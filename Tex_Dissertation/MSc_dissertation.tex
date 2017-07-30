@@ -132,7 +132,7 @@ especially the front page.
 \chapter{Introduction}
 
 On July 2012 the discovery of the Higgs boson was announced at CERN's Large Hadron Collider (LHC). This marked the begining of a new era for experimental High Energy Physics motivating the design of new 
-experiments for further and deeper exploration of the Higgs boson itsel but also, addressing the questions/problems that arose with it. 
+experiments for further and deeper exploration of the Higgs boson itself but also, a huge ma addressing the questions/problems that arose with it. 
 
 One of these experiments is Compact Linear Collider (CLIC), a high-luminosity linear $e^{-}$ $e^{+}$ collider. It is designed for a staging scenario of three main centre of mass energies at $\surd{s}$ = 380 GeV, $\surd{s}$ = 1.5 TeV
 and $\surd{s}$ = 3 TeV targeting optimal physics output based on the current landscape. The main difference of CLIC with LHC is that in the latter, protons collide which are non fundamental particles as they consist of quarks and 
@@ -169,17 +169,23 @@ Specifically, at $\surd s$ = 380 GeV and with an integrated luminosity of $\math
 prescision measurements can be made in the Higgs and the top quark sector. At this enegy stage the Higgsstrahlung
 process ($e^{+}e^{-}\rightarrow ZH$) alongside the $WW$ fusion ($e^{+}e^{-}\rightarrow H\nu_{e}\tilde{\nu}_{e}$) 
 are the dominant and can shed light to properties of the Higgs boson in a model independent way~\cite{clic2016updated}.
-Furthermore at the next two stages leading role will play the propsed scenarios for physics BSM with most 
+In CLIC there is also a dedicated program for top quark physics, as it is one of the most important particles
+in SM because it couples strongest to the Higgs field due to its mass but also it has an important role in 
+many of the BSM scenarios.
+Furthermore at the next two stages leading role will play the proposed scenarios for physics BSM with most 
 importantly Supersymmetry at $\surd s$ = 3 TeV and with $\mathcal{L}_{int}$ = 2000 fb$^{-1}$. This  is because CLIC has the potential for direct particle detection up to the 
 kinematic limit of $\surd s /2$ but also through indirect detection of observables that are sensitive to BSM
-scenarios exploiting the full energy potential.
+scenarios through precision measurements and comparison with the SM expectations, 
+taking advantage of the full energy potential.
+
+
 
 Given the linear nature of CLIC, there are no energy losses induced by Synchrotron radiation which appears in 
 circular colliders, but due Beamsstrahlung radiation. As the colsliding bunches get closer to the 
-vertex, the strong electromagnetic fields (up to 10 Tesla) created by the opposing beam cause deflection
+vertex, the strong electromagnetic fields (up to 10 Tesla) created by the opposing beam, cause deflection
 of the partices trajectories resulting to emit Synchrotron radiation. The effect is energy-dependent with huge
-impact at higher energies~\cite{bonvicini1989first} as it can be seen in the following image~\cite{abramowicz2017higgs}.
-
+impact at higher energies~\cite{bonvicini1989first} as it can be seen in the following 
+image~\cite{abramowicz2017higgs}.
 
 \begin{figure}[h!]
   \centering
@@ -189,92 +195,121 @@ impact at higher energies~\cite{bonvicini1989first} as it can be seen in the fol
   \label{fig2.15}
 \end{figure}
 
+CLIC is designed to operate for seven, five and six years respectively in each energy stage while the 
+upgrading periods will last two years. The total run will last for 22 years with the following table summarising
+the luminosities achieved in each stage:
 
+\begin{table}[h]
 
+\centering % used for centering table
+\begin{tabular}{c c} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+$\surd s$ (GeV)  & $\mathcal{L}$   \\ 
+\hline % inserts single horizontal line
+380 & 500 fb^{-1} &
+1.5 & 1.5 ab^{-1} &
+3   &  2 ab^{-1}
+ &\hline %inserts single line
+\end{tabular}
+\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+
+Furthermore, the experiment has two detector concepts CLIC SiD and CLIC ILD in order to serve the required 
+jet energy resolution. The latter has been  developed for the International Linear Collinder but it has been
+adapted according to the needs of CLIC. Both detectors have strong central solenoid magnets creating an axial 
+magnetic field of 5T for CLIC SiD and 4T for CLI ILD~\cite{abramowicz2017higgs}.
 
 
 
 \chapter{Supersymmetry}
 
-\section{}
+\section{Motivation}
 
-This section should be written in standard scientific
-language. Standard techniques in your research field should not be
-written out in detail. In computational projects this section should
-be used to explain the algorithms used and the layout of the
-computational code. A copy of the actual code may be given in the
-appendices if appropriate.
+The model that describes elementary particle physics is the Standar Model. It involves matter  fields (fermions)
+and vector gauge bosons (force carriers) that they stem from the fact that the SM Lagrngian is subject to $SU(3) \otimes 
+SU(2) \otimes U(1)$ symmetries. An important part of this theory is the existence of the Higgs field which appeared
+during the unification of the electromagnetic and the weak force. It is known for the fact that it "gives"
+mass to the elementary particles (besides photons and gluons which they are protected by the $U(1)$,$SU(3)$
+symmetries respectively.
 
-This section should emphasise the philosophy of the approach used and
-detail novel techniques. However please note: this section should not
-be a blow-by-blow account of what you did throughout the project. It
-should not contain large detailed sections about things you tried and
-found to be completely wrong! However, if you find that a technique
-that was expected to work failed, that is a valid result and should be
-included.
+It is true that even with the great success that the SM has been probed does not consist a flawless theory.
+Many parts of it are still to be answered or contain significant controversies. One example is the Hierarchy 
+problem. In the electroweak sector of the SM there is a parameter that has the diminsions of energy, the 
+vacum expectation value of the Higgs field which phenomenologicaly is 
 
-Here logical structure is particularly important, and you may find
-that to maintain good structure you may have to present the
-explorations/calculations/computations/whatever in a different order
-from the one in which you carried them out.
+\begin{equation}
+ \upsilon \approx 246 \quad GeV
+\end{equation}
 
+The importance of this parameter is that it sets the masses of the the theory and as well as the Higgs boson
+itself as it is
 
-You might sometimes want to include multiple equations in one place
-\begin{eqnarray}
-  E &=& ma^{2} \\
-  E &=& mb^{2} \\
-  E &=& mc^{2}
-\end{eqnarray}
-You might want to include multiple equations in one place without
-numbering them
-\begin{eqnarray*}
-  E &=& ma^{2} \\
-  E &=& mb^{2} \\
-  E &=& mc^{2}
-\end{eqnarray*}
-You might want to include multiple equations in one place without
-numbering \emph{all} of them
-\begin{eqnarray}
-  E &=& ma^{2} \nonumber \\
-  E &=& mb^{2} \nonumber \\
-  E &=& mc^{2}
-\end{eqnarray}
-
-You might also want to include diagrams.  The example shows the use of
-the special command which allows existing postscript files to be
-included.  You would normally keep your figures separate from the text. 
-These pictures might be images or pdf output from some
-program.
-
-Below I create a figure which is centred and stretched to 30\% of the
-width of the page \verb+{0.30\hsize}+ and with the height stretched by
-the same amount \verb+{!}+ to preserve the aspect ratio. If you omit
-the extension (ie .eps, .ps or .pdf) on the file name then \LaTeX\ will
-pick up the postscript copy whereas pdflatex will automatically pick
-up the PDF version.
+\begin{equation}
+ M_{H} = \upsilon \sqrt{\frac{\lambda}{2}} 
+\end{equation}
 
 
-\begin{figure}
+where $\lambda$ is the constant of the Higgs self interaction. The problem arises when we try compute higher 
+order corrections to the mass of the Higgs field. The self energy of the higgs boson has a term of the form
 
-\begin{center}
-  \resizebox{0.30\hsize}{!}{\includegraphics{crest.pdf}}
-\end{center}
+\begin{equation}
+ \int_{}^{\Lambda} d^{4}k \quad f(k,external\quad momenta)
+\end{equation}
 
-\caption{The University Crest}
-\label{fig:eucrest}
+where $\Lambda$ represents the scale of the new physics such as the effects of quantum gravity. In dimensional 
+regularisation, when $\Lambda \rightarrow \infty$ the renormalisability of the theory assures that there
+is no inconsistency, but if we take into account a scale, for example, for the quantum gravity then $\Lambda \rightarrow 
+M_{P} \approx 1.2\times 10^{19}\quad GeV$ which is the Plank mass, then the additive quantum corrections for the Higgs 
+mass become too big dragging the value of the Higgs mass up. Because the VEV of the Higgs boson has a fixed 
+phenomenologicaly value, one way to circumvent this problem is by relating bosons with fermions since in the 
+latter, the algebraic terms for their self energies come with a minus sign giving the desired calcelations 
+without any "fine tuning" from our side. This results into the SUSY theory stabilising the Hierarchy $M_{H}
+\ll M_{P}$ with the constraint that the SUSY particles should be visible at a scale not too much greater 
+than 1-10 TeV~\cite{aitchison2005supersymmetry}.
 
-\end{figure}
 
-You should find the file crest.pdf on this wiki.
+\section{SUSY Phenomenology}
 
-% note that labels do not need to include a description of the object
-% they are labelling but it can be helpful, eg \label{fig:figurename}.
+Inside SUSY every boson has a fermionic supersymmetric partner and every fermion has a bosonic one. The 
+fermion superpartners are called sfermions and differ in the spin value by 1/2 whereas the boson particles 
+which are the force carries are related to a spin 1/2 particles, the gauginos. In the following table I show
+the correspondance between SM and SUSY gauge particles.
 
-You can use a label on a figure to refer to it later. The university
-crest is in Figure~(\ref{fig:eucrest}). Note that you should not use
-phrases like ``the figure above'' or ``the following figure'' since
-\LaTeX\ may move the figure relative to the text if it cannot be fitted
-onto the current page.
+\begin{table}[ht]
+
+\centering % used for centering table
+\begin{tabular}{c c c c} % centered columns (4 columns)
+\hline\hline %inserts double horizontal lines
+Standard Model  &  & SUSY &  \\ [0.5ex] 
+\hline % inserts single horizontal line
+Photon & \gamma & Photino & \tilde{\gamma} \\ % inserting body of the table
+Gluon & g & Gluino & \tilde{g} \\
+Z Boson & Z & Zino & \tilde{Z} \\
+W Boson & W^{\pm,0} & Wino & \tilde{W}^{\pm,0} \\
+B Boson& B & Bino & \tilde{B} \\ [1ex] % [1ex] adds vertical space
+\hline %inserts single line
+\end{tabular}
+\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+
+The framework of this project is the Minimal Supersymmetric Standard Model which besides the SM particles 
+includes the sleptons $\tilde{\ell}^{\pm}$, the sneutrinos $\tilde{\nu}_{l}$, the squarks $\tilde{q}$, the 
+gluinos $\tilde{g}$, two pair of charginos $\tilde{\chi}^{\pm}_{i}$ where $i=1,2$, four neutralinos 
+$\tilde{\chi}^{0}_{i}$, $i=1,...,4$ and five Higgs bosons $h^{0}$, $H^{0}$, $A^{0}$,$H^{\pm}$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \chapter{Another Chapter Title}
 \section{Number of Chapters}

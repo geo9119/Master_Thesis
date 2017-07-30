@@ -2,6 +2,8 @@
 \contentsline {chapter}{\numberline {2}CLIC}{3}
 \contentsline {section}{\numberline {2.1}Outline of the experiment}{3}
 \contentsline {chapter}{\numberline {3}Supersymmetry}{5}
+\contentsline {section}{\numberline {3.1}Motivation}{5}
+\contentsline {section}{\numberline {3.2}SUSY Phenomenology}{6}
 \contentsline {chapter}{\numberline {4}Another Chapter Title}{7}
 \contentsline {section}{\numberline {4.1}Number of Chapters}{7}
 \contentsline {chapter}{\numberline {5}Results and Analysis}{8}
