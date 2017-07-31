@@ -8,6 +8,8 @@
 \usepackage{url}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{amsmath}
+
 %\graphicspath{ {/home/george/Desktop/Tex_Dissertation/images} }
 %
 % head.sty is no longer needed
@@ -132,9 +134,10 @@ especially the front page.
 \chapter{Introduction}
 
 On July 2012 the discovery of the Higgs boson was announced at CERN's Large Hadron Collider (LHC). This marked the begining of a new era for experimental High Energy Physics motivating the design of new 
-experiments for further and deeper exploration of the Higgs boson itself but also, a huge ma addressing the questions/problems that arose with it. 
+experiments for further and deeper exploration of the Higgs boson itself but also, a huge marathon
+addressing the questions/problems that arose with it. 
 
-One of these experiments is Compact Linear Collider (CLIC), a high-luminosity linear $e^{-}$ $e^{+}$ collider. It is designed for a staging scenario of three main centre of mass energies at $\surd{s}$ = 380 GeV, $\surd{s}$ = 1.5 TeV
+One of these proposed experiments is Compact Linear Collider (CLIC), a high-luminosity linear $e^{-}$ $e^{+}$ collider. It is designed for a staging scenario of three main centre of mass energies at $\surd{s}$ = 380 GeV, $\surd{s}$ = 1.5 TeV
 and $\surd{s}$ = 3 TeV targeting optimal physics output based on the current landscape. The main difference of CLIC with LHC is that in the latter, protons collide which are non fundamental particles as they consist of quarks and 
 gluons bound alltogether. One of the disadvantages of LHC is the inability to know beforehand the initial state of the colliding particles as quarks exist in a "sea of gluons" making it impossible to know their momenta. This sets
 some restrictions with resprect to the precision that it can probe various observables.
@@ -144,7 +147,7 @@ Synchrotron radiation since protons are accelerated in a 27 km circular accelera
 
 The main targets of CLIC are dependent of the energy stage. In the first it will focus on prescision standard model physics such as Higgs and Top quark measurements and in the two subsequent, among others, there will be searches
 for new physics~\cite{clic2016updated}. One of the theories that aspires to give solutions to many of the problems of Standard Model is Supersymmetry (SUSY). In this theory every particle has a Supersymmetric partner that differs in the spin by $1/2$, thus 
-relating bosons with fermions and fermios with bosons.
+relating bosons with fermions and fermions with bosons.
 
 In the Minimal Supersymmetric Standard Model, the top squarks $\tilde{t}$ decay almost all the times into a top quark $t$
 and a dark matter candidate, the neutralino $\tilde{\chi}_{1}^{0}$. In this project I will use Multivariate Analisis
@@ -174,7 +177,7 @@ in SM because it couples strongest to the Higgs field due to its mass but also i
 many of the BSM scenarios.
 Furthermore at the next two stages leading role will play the proposed scenarios for physics BSM with most 
 importantly Supersymmetry at $\surd s$ = 3 TeV and with $\mathcal{L}_{int}$ = 2000 fb$^{-1}$. This  is because CLIC has the potential for direct particle detection up to the 
-kinematic limit of $\surd s /2$ but also through indirect detection of observables that are sensitive to BSM
+kinematic limit of $\surd s /2$ for pair production but also through indirect detection of observables that are sensitive to BSM
 scenarios through precision measurements and comparison with the SM expectations, 
 taking advantage of the full energy potential.
 
@@ -230,11 +233,12 @@ and vector gauge bosons (force carriers) that they stem from the fact that the S
 SU(2) \otimes U(1)$ symmetries. An important part of this theory is the existence of the Higgs field which appeared
 during the unification of the electromagnetic and the weak force. It is known for the fact that it "gives"
 mass to the elementary particles (besides photons and gluons which they are protected by the $U(1)$,$SU(3)$
-symmetries respectively.
+symmetries respectively)
+via Spontaneous Symmetry Breaking .
 
 It is true that even with the great success that the SM has been probed does not consist a flawless theory.
 Many parts of it are still to be answered or contain significant controversies. One example is the Hierarchy 
-problem. In the electroweak sector of the SM there is a parameter that has the diminsions of energy, the 
+problem. In the electroweak sector of the SM there is a parameter that has the dimensions of energy, the 
 vacum expectation value of the Higgs field which phenomenologicaly is 
 
 \begin{equation}
@@ -268,9 +272,10 @@ without any "fine tuning" from our side. This results into the SUSY theory stabi
 than 1-10 TeV~\cite{aitchison2005supersymmetry}.
 
 
+
 \section{SUSY Phenomenology}
 
-Inside SUSY every boson has a fermionic supersymmetric partner and every fermion has a bosonic one. The 
+Inside SUSY every boson is related to a fermionic supersymmetric partner and every fermion has a bosonic one. The 
 fermion superpartners are called sfermions and differ in the spin value by 1/2 whereas the boson particles 
 which are the force carries are related to a spin 1/2 particles, the gauginos. In the following table I show
 the correspondance between SM and SUSY gauge particles.
@@ -294,9 +299,58 @@ B Boson& B & Bino & \tilde{B} \\ [1ex] % [1ex] adds vertical space
 
 The framework of this project is the Minimal Supersymmetric Standard Model which besides the SM particles 
 includes the sleptons $\tilde{\ell}^{\pm}$, the sneutrinos $\tilde{\nu}_{l}$, the squarks $\tilde{q}$, the 
-gluinos $\tilde{g}$, two pair of charginos $\tilde{\chi}^{\pm}_{i}$ where $i=1,2$, four neutralinos 
+gluinos $\tilde{g}$, two pair of charginos $\tilde{\chi}^{\pm}_{i}$ where $i=1,2$,  four neutralinos 
 $\tilde{\chi}^{0}_{i}$, $i=1,...,4$ and five Higgs bosons $h^{0}$, $H^{0}$, $A^{0}$,$H^{\pm}$.
 
+Both particles and sparticles belong to the same super-multiplet having the same mass and the same quantum 
+numbers as their SM partners but with different spin. Because no such degenerate fermion-boson pair exists 
+in nature,
+then it is deduced that SUSY must be a broken symmetry. In order to constitute a solid solution to the 
+Hierarchy problem, then the difference in the masses of the particles and their supersymmetric partners 
+must be of the order of $\mathcal{O}(1  TeV) $~\cite{nagashima2014beyond}.
+
+In Standard Model, for the Spontaneous Symmetry Breaking one Higgs doublet is needed with 4 degrees of 
+freedom. For the SUSY model on the other hand two such doublets are required with a total of eight 
+degrees of freedom where three of them are absorbed to give mass to the SM particles such as W$^{\pm}$ and Z,
+and the remaining five give rise to five physical Higgs bosons $\tilde{h}$,$\tilde{H}^{\pm}$,$\tilde{A}$,
+$\tilde{H}^{0}$. Those in turn, mix further to become the neutralinos and the charginos : $\tilde{\chi}_{i}^{0}$,
+$\tilde{\chi}_{i}^{\pm}$. 
+
+It is known that within the SM the fermions carry chirality denoted by L or R whether they are left or right 
+respectively, according to the way they transform under the symmetry group $SU(2) \otimes U(1)$. Thus given 
+the SUSY relation of fermions-bosons that means that the sfermions  (bosonic superpartners), come into 
+doublets of the form $(f_{i},\tilde{f}_{i})$, where i=L,R. The sfermions mix further to make the eigenstates
+of the mass matrix. This mixing is expected to be strong for third generation sfermions since the Yukawa 
+couplings can be large, more precisely in our case the stop quark mixing effects can be large because
+of the large mass of the top quark.
+
+The following matrix is the mixing matrix expressed in the $(\tilde{f}_{L},\tilde{f}_{R})$ basis:
+
+\begin{equation}
+ \mathcal{M}^{2}_{\tilde{f}} =
+\[  
+  \begin{pmatrix}
+   M^{2}_{\tilde{f}_{L}}  &  \alpha_{f}m_{f} \\
+   \alpha_{f}m_{f}        &  M^{2}_{\tilde{f}_{R}}
+  \end{pmatrix}
+\]
+\end{equation}
+
+where the $M^{2}_{\tilde{f}_{L}}$ are terms that depend on the mass of the quark, the charge and the third 
+component of the weak isospin. The off diagonal elements $\alpha_{f}$ are dependent on the soft SUSY breaking
+trilinear scalar coupling parameters.
+
+In this project I will focous on the top squarks  where the mixing   $\tilde{t}_{R}-\tilde{t}_{L}$ is important
+due to the large top quark mass. By computing the eigenvalues of the previous matrix and for the right
+flavour we obtain:
+
+\begin{equation}
+ m^{2}_{\tilde{t}_{1,2}} = \frac{1}{2}(M^{2}_{\tilde{t}_{L}} + M^{2}_{\tilde{t}_{R}} \mp 
+ \sqrt{(M^{2}_{\tilde{t}_{L}}-M^{2}_{\tilde{t}_{R}})^{2} + 4 m^{2}_{t}\alpha^{2}_{t}})
+\end{equation}
+
+It is obvious that the $m^{2}_{\tilde{t}_{1}}$ will have the lowest mass, something that makes it the 
+lightest squark.
 
 
 
