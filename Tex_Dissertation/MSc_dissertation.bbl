@@ -27,4 +27,12 @@ Yorikiyo Nagashima.
 \newblock {\em Beyond the standard model of elementary particle physics}.
 \newblock John Wiley \& Sons, 2014.
 
+\bibitem{aaboud2016search}
+Morad Aaboud, G~Aad, B~Abbott, J~Abdallah, O~Abdinov, B~Abeloos, R~Aben,
+  OS~AbouZeid, NL~Abraham, H~Abramowicz, et~al.
+\newblock Search for top squarks in final states with one isolated lepton,
+  jets, and missing transverse momentum in s= 13 tev p p collisions with the
+  atlas detector.
+\newblock {\em Physical Review D}, 94(5):052009, 2016.
+
 \end{thebibliography}

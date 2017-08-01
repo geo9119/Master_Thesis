@@ -207,12 +207,11 @@ the luminosities achieved in each stage:
 \centering % used for centering table
 \begin{tabular}{c c} % centered columns (4 columns)
 \hline %inserts double horizontal lines
-$\surd s$ (GeV)  & $\mathcal{L}$   \\ 
-\hline % inserts single horizontal line
-380 & 500 fb^{-1} &
-1.5 & 1.5 ab^{-1} &
-3   &  2 ab^{-1}
- &\hline %inserts single line
+$\surd s$ (GeV)  & $\mathcal{L}$   \\ \hline % inserts single horizontal line
+380 & 500 fb$^{-1}$  \\
+1.5 & 1.5 ab$^{-1}$ \\
+3   &  2 ab$^{-1}$ 
+ %inserts single line
 \end{tabular}
 \label{table:nonlin} % is used to refer this table in the text
 \end{table}
@@ -271,6 +270,18 @@ without any "fine tuning" from our side. This results into the SUSY theory stabi
 \ll M_{P}$ with the constraint that the SUSY particles should be visible at a scale not too much greater 
 than 1-10 TeV~\cite{aitchison2005supersymmetry}.
 
+One other feature that makes SUSY attractive is the fact that it includes the convergence of the couplings,
+something that it is known as Grand Unification. From the point of view of SM, something like that is 
+unable to achieve since two of the couplings decrease with energy (weak and strong coupling) whereas one
+(electromagnetic) increases. In the MSSM, by the inclusion of the sparticles such unification is actually
+achievable as it can be seen in the following figure:
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\linewidth]{{images/PWOct14gates-fig2-full}.jpg}
+  \label{}
+\end{figure}
+
 
 
 \section{SUSY Phenomenology}
@@ -287,11 +298,11 @@ the correspondance between SM and SUSY gauge particles.
 \hline\hline %inserts double horizontal lines
 Standard Model  &  & SUSY &  \\ [0.5ex] 
 \hline % inserts single horizontal line
-Photon & \gamma & Photino & \tilde{\gamma} \\ % inserting body of the table
-Gluon & g & Gluino & \tilde{g} \\
-Z Boson & Z & Zino & \tilde{Z} \\
-W Boson & W^{\pm,0} & Wino & \tilde{W}^{\pm,0} \\
-B Boson& B & Bino & \tilde{B} \\ [1ex] % [1ex] adds vertical space
+Photon & $\gamma$ & Photino & $\tilde{\gamma}$ \\ % inserting body of the table
+Gluon & g & Gluino & $\tilde{g}$ \\
+Z Boson & Z & Zino & $\tilde{Z}$ \\
+W Boson & $W^{\pm,0}$ & Wino & $\tilde{W}^{\pm,0}$ \\
+B Boson& B & Bino & $\tilde{B}$ \\ [1ex] % [1ex] adds vertical space
 \hline %inserts single line
 \end{tabular}
 \label{table:nonlin} % is used to refer this table in the text
@@ -352,6 +363,117 @@ flavour we obtain:
 It is obvious that the $m^{2}_{\tilde{t}_{1}}$ will have the lowest mass, something that makes it the 
 lightest squark.
 
+\section{Results from LHC for SUSY}
+ 
+ The search for indications for Supersymmetry is not new as LHC has been optimized and focused among other
+ to the direct or indirect detection of sparticles. The majority of the cases that have been studied, 
+ consider as main decay channel of the sparticles the following:
+ 
+ \begin{equation}
+  BR(\tilde{q} \rightarrow q  \chi_{i}^{0,\pm}) = 100 \%
+ \end{equation}
+
+So far thought no indication of SUSY has been found in LHC but through each analysis the exclusion limits 
+for the SUSY observables become bigger and bigger as it can be seen in the following figures that summarises
+the latest of them for the stop quark mass at $\surd s$ = 8,13 GeV in proton proton collisions
+~\cite{aaboud2016search}:
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\linewidth]{{images/ATLAS_SUSY_Stop_tLSP}.png}
+  \label{fig2.15}
+\end{figure}
+
+Whereas in the following figure there are the exclusion limits in ATLAS for p-p collisions at 13 TeV for the
+channel invastiged in this project
+
+
+ \begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.7\linewidth, scale=5]{{images/fig_08}.png}
+  \label{}
+\end{figure}
+
+
+
+
+
+
+
+\chapter{Methods}
+\section{Introduction}
+
+In this chapter I will describe the exact conditions and methods that were followed in this project for the 
+calculation of the stop quark mass at CLIC Conceptual experiment.
+
+I will invedtigate the production of a pair of stop quarks at $\surd s$ = 3 TeV and assumig an  integrated 
+luminosity of $\mathcal{L}_{int}$ = 2000 fb$^{-1}$. The channel of interest is the following:
+
+\begin{equation}
+ e^{+} e^{+} \rightarrow \tilde{t} \tilde{\bar{t}} \rightarrow t\tilde{\chi}_{1}^{0} \bar{t}\tilde{\chi}_{1}^{0}
+ \rightarrow W^{+}W^{-}b\bar{b} \tilde{\chi}_{1}^{0} \tilde{\chi}_{1}^{0}
+\end{equation}
+
+and for this model the mass of the top squark is $m_{\tilde{t}}$ = 844 GeV whereas the mass of the 
+neutralino is $m_{\tilde{\chi}_{1}^{0}}$. This is not the only possible decay of a top squark but it is the
+dominant one. In what follows I show the top three branching ratios of the top squark decay and two
+of the corresponding Feynmann diagrams:
+
+\begin{figure}[ht!]
+  \raggedleft
+  \includegraphics[width=0.4\linewidth]{{images/feyn1}.png}
+  \hspace{\fill}
+    \includegraphics[width=0.4\linewidth]{{images/feyn2}.png}
+  \label{}
+\end{figure}
+
+
+\newpage
+
+\begin{enumerate}
+ \item BR($\tilde{t}\rightarrow t \tilde{\chi}_{1}^{0}$) = 52.4 \%
+ \item BR($\tilde{t}\rightarrow b \tilde{\chi}_{1}^{\pm}$) = 34.1 \%
+ \item BR($\tilde{t}\rightarrow t \tilde{\chi}_{2}^{0}$) = 13.2 \%
+ \end{enumerate}
+
+As also the branching ratios for the decay of the W boson to either in a hadronic final state or in
+a leptonic one are:
+
+\begin{itemize}
+ \item BR($W\rightarrow q\bar{q}$) = 67.8 \% 
+ \item BR($W\rightarrow l\nu_{l}$) = 32.2 \%
+\end{itemize}
+
+In the following I summarise the possible decays of the stops indicating the branching pair fraction
+for each one:
+
+\begin{itemize}
+ \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \tilde{\chi}_{1}^{0}
+ \chi^{\pm}_{1}b \rightarrow
+ W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}$ \quad (35.8\%)
+
+ \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t\bar{t} \tilde{\chi}_{1}^{0}
+ \tilde{\chi}^{0}_{1} \rightarrow
+ W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}$ \quad (27.4\%)
+
+ \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t\bar{t} \tilde{\chi}_{1}^{0}
+ \chi^{0}_{2} \rightarrow
+ W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}h$ \quad (13.7\%)
+ 
+ \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow b\bar{b} \chi_{1}^{+}
+ \chi^{-}_{1} \rightarrow
+ W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}$ \quad (11.6\%)
+ 
+ \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \tilde{\chi}_{2}^{0}
+ \chi^{\pm}_{1}b \rightarrow
+ W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}h$ \quad (9\%)
+ 
+ \end{itemize}
+
+
+\newpage
+
+\section{Calculation of SUSY particle masses}
 
 
 
@@ -362,21 +484,6 @@ lightest squark.
 
 
 
-
-
-
-\chapter{Another Chapter Title}
-\section{Number of Chapters}
-
-You may vary the number of chapters. The Introduction and Background
-Theory chapter are essential, although you may choose a different
-title for the latter. These two introductory chapters are usually
-followed by a chapter on what you did yourself, with a title such as
-Design and Development, although you can choose any title you
-wish. After that, you might to have another chapter, or you may go
-straight to the Results and Conclusions chapter.
-
-After the Introduction, you are free to use any chapter titles you wish.
 
 
 \chapter{Results and Analysis}

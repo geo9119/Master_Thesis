@@ -4,45 +4,45 @@ The top-level auxiliary file: MSc_dissertation.aux
 The style file: unsrt.bst
 Database file #1: MSc_dissertation.bib
 Warning--I didn't find a database entry for "ob:bornwolf"
-You've used 5 entries,
+You've used 6 entries,
             1791 wiz_defined-function locations,
-            478 strings with 4550 characters,
-and the built_in function-call counts, 1130 in all, are:
-= -- 68
-> -- 101
+            485 strings with 4904 characters,
+and the built_in function-call counts, 1464 in all, are:
+= -- 87
+> -- 136
 < -- 0
-+ -- 36
-- -- 31
-* -- 89
-:= -- 217
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 4
++ -- 48
+- -- 42
+* -- 124
+:= -- 279
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 44
-empty$ -- 89
-format.name$ -- 31
-if$ -- 228
+cite$ -- 6
+duplicate$ -- 53
+empty$ -- 112
+format.name$ -- 42
+if$ -- 294
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 6
-newline$ -- 28
-num.names$ -- 5
-pop$ -- 15
+int.to.str$ -- 6
+missing$ -- 7
+newline$ -- 33
+num.names$ -- 6
+pop$ -- 16
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 14
+skip$ -- 17
 stack$ -- 0
-substring$ -- 21
-swap$ -- 5
+substring$ -- 39
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 7
-width$ -- 6
-write$ -- 54
+while$ -- 9
+width$ -- 7
+write$ -- 65
 (There was 1 warning)
