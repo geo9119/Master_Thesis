@@ -35,4 +35,22 @@ Morad Aaboud, G~Aad, B~Abbott, J~Abdallah, O~Abdinov, B~Abeloos, R~Aben,
   atlas detector.
 \newblock {\em Physical Review D}, 94(5):052009, 2016.
 
+\bibitem{simon2010techniques}
+Frank Simon.
+\newblock Techniques and prospects for light-flavored squark mass measurements
+  at a multi-tev e+ e- collider.
+\newblock Technical report, 2010.
+
+\bibitem{suehara2016lcfiplus}
+Taikan Suehara and Tomohiko Tanabe.
+\newblock Lcfiplus: A framework for jet analysis in linear collider studies.
+\newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  808:109--116, 2016.
+
+\bibitem{cacciari2012fastjet}
+Matteo Cacciari, Gavin~P Salam, and Gregory Soyez.
+\newblock Fastjet user manual.
+\newblock {\em The European Physical Journal C}, 72(3):1896, 2012.
+
 \end{thebibliography}

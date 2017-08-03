@@ -451,19 +451,113 @@ for each one:
  \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \tilde{\chi}_{1}^{0}
  \chi^{\pm}_{1}b \rightarrow
  W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}$ \quad (35.8\%)
-\end{itemize}
+
+ \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t\bar{t} \tilde{\chi}_{1}^{0}
+ \tilde{\chi}^{0}_{1} \rightarrow
+ W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}$ \quad (27.4\%)
+
+ \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t\bar{t} \tilde{\chi}_{1}^{0}
+ \chi^{0}_{2} \rightarrow
+ W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}h$ \quad (13.7\%)
+ 
+ \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow b\bar{b} \chi_{1}^{+}
+ \chi^{-}_{1} \rightarrow
+ W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}$ \quad (11.6\%)
+ 
+ \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \tilde{\chi}_{2}^{0}
+ \chi^{\pm}_{1}b \rightarrow
+ W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}h$ \quad (9\%)
+ 
+ \end{itemize}
 
 
+\newpage
+
+\section{Calculation of SUSY particle masses}
+
+There are various ways that have been developed for the calculation of the squark masses at electron-positron
+linear colliders. In this chapter I present one that will not be used in my analysis but sketch the potencial
+and thus the importance of the aforementioned colliders regarding these kind of calculations.
+
+The main topologies that are considered are those that the gluino is heavier than the squarks and thus the 
+dominant decaying channel is:
+
+\begin{equation}
+ e^{-}e^{+} \rightarrow \tilde{q} \tilde{\bar{q}} \rightarrow q\bar{q}\chi_{1}^{0}\chi_{1}^{0}
+\end{equation}
+
+It needs to be mentioned that a powerfull advantage of the CLIC experiment is the possibility of achieving 
+polarisation up to 80$\%$ helping to reduce the WW background and the ability to create right or left squarks
+depending on the needs of the physical analysis.
+
+\subsection{Modified Invariant Mass}
+
+This technique has been developed initially for LHC experiment where the p-p collision energy is not known.
+The calculation was achieved by creating the variable $M_{C}$ which is related to the standard 
+invariant mass but it's invariance comes from contra linear boosts of equal magnitude. The squark mass is given
+by:
+
+\begin{equation}
+ m_{\tilde{q}}=\frac{1}{2} \big(M_{C}^{max} + \sqrt{(M_{C}^{max})^{2} + 4m_{\chi}^{2}} \big)
+\end{equation}
+
+where 
+
+\begin{equation}
+ M_{C}^{2}=2(E_{q,1}E_{q,2}+\vec{p}_{q,1}\vec{p}_{q,2})
+\end{equation}
+
+and
+
+\begin{equation}
+ M_{C}^{max}=\frac{m^{2}_{\tilde{q}}-m^{2}_{\chi}}{m_{\tilde{q}}}
+\end{equation}
+
+The power off this kind of calculation comes from the fact that no knowledge for the exact center of mass 
+energy is needed (In comparison with the first method described in~\cite{simon2010techniques}), something that is not purely known since the effects of initial state radiation and
+the Beamstrahlung can distort it significantly resulting to even bigger uncertainties. Note that this method 
+assumes that the mass of the neutralino is known and that the quark is massless. 
+
+\section{Minimisaton of $\chi^{2}$ Method}
+
+In this chapter I describe the procedure that I followed until the calculation of the top squark mass. 
+This involved the vertex finding, the jet clustering, the flavourtagging and the calculation of the $\chi^{2}$
+for each top squark mass.
+
+\subsection{Vertex Finding}
+
+For the needs of this projecct I used the package of LCFIplus which is an improved software of the already 
+existing one LCFIVertex. The important difference between the  two is that LCFIplus employs the vertex finding 
+befere the jet clustering (in comparison to LCFIVertex which follows the exact oposite procedure) with the 
+goal to protect the secondadry vertices from breaking up and grouped into different jets~\cite{suehara2016lcfiplus}.
+This is an important step towards better performance since the Bottom jets can be identified from their 
+sufficiently large distance between the primary vertex and their decay vertex. Additionally, the importance
+of this step to be performed before jet clustering, is that hadrons that contain bottom or charm quarks 
+have sizeable lifetimes and they can be measured Inside the detector.
 
 
+That said, the vertex finding was the first step towards obtaining the final data for analysis.
+
+\subsection{Jet Clustering}
+
+Jets are an indespensible part of high energy physics. They come from the manifestation of strong nuclear
+as free quarks or gluons hadronize. They are visual structures that are measured in the detectors and they
+serve the need of approaching the initial parton that they originated. Throught the years various algorithms 
+have been developed for the clustering of such objects differing in the way that the approach suchh procedure.
+Two of the most famous are the sequential recombination algorithms and cone algorithms. In this projecct I use
+the a sequential recombination algorithm, the $k_{t}$ algorithm which is a longitudinaly invariant algorithm
+firstly designed for hadron colliders.
+
+The $k_{t}$ involves a measure of distance $d_{ij}$ for all the pair of particles $i,j$:
+
+\begin{equation}
+ d_{ij}=d_{ji}=min(p_{Ti}^{2},p_{Tj}^{2})\frac{\Delta R^{2}_{ij}}{R^{2}}
+\end{equation}
 
 
-
-
-
-
-
-
+where $p_{Ti}$ is the transverse momentum of $i^{th}$ particle with respect to beam direction and 
+$\Delta R^{2}_{ij}=(y_{i}-y_{j})^{2}+(\phi_{i}-\phi_{j})^{2}$ with $y$ being the rapitdity and and $\phi$ being
+the azimuth angle.
 
 
 
