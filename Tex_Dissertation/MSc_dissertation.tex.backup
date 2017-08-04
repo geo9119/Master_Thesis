@@ -556,8 +556,167 @@ The $k_{t}$ involves a measure of distance $d_{ij}$ for all the pair of particle
 
 
 where $p_{Ti}$ is the transverse momentum of $i^{th}$ particle with respect to beam direction and 
-$\Delta R^{2}_{ij}=(y_{i}-y_{j})^{2}+(\phi_{i}-\phi_{j})^{2}$ with $y$ being the rapitdity and and $\phi$ being
-the azimuth angle.
+$\Delta R^{2}_{ij}=(y_{i}-y_{j})^{2}+(\phi_{i}-\phi_{j})^{2}$ with $y$ being the rapitdity, $\phi$ being
+the azimuth angle and R the jet radius fixed in this project as $R=0.7$.
+
+The basic idea behind this algorithm is that it calculates the $d_{ij}$ with the smallest value and then it 
+"merges" the $i,j$ into a single object with momentum $p_{i}+p_{j}$. This procedure is repeated until the quantity
+$d_{ij}$ is above some threshold and all the particles that are left are the event's jet
+~\cite{cacciari2012fastjet}.
+
+\subsection{Flavour Tagging}
+
+Flavour Tagging is the procedure in which a pseudoprobability is assigned to each jet regarding the parton
+that the jet originates from. In this project, there are six jets in the final products four of them 
+originating from b quarks. 
+
+The flavour tagging algorithm that was used belonged in the LCFIplus package~\cite{suehara2016lcfiplus}.
+It  makes use of the TMVA package which in turn uses multivariate classifiers. A set of input variables are 
+defined for each jet and they are passed to the Gradien Boosted Descision Trees (a certain type of classifiers)
+which they are trained and then applied to the jets of the physical process. Those input variables are
+constituents of the jets such as tracks and secondary vertices.
+
+\subsection{Classification Method: \textit{Boosted Descision Trees}}
+
+For the calculation of the top squark mass I made use of the TMVA package wich is provides a multivariate 
+analysis platform in order (for this project) to make separation between the signal and the background. Two 
+of them were empoyed and used and compaired: the \textit{Boosted Descision Trees} (BDT) and the 
+\textit{Gradient Boosted Descision Trees} (GBDT).
+
+In this chapter I describe the Boosted Descision Trees method of classification and cite the results of this 
+investigation.
+
+\subsubsection{Background on BDT's}
+
+Before I explain what BDT's are, it would be beneficial to sketch what Descision Trees are. 
+
+Suppose we start with signal and background events described by a set of variables such as (in HEP) transverse 
+momenta, missing energy, etc. Then we sort all events by each variable and we choose the one that gives the
+best separation between signal and background. This is how the first node is made. Then, in the two branches 
+that are made we repeat this procedure applying the best cut on each node until the splitting stops based on 
+some criterion. That is how the terminal node is reached which is called leaf~\cite{hoecker2007tmva}.
+
+One \textit{issue} that arises for Descision Trees is their instability in statistical fluctuations. If two 
+of the input variables have similar separation power then a fluctuation of the input sample may cause the 
+selection of one of the two variables disregarding the other, something that would not happen if the fluctuation
+was not present. This results in a totaly different tree structure.
+
+A way to circumvent this problem is to employ many different trees whose depth is small. They are called
+weak learners. The classification of the event comes from the majority vote of these weak learners (boosting).
+It is important to be noted that each tree is trainned with the same sample of input variables. That way not 
+only we reach better results in the possible presence of statistical fluctuations but we also avoid the 
+overtrainning of the trees.
+
+\subsubsection{Separation of Signal and Background}
+
+In the physical case that I examine I have what will later be denoted as SUSY signal: corresponding to the 
+top squarks, SUSY and SM background: corresponding to any physical process that immitates the one under 
+consideration.
+
+To this end, using the TMVA package in root and trainning 200 trees with the  preselection cuts:
+
+\begin{itemize}
+ \item $E_{visible} <$ 2 TeV
+ \item $E_{top 1,2} <$ 1.2 TeV
+\end{itemize}
+
+where $E_{visible}$ is the total energy of the jets and $E_{top,i}$ is the energy of the $i^{th}$ top quark.
+99$\%$ of the signal events passed the cut whereas for the background 70$\%$.
+
+In what follows I enumerate the input variables in the TMVA that they were used for trainning and testing 
+the classifiers. It is important to notice that the sample with which the BDT's was trainned and tested were
+different.
+
+\begin{enumerate}
+ \item The invariant masses of the top quarks
+ \item The invariant masses of the W bosons
+ \item The missing transverse momentum  $p_{T}$
+ \item The $\Delta \phi$ angle between the $t\bar{}t$ quarks
+ \item The $\Delta R$  between the W candidates and the b jets
+ \item The $cos\theta_{top}$. We expect the top quarks created by purely SM processes to be more boosted 
+ than the ones that involved SUSY processes.
+ \item Thrust: 
+ \begin{equation}
+  T=max_{\hat{n}}\frac{\sum_{i}^{}|\vec{p}_{i}\cdot \hat{n}_{i}|}{\sum_{i}^{}|\vec{p}_{i}|}
+ \end{equation}
+	where $\hat{n}$ is the unitary vector that maximises the ratio of the sums. The sums run over all the
+	particles that emerge from the collision.
+
+	
+  \item The three highest b tags
+  \item The three highest c tags
+  \item $\theta_{miss}$, which is defined to be the polar angle of the missing momentum
+  \item Oblatness
+  \item Sphericity (defined in~\cite{chen2012new})
+  \item Aplanarity (defined in~\cite{chen2012new})
+  \item The number of particles
+  \item $y_{3,4},y_{4,5},y_{5,6},y_{6,7},y_{7,8}$: The jet transition values defined from the following 
+  formula:
+  \begin{equation}
+   y_{i,j}=min(E_{i}^{2},E_{j}^{2})\frac{1-(cos\theta_{i}-cos\theta_{j})}{s}
+  \end{equation}
+  where i,j jets are chosen such that y gets the minimum value. 
+\end{enumerate}  
+
+\newpage
+
+The TMVA trains the classifiers with respect to the input variables and then with the weight files that it has
+created, it applies them to a different sample (test phase). Essentially what TMVA achieves is reducing the 
+multi dimantional phase space of variables into one variable, known as BDT cut.
+
+According to the following graph, the value of the BDT cut that was chosen is $cut_{BDT}=-0.036$ due to the 
+fact that it has the maximum statistical significance $\frac{S}{\sqrt{S+B}}$=5.68, where S is the
+number of signal events and B is the number of background events.
+
+\begin{figure}[ht!]
+  \includegraphics[width=0.6\linewidth]{{images/cut_efficiency}.pdf}
+  \caption{The green line represents the statistical significance $\frac{S}{\sqrt{S+B}}$ where as it can be
+  seen it reaches the greatest value at -0.036. The cut is also known as descision boundary and defines the
+  critical region.}
+  
+ \includegraphics[width=0.6\linewidth]{{images/BDT_output}.pdf}
+  \caption{The BDT output for the signal and the two backgrounds. The y axis has a log scale.}
+\end{figure}
+
+\newpage
+
+After the training phase, the TMVA yields which variables where the most important in the classification
+procedure where (ordered from the most significant):
+
+\begin{enumerate}
+ \item $\theta_{miss}$
+ \item missing $p_{T}$ 
+ \item $\Delta \phi$
+ \item $cos\theta_{top}$
+\end{enumerate}
+
+The following histograms show the aforementioned variables as they were given for training and testing.
+
+
+\begin{figure}
+\begin{minipage}[c]{0.5\linewidth}
+\includegraphics[width=\linewidth]{{images/thetamiss_report}.pdf}
+\caption{Image A}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.5\linewidth}
+\includegraphics[width=\linewidth]{{images/missingptpfo_report}.pdf}
+\caption{Image B}
+\end{minipage}
+\end{figure}
+
+\begin{figure}
+\begin{minipage}[c]{0.5\linewidth}
+\includegraphics[width=\linewidth]{{images/deltaphi_report}.pdf}
+\caption{Image A}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.5\linewidth}
+\includegraphics[width=\linewidth]{{images/costhetatopmax}.pdf}
+\caption{Image B}
+\end{minipage}
+\end{figure}
+
 
 
 

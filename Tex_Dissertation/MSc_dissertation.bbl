@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{clic2016updated}
 The CLIC, MJ~Boland, U~Felzmann, PJ~Giansiracusa, TG~Lucas, RP~Rassool,
@@ -52,5 +52,17 @@ Taikan Suehara and Tomohiko Tanabe.
 Matteo Cacciari, Gavin~P Salam, and Gregory Soyez.
 \newblock Fastjet user manual.
 \newblock {\em The European Physical Journal C}, 72(3):1896, 2012.
+
+\bibitem{hoecker2007tmva}
+Andreas Hoecker, Peter Speckmayer, Joerg Stelzer, Jan Therhaag, Eckhard von
+  Toerne, Helge Voss, M~Backes, T~Carli, O~Cohen, A~Christov, et~al.
+\newblock Tmva-toolkit for multivariate data analysis.
+\newblock {\em arXiv preprint physics/0703039}, 2007.
+
+\bibitem{chen2012new}
+Chunhui Chen.
+\newblock New approach to identifying boosted hadronically decaying particles
+  using jet substructure in its center-of-mass frame.
+\newblock {\em Physical Review D}, 85(3):034007, 2012.
 
 \end{thebibliography}
