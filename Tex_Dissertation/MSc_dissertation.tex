@@ -746,12 +746,12 @@ number of the signal events.
 For completenes, the above diagrams depict the SM background efficiency and the SUSY background efficiency.
 
 \begin{figure}
-\begin{minipage}[c]{0.5\linewidth}
+\begin{minipage}[c]{0.6\linewidth}
 \includegraphics[width=\linewidth]{{images/ratio_plot_SMbackground_witherrors}.pdf}
 \caption{\scriptsize{The Standard Model Background Efficiency}}
 \end{minipage}
 \hfill
-\begin{minipage}[c]{0.5\linewidth}
+\begin{minipage}[c]{0.6\linewidth}
 \includegraphics[width=\linewidth]{{images/ratio_plot_susybg_witherrors}.pdf}
 \caption{\scriptsize{The SUSY Background Efficiency}}
 \end{minipage}
@@ -762,13 +762,22 @@ For completenes, the above diagrams depict the SM background efficiency and the 
 \subsubsection{Effectiveness of BDT's}
 
 In the following graphs we can see the number of events of the signal and the two backgrounds with respect
-of the $E_{jjj}$. 
+of the $E_{jjj}$ before and after the $cut_{BDT}$. As it can be seen, the Standard Model Background as well as
+the SUSY Background have reduced significantly.
+
 
 \begin{figure}[ht!]
-  \includegraphics[width=0.7\linewidth]{{images/ratio_plot_witherrors}.pdf}
-  \caption{\scriptsize{}}
+  \includegraphics[width=0.7\linewidth]{{images/prebdtcut}.pdf}
+  \caption{\scriptsize{Signal, SM background and SUSY background before the TMVA application. It is a 
+  stacked histogram with log y axis.}}
 \end{figure}
 
+\begin{figure}[ht!]
+  \includegraphics[width=0.7\linewidth]{{images/postbdtcut}.pdf}
+  \caption{\scriptsize{Signal, SM background and SUSY background after the TMVA application.}}
+\end{figure}
+
+\newpage
 
 
 
