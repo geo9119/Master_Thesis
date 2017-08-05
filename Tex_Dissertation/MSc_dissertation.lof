@@ -1,16 +1,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The luminosity spectrum for CLIC operating at ${\mathchar "1270}s$ = 3 TeV, where ${\mathchar "1270}s'$ is the effective centre-of-mass energy after beamstrahlung and initial state radiation }}{4}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The luminosity spectrum for CLIC operating at ${\mathchar "1270}s$ = 3 TeV, where ${\mathchar "1270}s'$ is the effective centre-of-mass energy after beamstrahlung and initial state radiation.}}}{4}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The green line represents the statistical significance $\frac {S}{\sqrt {S+B}}$ where as it can be seen it reaches the greatest value at -0.036. The cut is also known as descision boundary and defines the critical region.}}{17}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The BDT output for the signal and the two backgrounds. The y axis has a log scale.}}{17}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Polar angle of the missing momentum of the jets}}}{18}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Missing transverse momentum}}}{18}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The angle between the reconstructed tops}}}{18}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {cos$\theta _{top}$}}}{18}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The green line represents the statistical significance $\frac {S}{\sqrt {S+B}}$ where as it can be seen it reaches the greatest value at -0.036. The cut is also known as descision boundary and defines the critical region.}}}{18}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The BDT output for the signal and the two backgrounds. The y axis has a log scale.}}}{18}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Polar angle of the missing momentum of the jets}}}{19}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Missing transverse momentum}}}{19}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The angle between the reconstructed tops}}}{19}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {cos$\theta _{top}$}}}{19}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The energy of the top quark. For higher energies there are less entries per bin, something that is connected with the effect of Beamsstrahlung radiadion that is manifested mainly in higher energies.}}}{20}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {}}}{20}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The Standard Model Background Efficiency}}}{21}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The SUSY Background Efficiency}}}{21}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {}}}{22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Simple Gnuplot example}}{21}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Simple Gnuplot example}}{25}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

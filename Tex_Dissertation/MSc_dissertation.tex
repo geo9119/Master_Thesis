@@ -193,8 +193,8 @@ image~\cite{abramowicz2017higgs}.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.7\linewidth]{{images/beamsstrahlung}.png}
-  \caption{The luminosity spectrum for CLIC operating at $\surd s$ = 3 TeV, where $\surd s'$ is the
-  effective centre-of-mass energy after beamstrahlung and initial state radiation }
+  \caption{\scriptsize{The luminosity spectrum for CLIC operating at $\surd s$ = 3 TeV, where $\surd s'$ is the
+  effective centre-of-mass energy after beamstrahlung and initial state radiation.}}
   \label{fig2.15}
 \end{figure}
 
@@ -394,7 +394,7 @@ channel invastiged in this project
   \label{}
 \end{figure}
 
-
+Further more 
 
 
 
@@ -580,7 +580,7 @@ constituents of the jets such as tracks and secondary vertices.
 
 For the calculation of the top squark mass I made use of the TMVA package wich is provides a multivariate 
 analysis platform in order (for this project) to make separation between the signal and the background. Two 
-of them were empoyed and used and compaired: the \textit{Boosted Descision Trees} (BDT) and the 
+of them were empoyed, used and compaired: the \textit{Boosted Descision Trees} (BDT) and the 
 \textit{Gradient Boosted Descision Trees} (GBDT).
 
 In this chapter I describe the Boosted Descision Trees method of classification and cite the results of this 
@@ -591,8 +591,8 @@ investigation.
 Before I explain what BDT's are, it would be beneficial to sketch what Descision Trees are. 
 
 Suppose we start with signal and background events described by a set of variables such as (in HEP) transverse 
-momenta, missing energy, etc. Then we sort all events by each variable and we choose the one that gives the
-best separation between signal and background. This is how the first node is made. Then, in the two branches 
+momenta, missing energy, etc. Then TMVA sorts all events by each variable and we choose the one that gives the
+best separation between signal and background. This is how the first node is made called root. Then, in the two branches 
 that are made we repeat this procedure applying the best cut on each node until the splitting stops based on 
 some criterion. That is how the terminal node is reached which is called leaf~\cite{hoecker2007tmva}.
 
@@ -609,7 +609,7 @@ overtrainning of the trees.
 
 \subsubsection{Separation of Signal and Background}
 
-In the physical case that I examine I have what will later be denoted as SUSY signal: corresponding to the 
+In the physical case that I examine what will later be denoted as SUSY signal: corresponding to the 
 top squarks, SUSY and SM background: corresponding to any physical process that immitates the one under 
 consideration.
 
@@ -670,12 +670,12 @@ number of signal events and B is the number of background events.
 
 \begin{figure}[ht!]
   \includegraphics[width=0.6\linewidth]{{images/cut_efficiency}.pdf}
-  \caption{The green line represents the statistical significance $\frac{S}{\sqrt{S+B}}$ where as it can be
+  \caption{\scriptsize{The green line represents the statistical significance $\frac{S}{\sqrt{S+B}}$ where as it can be
   seen it reaches the greatest value at -0.036. The cut is also known as descision boundary and defines the
-  critical region.}
+  critical region.}}
   
  \includegraphics[width=0.6\linewidth]{{images/BDT_output}.pdf}
-  \caption{The BDT output for the signal and the two backgrounds. The y axis has a log scale.}
+  \caption{\scriptsize{The BDT output for the signal and the two backgrounds. The y axis has a log scale.}}
 \end{figure}
 
 \newpage
@@ -690,7 +690,7 @@ procedure where (ordered from the most significant):
  \item $cos\theta_{top}$
 \end{enumerate}
 
-The following histograms show the aforementioned variables as they were given for training and testing.
+The above histograms show the aforementioned variables as they were given for training and testing.
 
 
 \begin{figure}
@@ -718,6 +718,80 @@ The following histograms show the aforementioned variables as they were given fo
 \end{figure}
 
 \newpage
+
+\subsubsection{Energy Spectrum of the Reconstructed Top quark}
+
+In the histogram below the energy spectrum of the top quark can be seen for the signal events.
+This variable was not given to the TMVA for training and testing. 
+It is clear that the maximum value of the energy is 1200 Tev something that explains why this was also set  
+as a preselection cut. 
+
+\begin{figure}[ht!]
+  \includegraphics[width=0.7\linewidth]{{images/E_jjj}.pdf}
+  \caption{\scriptsize{The energy of the top quark. For higher energies there are less entries per bin, something that
+  is connected with the effect of Beamsstrahlung radiadion that is manifested mainly in higher energies.}}
+\end{figure}
+
+
+\begin{figure}[ht!]
+  \includegraphics[width=0.7\linewidth]{{images/ratio_plot_witherrors}.pdf}
+  \caption{\scriptsize{}}
+\end{figure}
+
+In the above histogram it can be seen the signal efficiency (with errors) as with respect to the energy of the three jets
+$E_{jjj}$. It is defined to be the ratio of the number of events that passed the $cut_{BDT}$ over the total
+number of the signal events.
+
+
+For completenes, the above diagrams depict the SM background efficiency and the SUSY background efficiency.
+
+\begin{figure}
+\begin{minipage}[c]{0.5\linewidth}
+\includegraphics[width=\linewidth]{{images/ratio_plot_SMbackground_witherrors}.pdf}
+\caption{\scriptsize{The Standard Model Background Efficiency}}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.5\linewidth}
+\includegraphics[width=\linewidth]{{images/ratio_plot_susybg_witherrors}.pdf}
+\caption{\scriptsize{The SUSY Background Efficiency}}
+\end{minipage}
+\end{figure}
+
+\newpage
+
+\subsubsection{Effectiveness of BDT's}
+
+In the following graphs we can see the number of events of the signal and the two backgrounds with respect
+of the $E_{jjj}$. 
+
+\begin{figure}[ht!]
+  \includegraphics[width=0.7\linewidth]{{images/ratio_plot_witherrors}.pdf}
+  \caption{\scriptsize{}}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

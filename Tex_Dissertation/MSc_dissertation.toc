@@ -5,23 +5,25 @@
 \contentsline {section}{\numberline {3.1}Motivation}{5}
 \contentsline {section}{\numberline {3.2}SUSY Phenomenology}{7}
 \contentsline {section}{\numberline {3.3}Results from LHC for SUSY}{8}
-\contentsline {chapter}{\numberline {4}Methods}{10}
-\contentsline {section}{\numberline {4.1}Introduction}{10}
-\contentsline {section}{\numberline {4.2}Calculation of SUSY particle masses}{12}
-\contentsline {subsection}{\numberline {4.2.1}Modified Invariant Mass}{12}
-\contentsline {section}{\numberline {4.3}Minimisaton of $\chi ^{2}$ Method}{13}
-\contentsline {subsection}{\numberline {4.3.1}Vertex Finding}{13}
-\contentsline {subsection}{\numberline {4.3.2}Jet Clustering}{13}
-\contentsline {subsection}{\numberline {4.3.3}Flavour Tagging}{14}
-\contentsline {subsection}{\numberline {4.3.4}Classification Method: \textit {Boosted Descision Trees}}{14}
-\contentsline {subsubsection}{Background on BDT's}{15}
-\contentsline {subsubsection}{Separation of Signal and Background}{15}
-\contentsline {chapter}{\numberline {5}Results and Analysis}{19}
-\contentsline {section}{\numberline {5.1}Some results}{19}
-\contentsline {subsection}{\numberline {5.1.1}More results}{19}
-\contentsline {section}{\numberline {5.2}Discussion of your results}{20}
-\contentsline {chapter}{\numberline {6}Conclusions}{22}
-\contentsline {chapter}{\numberline {A}Stuff that's too detailed}{23}
-\contentsline {section}{\numberline {A.1}{\rm B\kern -.05em{\sc i\kern -.025em b}\kern -.08em T\kern -.1667em\lower .7ex\hbox {E}\kern -.125emX}}{23}
-\contentsline {section}{\numberline {A.2}Producing your documents using \texttt {pdflatex}}{24}
-\contentsline {chapter}{\numberline {B}Stuff that won't be read by anyone}{26}
+\contentsline {chapter}{\numberline {4}Methods}{11}
+\contentsline {section}{\numberline {4.1}Introduction}{11}
+\contentsline {section}{\numberline {4.2}Calculation of SUSY particle masses}{13}
+\contentsline {subsection}{\numberline {4.2.1}Modified Invariant Mass}{13}
+\contentsline {section}{\numberline {4.3}Minimisaton of $\chi ^{2}$ Method}{14}
+\contentsline {subsection}{\numberline {4.3.1}Vertex Finding}{14}
+\contentsline {subsection}{\numberline {4.3.2}Jet Clustering}{14}
+\contentsline {subsection}{\numberline {4.3.3}Flavour Tagging}{15}
+\contentsline {subsection}{\numberline {4.3.4}Classification Method: \textit {Boosted Descision Trees}}{15}
+\contentsline {subsubsection}{Background on BDT's}{16}
+\contentsline {subsubsection}{Separation of Signal and Background}{16}
+\contentsline {subsubsection}{Energy Spectrum of the Reconstructed Top quark}{20}
+\contentsline {subsubsection}{Effectiveness of BDT's}{22}
+\contentsline {chapter}{\numberline {5}Results and Analysis}{23}
+\contentsline {section}{\numberline {5.1}Some results}{23}
+\contentsline {subsection}{\numberline {5.1.1}More results}{23}
+\contentsline {section}{\numberline {5.2}Discussion of your results}{24}
+\contentsline {chapter}{\numberline {6}Conclusions}{26}
+\contentsline {chapter}{\numberline {A}Stuff that's too detailed}{27}
+\contentsline {section}{\numberline {A.1}{\rm B\kern -.05em{\sc i\kern -.025em b}\kern -.08em T\kern -.1667em\lower .7ex\hbox {E}\kern -.125emX}}{27}
+\contentsline {section}{\numberline {A.2}Producing your documents using \texttt {pdflatex}}{28}
+\contentsline {chapter}{\numberline {B}Stuff that won't be read by anyone}{30}
