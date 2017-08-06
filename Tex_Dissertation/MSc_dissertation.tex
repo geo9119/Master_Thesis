@@ -339,7 +339,8 @@ The following matrix is the mixing matrix expressed in the $(\tilde{f}_{L},\tild
 
 \begin{equation}
  \mathcal{M}^{2}_{\tilde{f}} =
-\[  
+
+ \[  
   \begin{pmatrix}
    M^{2}_{\tilde{f}_{L}}  &  \alpha_{f}m_{f} \\
    \alpha_{f}m_{f}        &  M^{2}_{\tilde{f}_{R}}
@@ -799,9 +800,41 @@ Before TMVA (Number of events)  & After TMVA (Number of events) & $\%$  \\ \hlin
 
 \subsubsection{Mass Calculation Results}
 
+For the calculation of the top squark mass I made use of the minimisation of the $\chi^{2}$ method. In this 
+method we calculate the $\chi^{2}$ value for different masses of the top squark, and the minimum of the fitted
+polynomial yields the mass.
+
+Concretely, the formula for the calculation of the $\chi^{2}$ is:
+
+\begin{equation}
+ \chi^{2}=\sum_{i}^{}\frac{(n_{data,i}-n_{template,i})^{2}}{\sigma_{data,i}^{2}+\sigma_{template,i}^{2}}
+\end{equation}
+
+where $n_{data}$ are the number of events in the energy spectrum of the three jets after the TMVA (figure 4.12)
+and $n_{template}$ are the number of events for each different template, while the sum runs over all the bins
+of the histogram.. Those are summarised in the table below.
 
 
+\hfill
 
+
+\centering % used for centering table
+\begin{tabular}{||c | c||} % centered columns (4 columns)
+\hline \hline %inserts double horizontal lines
+$M_{template}$ 		   & $\sigma$ (fb)   \\ \hline % inserts single horizontal line
+$M_{nom}$ -200 GeV         &   2.8   \\
+$M_{nom}$ -100 GeV         &   2.2   \\
+$M_{nom}$ -50  GeV         &   1.9   \\  
+$M_{nom}$        	   &  1.65   \\
+$M_{nom}$ +50  GeV	   &   1.4   \\
+$M_{nom}$ +100 GeV	   &   1.2   \\
+$M_{nom}$ +200 GeV	   &   0.8   \\
+
+\hline
+ %inserts single line
+\end{tabular}
+\label{table:nonlin} % is used to refer this table in the text
+\end{table}
 
 
 

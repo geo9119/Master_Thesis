@@ -210,7 +210,7 @@ the luminosities achieved in each stage:
 $\surd s$ (GeV)  & $\mathcal{L}$   \\ \hline % inserts single horizontal line
 380 & 500 fb$^{-1}$  \\
 1.5 & 1.5 ab$^{-1}$ \\
-3   &  2 ab$^{-1}$ 
+3   &  3 ab$^{-1}$ 
  %inserts single line
 \end{tabular}
 \label{table:nonlin} % is used to refer this table in the text
@@ -779,8 +779,39 @@ the SUSY Background have reduced significantly.
 
 \newpage
 
+The following table summarises the number of events that passed the preselection cuts, before and after the 
+TMVA cut.
 
+\begin{table}[h]
 
+\centering % used for centering table
+\begin{tabular}{||c | c | c||} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+Before TMVA (Number of events)  & After TMVA (Number of events) & $\%$  \\ \hline % inserts single horizontal line
+3005   & 542    & 18 \\
+17628  & 567    &  3 \\
+113494 &  3036  &  2 \\  
+\hline
+ %inserts single line
+\end{tabular}
+\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+
+\subsubsection{Mass Calculation Results}
+
+For the calculation of the top squark mass I made use of the minimisation of the $\chi^{2}$ method. In this 
+method we calculate the $\chi^{2}$ value for different masses of the top squark, and the minimum of the fitted
+polynomial yields the mass.
+
+Concretely, the formula for the calculation of the $\chi^{2}$ is:
+
+\begin{equation}
+ \chi^{2}=\sum_{i}^{}\frac{(n_{data,i}-n_{template,i})^{2}}{\sigma_{data,i}^{2}+\sigma_{template,i}^{2}}
+\end{equation}
+
+where $n_{data}$ are the number of events in the energy spectrum of the three jets after the TMVA (figure 4.12)
+and $n_{template}$ are the number of events for each different template. Those are summarised in the table 
+below.
 
 
 
