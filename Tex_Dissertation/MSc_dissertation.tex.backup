@@ -339,7 +339,8 @@ The following matrix is the mixing matrix expressed in the $(\tilde{f}_{L},\tild
 
 \begin{equation}
  \mathcal{M}^{2}_{\tilde{f}} =
-\[  
+
+ \[  
   \begin{pmatrix}
    M^{2}_{\tilde{f}_{L}}  &  \alpha_{f}m_{f} \\
    \alpha_{f}m_{f}        &  M^{2}_{\tilde{f}_{R}}
@@ -810,21 +811,46 @@ Concretely, the formula for the calculation of the $\chi^{2}$ is:
 \end{equation}
 
 where $n_{data}$ are the number of events in the energy spectrum of the three jets after the TMVA (figure 4.12)
-and $n_{template}$ are the number of events for each different template. Those are summarised in the table 
-below.
+and $n_{template}$ are the number of events for each different template, while the sum runs over all the bins
+of the histogram. The templates are summarised in the table below.
 
 
+\hfill
+
+\begin{table}[h]
+\centering % used for centering table
+\begin{tabular}{||c | c||} % centered columns (4 columns)
+\hline \hline %inserts double horizontal lines
+$M_{template}$ 		   & $\sigma$ (fb)   \\ \hline % inserts single horizontal line
+$M_{nom}$ -200 GeV         &   2.8   \\
+$M_{nom}$ -100 GeV         &   2.2   \\
+$M_{nom}$ -50  GeV         &   1.9   \\  
+$M_{nom}$        	   &  1.65   \\
+$M_{nom}$ +50  GeV	   &   1.4   \\
+$M_{nom}$ +100 GeV	   &   1.2   \\
+$M_{nom}$ +200 GeV	   &   0.8   \\
+
+\hline
+ %inserts single line
+\end{tabular}
+\label{table:nonlin} % is used to refer this table in the text
+\end{table}
 
 
+\newpage
 
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width=0.8\linewidth]{{images/chisqvsmass_intlumi3000}.pdf}
+  \caption{\scriptsize{The $\chi^{2}$ versus the different top squark mass templates.}}
+\end{figure}
 
+In order to calculate the statistical uncertainty off the mass we employed a \textit{toy Monte Carlo Method}.
 
-
-
-
-
-
-
+In this method, I smeared each bin of the energy spectrum of the three jets (Figure 4.12), with a Gaussian
+of deviation $\sqrt{n_{data,i}}$ and mean zero. Then the mass calculation was repeated. This procedure was 
+done 5000 times. The deviation of the Gaussian was chosen to have that value since $\sqrt{n_{data,i}}$
+is the error of each bin content $i$.
 
 
 
