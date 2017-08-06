@@ -14,11 +14,11 @@
 \contentsline {figure}{\numberline {4.9}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The Standard Model Background Efficiency}}}{21}
 \contentsline {figure}{\numberline {4.10}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The SUSY Background Efficiency}}}{21}
 \contentsline {figure}{\numberline {4.11}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Signal, SM background and SUSY background before the TMVA application. It is a stacked histogram with log y axis.}}}{22}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Signal, SM background and SUSY background after the TMVA application.}}}{22}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The $\chi ^{2}$ versus the different top squark mass templates.}}}{24}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Signal, SM background and SUSY background after the TMVA application, again stacked.}}}{22}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The $\chi ^{2}$ versus the different top squark mass templates. The minimum is at 860 GeV/c$^{2}$.}}}{24}
 \contentsline {figure}{\numberline {4.14}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Toy Monte carlo method that yielded an uncertainty of 14 GeV.}}}{24}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Simple Gnuplot example}}{28}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Simple Gnuplot example}}{29}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

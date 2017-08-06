@@ -775,7 +775,7 @@ the SUSY Background have reduced significantly.
 
 \begin{figure}[ht!]
   \includegraphics[width=0.7\linewidth]{{images/postbdtcut}.pdf}
-  \caption{\scriptsize{Signal, SM background and SUSY background after the TMVA application.}}
+  \caption{\scriptsize{Signal, SM background and SUSY background after the TMVA application, again stacked.}}
 \end{figure}
 
 \newpage
@@ -812,7 +812,7 @@ Concretely, the formula for the calculation of the $\chi^{2}$ is:
 
 where $n_{data}$ are the number of events in the energy spectrum of the three jets after the TMVA (figure 4.12)
 and $n_{template}$ are the number of events for each different template, while the sum runs over all the bins
-of the histogram. The templates are summarised in the table below.
+of the histogram. A $\chi^{2}$ was calculated for each different template, summarised in the table below.
 
 
 \hfill
@@ -836,13 +836,16 @@ $M_{nom}$ +200 GeV	   &   0.8   \\
 \label{table:nonlin} % is used to refer this table in the text
 \end{table}
 
+The mass was found  to be $m_{\tilde{t}}$ = 860 GeV.
+
 
 \newpage
 
 \begin{figure}[ht!]
 \centering
-  \includegraphics[width=0.8\linewidth]{{images/chisqvsmass_intlumi3000}.pdf}
-  \caption{\scriptsize{The $\chi^{2}$ versus the different top squark mass templates.}}
+  \includegraphics[width=0.7\linewidth]{{images/chisqvsmass_intlumi3000}.pdf}
+  \caption{\scriptsize{The $\chi^{2}$ versus the different top squark mass templates. The minimum is at 
+  860 GeV.}}
 \end{figure}
 
 In order to calculate the statistical uncertainty off the mass we employed a \textit{toy Monte Carlo Method}.
@@ -850,8 +853,18 @@ In order to calculate the statistical uncertainty off the mass we employed a \te
 In this method, I smeared each bin of the energy spectrum of the three jets (Figure 4.12), with a Gaussian
 of deviation $\sqrt{n_{data,i}}$ and mean zero. Then the mass calculation was repeated. This procedure was 
 done 5000 times. The deviation of the Gaussian was chosen to have that value since $\sqrt{n_{data,i}}$
-is the error of each bin content $i$.
+is the error of each bin content $i$. The result was an uncertainty of the mass 14 GeV.
 
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width=0.7\linewidth]{{images/toyMC_intlumi3000}.pdf}
+  \caption{\scriptsize{Toy Monte carlo method that yielded an uncertainty of 14 GeV.}}
+\end{figure}
+
+
+\newpage
+
+\subsection{Results - Summary of the BDT method}
 
 
 
