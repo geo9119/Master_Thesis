@@ -888,7 +888,8 @@ comparison will be made between BDT's and GBDT's.
 
 Gradient Boosting is a different method for classification. The goal, as in the BDT's, is to create a 
 prediction model. The main difference from the classification method described in chapter 4.3.4 is that 
-the prediction model is built in an iterative way allowing its own optimisation by the calculation of errors.
+the prediction model is built in an iterative way allowing its own optimisation by the calculation of errors
+using a different loss function.
 
 Again like all the boosting methods, it combines a set of weak learners (for BDT it was the number of trees).
 In the first phase -training phase- a rough approximation for the prediction model is made. Subsequently, the error of the 
@@ -897,7 +898,9 @@ previous model making it a slightly  better compaired to the previous one.
 This procedure is repeated various times. 
 
 The name gradient comes from the observation that the residuals that each time are added are just the 
-negative gradient of a squared error loss function~\cite{hoecker2007tmva}.
+negative gradient of a squared error loss function~\cite{hoecker2007tmva}. The mathematical formulation of 
+both BDT's and GBDT's lies beyond the scope of this project but it can be seen in~\cite{schapire1999brief},
+~\cite{hoecker2007tmva}.
 
 
 
