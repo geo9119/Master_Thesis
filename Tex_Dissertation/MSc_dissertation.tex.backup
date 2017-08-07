@@ -388,14 +388,12 @@ the latest of them for the stop quark mass at $\surd s$ = 8,13 GeV in proton pro
 Whereas in the following figure there are the exclusion limits in ATLAS for p-p collisions at 13 TeV for the
 channel invastiged in this project
 
-
- \begin{figure}[ht!]
+\begin{figure}[ht!]
   \centering
-  \includegraphics[width=0.7\linewidth, scale=5]{{images/fig_08}.png}
+  \includegraphics[width=0.6\linewidth, scale=5]{{images/fig_08}.png}
   \label{}
 \end{figure}
 
-Further more 
 
 
 
@@ -845,7 +843,7 @@ The mass was found  to be $m_{\tilde{t}}$ = 860 GeV.
 \centering
   \includegraphics[width=0.7\linewidth]{{images/chisqvsmass_intlumi3000}.pdf}
   \caption{\scriptsize{The $\chi^{2}$ versus the different top squark mass templates. The minimum is at 
-  860 GeV.}}
+  860 GeV/c$^{2}$.}}
 \end{figure}
 
 In order to calculate the statistical uncertainty off the mass we employed a \textit{toy Monte Carlo Method}.
@@ -866,13 +864,33 @@ is the error of each bin content $i$. The result was an uncertainty of the mass 
 
 \subsection{Results - Summary of the BDT method}
 
+Using the Boosted Descision Trees and with the method of minimisation of the $\chi^{2}$ for different 
+templates, I found the mass of the supersymmetric top quark to be 
+
+\begin{equation}
+ m_{\tilde{t}}=860\pm 14 \textrm{GeV}/c^{2}
+\end{equation}
+
+Although the nominal mass is $M_{nom}$= 846 GeV/$c^{2}$, my calculation is one sigma  inside this range,
+taking into account the aforementioned uncertainty at CLIC for integrated luminosity 
+$\mathcal{L}_{int}$=3000 fb$^{-1}$.
 
 
+\newpage
 
+\subsection{Classification Method: \textit{Gradient Boosted Descision Trees}}
 
+In this chapter I will describe the mass calculation for the top squark using the Gradient Boosted 
+Decision Trees (GBDT) as a method of classification for discrimination between signal and background. Furthermore,
+comparison will be made between BDT's and GBDT's.
 
+\subsubsection{Background on GBDT's}
 
+Gradient Boosting is a different method for classification. The goal, as in the BDT's, is to create a 
+prediction model. The main difference from the classification method described in chapter 4.3.4 is that 
+the prediction model is built in an iterative way allowing its own optimisation by the calculation of errors.
 
+Again like all the boosting methods, it combines a set of weak learners (for BDT it was the number of trees)  
 
 
 
