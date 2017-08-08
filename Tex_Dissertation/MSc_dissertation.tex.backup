@@ -920,7 +920,43 @@ The list of the input variables can be seen in chapter 4.3.4 (p.16).
 
 Based again, to the graph that has the efficiency vs the $cut_{GBDT}$, the chosen value for the cut was the one
 that maximised the statistical significance $\frac{S}{\sqrt{S+B}}$, where $S$ is the signal and $B$ is the 
-background.
+background: $cut_{GBDT}=-0.0606$. It needs to be noted that the statistical significance achieved through
+this method is almost one point higher than that of the BDT method of classification.
+
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width=0.7\linewidth]{{images/cutefficiency_bdtg_new}.pdf}
+  \caption{\scriptsize{The green line represents the statistical significance $\frac{S}{\sqrt{S+B}}$ where as it can be
+  seen it reaches the greatest value at -0.0606. The cut is also known as descision boundary and defines the
+  critical region.}}
+\end{figure}
+
+The variables that TMVA found most important are exactly the same with those of the BDT method, namely:
+
+\begin{enumerate}
+ \item $\theta_{miss}$ : the polar angle of the missing momentum of the jets.
+ \item $p_{T}$ : the missing transverse momentum.
+ \item $\Delta \phi$ : the angle between the reconstructed tops.
+ \item $cos\theta_{top}$.
+\end{enumerate}
+
+In the following stacked histogram, it can be seen the post GBDT reduction of background and in the table 
+below, the number of events that passed (for both signal and background) are denoted.
+
+\newpage
+
+
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width=0.7\linewidth]{{images/postbdtcut}.pdf}
+  \caption{\scriptsize{The green line represents the statistical significance $\frac{S}{\sqrt{S+B}}$ where as it can be
+  seen it reaches the greatest value at -0.0606. The cut is also known as descision boundary and defines the
+  critical region.}}
+\end{figure}
+
+
+
+
 
 
 

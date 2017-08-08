@@ -781,15 +781,14 @@ the SUSY Background have reduced significantly.
 The following table summarises the number of events that passed the preselection cuts, before and after the 
 TMVA cut.
 
-\begin{table}[h]
-
+\begin{table}
 \centering % used for centering table
-\begin{tabular}{||c | c | c||} % centered columns (4 columns)
+\begin{tabular}{||c | c | c | c||} % centered columns (4 columns)
 \hline %inserts double horizontal lines
-Before TMVA (Number of events)  & After TMVA (Number of events) & $\%$  \\ \hline % inserts single horizontal line
-3005   & 493    & 16 \\
-17628  & 558    &  3.1 \\
-113494 &  528  &  0.4 \\  
+       BDT      &Before TMVA ($N_{events}$)  & After TMVA ($N_{events}$) & $\%$  \\ \hline % inserts single horizontal line
+Signal           & 3005     &  493       & 16 \\
+SUSY background  & 17628    &  558       & 3.1 \\
+SM background    & 113494   &  528       &  0.4 \\  
 \hline
  %inserts single line
 \end{tabular}
@@ -930,6 +929,43 @@ this method is almost one point higher than that of the BDT method of classifica
   seen it reaches the greatest value at -0.0606. The cut is also known as descision boundary and defines the
   critical region.}}
 \end{figure}
+
+The variables that TMVA found most important are exactly the same with those of the BDT method, namely:
+
+\begin{enumerate}
+ \item $\theta_{miss}$ : the polar angle of the missing momentum of the jets.
+ \item $p_{T}$ : the missing transverse momentum.
+ \item $\Delta \phi$ : the angle between the reconstructed tops.
+ \item $cos\theta_{top}$.
+\end{enumerate}
+
+In the following stacked histogram, it can be seen the post GBDT reduction of background and in the table 
+above, the number of events that passed (for both signal and background) are denoted.
+
+\newpage
+
+
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width=0.8\linewidth]{{images/postbdtcut_gbdt}.pdf}
+  \caption{\scriptsize{}}
+\end{figure}
+
+\begin{table}
+\centering % used for centering table
+\begin{tabular}{||c | c | c | c||} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+       GBDT      &Before TMVA ($N_{events}$)  & After TMVA ($N_{events}$) & $\%$  \\ \hline % inserts single horizontal line
+Signal           & 3005     & 455       & 15 \\
+SUSY background  & 17628    &  330      & 1.8 \\
+SM background    & 113494   &  198      &  0.1 \\  
+\hline
+ %inserts single line
+\end{tabular}
+\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+
+
 
 
 

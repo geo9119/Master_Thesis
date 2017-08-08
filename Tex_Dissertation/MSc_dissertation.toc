@@ -23,11 +23,11 @@
 \contentsline {subsection}{\numberline {4.3.6}Classification Method: \textit {Gradient Boosted Descision Trees}}{25}
 \contentsline {subsubsection}{Background on GBDT's}{25}
 \contentsline {subsubsection}{Training and testing phase}{25}
-\contentsline {chapter}{\numberline {5}Results and Analysis}{27}
-\contentsline {section}{\numberline {5.1}Some results}{27}
-\contentsline {section}{\numberline {5.2}Discussion of your results}{27}
-\contentsline {chapter}{\numberline {6}Conclusions}{28}
-\contentsline {chapter}{\numberline {A}Stuff that's too detailed}{29}
-\contentsline {section}{\numberline {A.1}{\rm B\kern -.05em{\sc i\kern -.025em b}\kern -.08em T\kern -.1667em\lower .7ex\hbox {E}\kern -.125emX}}{29}
-\contentsline {section}{\numberline {A.2}Producing your documents using \texttt {pdflatex}}{30}
-\contentsline {chapter}{\numberline {B}Stuff that won't be read by anyone}{32}
+\contentsline {chapter}{\numberline {5}Results and Analysis}{28}
+\contentsline {section}{\numberline {5.1}Some results}{28}
+\contentsline {section}{\numberline {5.2}Discussion of your results}{28}
+\contentsline {chapter}{\numberline {6}Conclusions}{29}
+\contentsline {chapter}{\numberline {A}Stuff that's too detailed}{30}
+\contentsline {section}{\numberline {A.1}{\rm B\kern -.05em{\sc i\kern -.025em b}\kern -.08em T\kern -.1667em\lower .7ex\hbox {E}\kern -.125emX}}{30}
+\contentsline {section}{\numberline {A.2}Producing your documents using \texttt {pdflatex}}{31}
+\contentsline {chapter}{\numberline {B}Stuff that won't be read by anyone}{33}
