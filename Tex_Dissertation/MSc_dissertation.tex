@@ -888,11 +888,11 @@ comparison will be made between BDT's and GBDT's.
 Gradient Boosting is a different method for classification. The goal, as in the BDT's, is to create a 
 prediction model. The main difference from the classification method described in chapter 4.3.4 is that 
 the prediction model is built in an iterative way allowing its own optimisation by the calculation of errors
-using a different loss function (than the one used for the BDT's).
+using a different loss function than the one used for the BDT's.
 
 Again like all the boosting methods, it combines a set of weak learners (for BDT it was the number of trees).
 In the first phase -training phase- a rough approximation for the prediction model is made. Subsequently, the 
-the error of the model and the actual values expected is calculated (residual) and it is added in the
+the error of the model and the actual expected values is calculated (residual) and it is added in the
 previous model making it a slightly  better. This procedure is repeated various times until a good description
 is reached. 
 
@@ -906,7 +906,7 @@ both BDT's and GBDT's lies beyond the scope of this project but can be seen in~\
 
 In this part of the procedure I "fed" the TMVA with the exact same variables as I did for the BDT's and 
 imposed the exact same preselection cuts. The purpose of this is to make a comparison of the two methods in 
-the end.
+the end. For this method 1000 trees were employed.
 
 The preselection cuts were:
 
@@ -939,7 +939,7 @@ The variables that TMVA found most important are exactly the same with those of 
  \item $cos\theta_{top}$.
 \end{enumerate}
 
-In the following stacked histogram, it can be seen the post GBDT reduction of background and in the table 
+In the following stacked histogram can be seen the post GBDT reduction of background and in the table 
 above, the number of events that passed (for both signal and background) are denoted.
 
 \newpage
@@ -947,8 +947,8 @@ above, the number of events that passed (for both signal and background) are den
 
 \begin{figure}[ht!]
 \centering
-  \includegraphics[width=0.8\linewidth]{{images/postbdtcut_bdtg_3000}.pdf}
-  \caption{\scriptsize{}}
+  \includegraphics[width=0.7\linewidth]{{images/postbdtcut_bdtg_3000}.pdf}
+  \caption{\scriptsize{Energy of the three jets after the $cut_{GBDT}$.}}
 \end{figure}
 
 \begin{table}
@@ -967,26 +967,148 @@ SM background    & 113494   &  198      &  0.1 \\
 
 
 
+\begin{figure}[!hb]
+\centering
+  \includegraphics[width=0.7\linewidth]{{images/GBDT_output}.pdf}
+  \caption{\scriptsize{The GBDT output for the signal (blue), SUSY background (red) and SM background 
+  (green).}}
+\end{figure}
 
 
 
 
-\chapter{Results and Analysis}
 
-This section should detail the obtained results in a clear,
-easy-to-follow manner. It is important to make clear what are original
-results and what are repeats of previous calculations or computations.
-Remember that long tables of numbers are just as boring to read as
-they are to type-in!
 
-Use graphs to present your results wherever practicable.
+\newpage
 
-Results or computations should be presented with uncertainties
-(errors), both statistical and systematic where applicable.
+The above histograms show the effciency for both backgrounds whereas the one below, for the signal.
+\begin{figure}
+\begin{minipage}[c]{0.6\linewidth}
+\includegraphics[width=\linewidth]{{images/ratio_plot_SMbackground_witherrors_gbdt}.pdf}
+\caption{\scriptsize{The Standard Model Background Efficiency for the GBDT method.}}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.6\linewidth}
+\includegraphics[width=\linewidth]{{images/ratio_plot_susybg_witherrors_gbdt}.pdf}
+\caption{\scriptsize{The SUSY Background Efficiency for the GBDT method.}}
+\end{minipage}
+\end{figure}
 
-Be selective in what you include: half a dozen \emph{e.g.}~tables that
-contain wrong data you collected while you forgot to switch on the
-computer are not relevant and may mask the correct results.
+
+
+\begin{figure}[!hb]
+\centering
+  \includegraphics[width=0.7\linewidth]{{images/ratio_plot_witherrors_gbdt}.pdf}
+  \caption{\scriptsize{The signal efficiency for the GBDT method.}}
+\end{figure}
+
+
+Using again the method of minimisation of the $\chi^{2}$ for different templates (table in p.22) of the top 
+squark mass (formula 4.9), I calculated the mass to be:
+\begin{equation}
+ m_{\tilde{t}}=811\quad \textrm{GeV}
+\end{equation}
+
+again using a toy Monte Carlo method I smeared each bin of the energy spectrum of the three jets with a 
+Gaussian of deviation $\sqrt{n_{data}}$ and mean zero, and I repeated the mass calculation. This procedure
+was done 5000 times. The resulting uncertainty was 19 GeV. 
+
+Both calculations can be seen in the following graphs where in the first the minimisation of the $\chi^{2}$
+can be seen and in the second the calculation of the uncertainty.
+
+
+\begin{figure}[!hb]
+\centering
+  \includegraphics[width=0.7\linewidth]{{images/chisqvsmass_gbdt}.pdf}
+  \caption{\scriptsize{The $\chi^{2}$ versus the different mass templates. The minimum is at 811 GeV/$c^{2}$.}}
+\end{figure}
+
+\begin{figure}[!hb]
+\centering
+  \includegraphics[width=0.7\linewidth]{{images/toyMC_gbdt}.pdf}
+  \caption{\scriptsize{The resulting uncertaity from the toy Monte Carlo method is 15 GeV.}}
+\end{figure}
+
+\newpage
+
+\subsection{Results - Summary of the GBDT method}
+
+Using the Gradient Boosted Descision Trees and with the method of minimisation of
+the $\chi^{2}$ for different mass templates, I found the mass of the supersymmetric top
+quark to be:
+
+\begin{equation}
+ m_{\tilde{t}}=811\pm 15 \quad \textrm{GeV}
+\end{equation}
+
+The nominal mass is $M_{nom}$ = 845 GeV/$c^{2}$, my calculation is two sigma inside this range taking into 
+account the uncertainty calculated through the toy MC method at CLIC for an integrated luminosity
+$\mathcal{L}_{int}$=3000 fb$^{-1}$.
+
+\section{Comparison of BDT - GBDT methods/Results}
+
+In this section I am going to compaire the performance as well as the results of the two methods followed in
+this project.
+
+For the BDT method I set the number of weak learners (trees) to be 1000 and the maximum depth of the tree to 
+be 3. Same considarations took place also for the the GBDT method.
+
+The following table summarises the basic characteristics of the two methods:
+
+
+
+\begin{table}[!hb]
+\centering % used for centering table
+\begin{tabular}{||c | c | c | c||} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+Method      &Stat. Efficiency &  $m_{\tilde{t}}$               &  $N_{signal}$ \\ 
+\hline 
+BDT         &       6.79      &  839 $\pm$ 11 GeV/$c^{2}$      &  493		\\
+GBD         &       7.68      &  811 $\pm$ 15 GeV/$c^{2}$      &  455		\\
+\hline
+ %inserts single line
+\end{tabular}
+\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+
+
+As it can be seen the GBDT method achieves higher statistical significance in comparison with the BDT method
+but higher uncertainty with a difference of 4 GeV. This can be attributed to the fact that the proposed cuts 
+from the TMVA are mainly addressed for particle discoveries rather than for measuring an observable. That 
+means that for the optimal precision of the TMVA one has to "play" with the value of the cut -primarily
+around the proposed value - in order to extract the lowest uncertainty possible for the mass calculation.
+
+Although, apart from the "cut tunning" issue, the fact that the BDT's perform better than any other (so far)
+classification method is no new to the experimental world. From 2005 similar studies were made for the 
+MiniBoone experiment and it was found that 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \section{Some results}
