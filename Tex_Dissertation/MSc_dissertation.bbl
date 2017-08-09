@@ -70,4 +70,12 @@ Robert~E Schapire.
 \newblock A brief introduction to boosting.
 \newblock In {\em Ijcai}, volume~99, pages 1401--1406, 1999.
 
+\bibitem{yang2005studies}
+Hai-Jun Yang, Byron~P Roe, and Ji~Zhu.
+\newblock Studies of boosted decision trees for miniboone particle
+  identification.
+\newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  555(1):370--385, 2005.
+
 \end{thebibliography}

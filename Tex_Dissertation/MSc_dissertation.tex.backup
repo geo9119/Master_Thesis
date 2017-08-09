@@ -1057,7 +1057,7 @@ The following table summarises the basic characteristics of the two methods:
 
 
 
-\begin{table}
+\begin{table}[!hb]
 \centering % used for centering table
 \begin{tabular}{||c | c | c | c||} % centered columns (4 columns)
 \hline %inserts double horizontal lines
@@ -1072,6 +1072,21 @@ GBD         &       7.68      &  811 $\pm$ 15 GeV/$c^{2}$      &  455		\\
 \end{table}
 
 
+As it can be seen the GBDT method achieves higher statistical significance in comparison with the BDT method
+but higher uncertainty with a difference of 4 GeV. This can be attributed to the fact that the proposed cuts 
+from the TMVA are mainly addressed for particle discoveries rather than for measuring an observable. That 
+means that for the optimal precision of the TMVA one has to "play" with the value of the cut -primarily
+around the proposed value - in order to extract the lowest uncertainty possible for the mass calculation.
+Furthermore as it can be seen in the above graph, the number of events after the TMVA cut, in the case of 
+GBDT are $\~$40 less. Even thought that they sound few, as a fraction they constitute $\~$8$\%$ of the
+$N_{signal}$,
+number not at all negligible especially when we deal with a few hundreads of events.
+Additionally another interesting thing is the importance of these $\~$40 more events in the case of BDT.
+
+
+Although, apart from the "cut tunning" issue, the fact that the BDT's performance is superior is is no 
+new to the experimental world. From 2005, similar studies were made for the MiniBoone experiment and 
+it was found that BDT's (on Adaboost mode) outperform other methods~\cite{yang2005studies}.
 
 
 
@@ -1079,22 +1094,27 @@ GBD         &       7.68      &  811 $\pm$ 15 GeV/$c^{2}$      &  455		\\
 
 
 
-\chapter{Results and Analysis}
 
-This section should detail the obtained results in a clear,
-easy-to-follow manner. It is important to make clear what are original
-results and what are repeats of previous calculations or computations.
-Remember that long tables of numbers are just as boring to read as
-they are to type-in!
 
-Use graphs to present your results wherever practicable.
 
-Results or computations should be presented with uncertainties
-(errors), both statistical and systematic where applicable.
 
-Be selective in what you include: half a dozen \emph{e.g.}~tables that
-contain wrong data you collected while you forgot to switch on the
-computer are not relevant and may mask the correct results.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \section{Some results}

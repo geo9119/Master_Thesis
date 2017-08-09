@@ -1077,10 +1077,23 @@ but higher uncertainty with a difference of 4 GeV. This can be attributed to the
 from the TMVA are mainly addressed for particle discoveries rather than for measuring an observable. That 
 means that for the optimal precision of the TMVA one has to "play" with the value of the cut -primarily
 around the proposed value - in order to extract the lowest uncertainty possible for the mass calculation.
+Furthermore as it can be seen in the above graph, the number of events after the TMVA cut, in the case of 
+GBDT are almost 40 less. Even thought that they sound few, as a fraction they constitute 8$\%$ of the
+$N_{signal}$,
+number not at all negligible especially when we deal with a few hundreads of events.
+Additionally another interesting thing is the importance of these 40 more events in the case of BDT.
+This is cleat because in the BDT the number of events of SM background ($N_{events}$=528) 
+in total are far more 
+than those in the GBDT method ($N_{events}$=198), and at first sight it would be expected that the GBDT has 
+better potencial than the BDT. The mass and uncertainty measurements proved to be the other way round.
 
-Although, apart from the "cut tunning" issue, the fact that the BDT's perform better than any other (so far)
-classification method is no new to the experimental world. From 2005 similar studies were made for the 
-MiniBoone experiment and it was found that 
+Similar contradiccion produces the careful examination of the signal efficiency plots(4.8 for BDT and 4.20
+for GBDT). Both of them (taking into account the errors) tend to have an almost constant trend but the 
+efficiency of GBDT is higher.
+
+Although, apart from the "cut tunning" issue, the fact that the BDT's performance is superior is is no 
+new to the experimental world. From 2005, similar studies were made for the MiniBoone experiment and 
+it was found that BDT's (on Adaboost mode) outperform other methods~\cite{yang2005studies}.
 
 
 
