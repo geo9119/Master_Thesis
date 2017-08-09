@@ -25,10 +25,5 @@
 \contentsline {subsubsection}{Training and testing phase}{25}
 \contentsline {subsection}{\numberline {4.3.7}Results - Summary of the GBDT method}{30}
 \contentsline {section}{\numberline {4.4}Comparison of BDT - GBDT methods/Results}{30}
-\contentsline {section}{\numberline {4.5}Some results}{31}
-\contentsline {section}{\numberline {4.6}Discussion of your results}{31}
 \contentsline {chapter}{\numberline {5}Conclusions}{32}
-\contentsline {chapter}{\numberline {A}Stuff that's too detailed}{33}
-\contentsline {section}{\numberline {A.1}{\rm B\kern -.05em{\sc i\kern -.025em b}\kern -.08em T\kern -.1667em\lower .7ex\hbox {E}\kern -.125emX}}{33}
-\contentsline {section}{\numberline {A.2}Producing your documents using \texttt {pdflatex}}{34}
-\contentsline {chapter}{\numberline {B}Stuff that won't be read by anyone}{36}
+\contentsline {chapter}{\numberline {6}Further Work}{33}
