@@ -1083,12 +1083,27 @@ Similar contradiccion produces the careful examination of the signal efficiency 
 for GBDT). Both of them (taking into account the errors) tend to have an almost constant trend but the 
 efficiency of GBDT is higher.
 
--interesting---> N of trees
+Another interesting fact is the dependence of the discrimination strength of the classifiers with respect to 
+the number of trees. Before I set the number of trees to be 1000, my initial calculation for the mass 
+was with 200 trees,
+something that yielded an uncertainty of 19 GeV. The reason for that is clear if the following histogram is 
+taken into account:
 
-Although, apart from the "cut tunning" issue, the fact that the BDT's performance is superior is is no 
+\begin{figure}[!hb]
+\centering
+  \includegraphics[width=0.6\linewidth]{{images/postbdtcut_200trees}.pdf}
+  \caption{\scriptsize{The signal and the two backgrounds after the BDT cuts for the case of 200 trees.}}
+\end{figure}
+
+If the above histogram is compaired with the corresponding one for 1000 trees (Figure 4.12), then it is clear
+that the SM background has reduced significantly. This is the reason why we get a significance of 11 GeV, i.e.
+8 GeV less.
+
+Although, apart from the "tunning" issues, the fact that the BDT's performance is superior is is no 
 new to the experimental world. From 2005, similar studies were made for the MiniBoone experiment and 
 it was found that BDT's (on Adaboost mode) outperform other methods~\cite{yang2005studies}.
 
+In the following histogram the ROC curve can be seen that 
 
 \chapter{Conclusions}
 
@@ -1116,12 +1131,33 @@ signal-background is preferable in the case of the mass calculation of the $\til
 
 \chapter{Further Work}
 
+As further work on this project the following can be mentioned:
 
--isolate leptons
--further investigation of the contradiccion of bdt gbdt
--look at other decays of the stop
--
-?????
+\begin{itemize}
+ \item As I investigated the following channel
+    \begin{equation}
+      e^{+} e^{+} \rightarrow \tilde{t} \tilde{\bar{t}} \rightarrow t\tilde{\chi}_{1}^{0} \bar{t}\tilde{\chi}_{1}^{0}
+      \rightarrow W^{+}W^{-}b\bar{b} \tilde{\chi}_{1}^{0} \tilde{\chi}_{1}^{0}
+    \end{equation}
+the decay of the W boson can be hadronic or leptonic. By isolating the cases that $W\rightarrow l\nu_{l}$
+,i.e. the hadronic channe, we can possobly achieve even smaller uncertainty in the mass calculation of the top
+squark.
+\item Another possibility is to look also for other decays of the top squarks such as 
+    \begin{equation}
+      e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \tilde{\chi}_{1}^{0}
+      \chi^{\pm}_{1}b \rightarrow
+      W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}
+    \end{equation}
+
+\item Work also can be done for finding the ideal cut of the BDT classification method as well the most 
+important variables that affect the procedure. One possible way to do such thing is by firstly including
+all the variables in the TMVA and after the training/testing phase to plot the backgroung rejection versus 
+the signal efficiency. Then, repeat the procedure for all the variables besides one and plot again the same 
+graph. That way, step by step, fewer and fewer variables will be taken into account by TMVA and where a huge 
+difference in the plot of backgroung rejection versus signal efficiency is seen, then this will be an 
+indication that this variable is an important one.
+
+\end{itemize}
 
 
 \newpage

@@ -113,6 +113,8 @@ I would like to thank my supervisor Prof. Victoria J. Martin not only for her he
 her deep and important insights on the subject, but also introducing me to a field that so far I was nothing 
 more than a stranger.
 
+His comments and technical help proved to be valuable, thus I owe a big thank you to Alan Taylor (UoE).
+
 Additionally I would like to express my gratitude towards the CLICdp team that helped me. Especially
 to Dr. Philipp Roloff, Dr. Marco Petric, Dr. Ignacio Garcia and Dr. Andre Sailer (all based at CERN).
 
@@ -1081,10 +1083,27 @@ Similar contradiccion produces the careful examination of the signal efficiency 
 for GBDT). Both of them (taking into account the errors) tend to have an almost constant trend but the 
 efficiency of GBDT is higher.
 
-Although, apart from the "cut tunning" issue, the fact that the BDT's performance is superior is is no 
+Another interesting fact is the dependence of the discrimination strength of the classifiers with respect to 
+the number of trees. Before I set the number of trees to be 1000, my initial calculation for the mass 
+was with 200 trees,
+something that yielded an uncertainty of 19 GeV. The reason for that is clear if the following histogram is 
+taken into account:
+
+\begin{figure}[!hb]
+\centering
+  \includegraphics[width=0.6\linewidth]{{images/postbdtcut_200trees}.pdf}
+  \caption{\scriptsize{The signal and the two backgrounds after the BDT cuts for the case of 200 trees.}}
+\end{figure}
+
+If the above histogram is compaired with the corresponding one for 1000 trees (Figure 4.12), then it is clear
+that the SM background has reduced significantly. This is the reason why we get a significance of 11 GeV, i.e.
+8 GeV less.
+
+Although, apart from the "tunning" issues, the fact that the BDT's performance is superior is is no 
 new to the experimental world. From 2005, similar studies were made for the MiniBoone experiment and 
 it was found that BDT's (on Adaboost mode) outperform other methods~\cite{yang2005studies}.
 
+In the following histogram the ROC curve can be seen that 
 
 \chapter{Conclusions}
 
@@ -1101,16 +1120,43 @@ whereas using the Gradient Boosted Decision Trees method of classification it wa
   m_{\tilde{t}} = 811 \pm 15 \textrm{GeV}/c^{2}
 \end{equation}
 
-Althought the GBDT's at first seem to be better candidate for a more precise mass calculation, the BDT's 
-proved to be the ones that offered a better one. 
+Althought the GBDT's at first seem to be the best candidate for a more precise mass calculation, the BDT's 
+proved to be the ones that offered a better one. That is because the resulting number of signal events in the BDT 
+method are more than the ones in GBDT implying that having stronger signal than better separation between 
+signal-background is preferable in the case of the mass calculation of the $\tilde{t}$ in CLIC experiment.
+
+
+
+
 
 \chapter{Further Work}
 
+As further work on this project the following can be mentioned:
 
--isolate leptons
+\begin{itemize}
+ \item As I investigated the following channel
+    \begin{equation}
+      e^{+} e^{+} \rightarrow \tilde{t} \tilde{\bar{t}} \rightarrow t\tilde{\chi}_{1}^{0} \bar{t}\tilde{\chi}_{1}^{0}
+      \rightarrow W^{+}W^{-}b\bar{b} \tilde{\chi}_{1}^{0} \tilde{\chi}_{1}^{0}
+    \end{equation}
+the decay of the W boson can be hadronic or leptonic. By isolating the cases that $W\rightarrow l\nu_{l}$
+,i.e. the hadronic channe, we can possobly achieve even smaller uncertainty in the mass calculation of the top
+squark.
+\item Another possibility is to look also for other decays of the top squarks such as 
+    \begin{equation}
+      e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \tilde{\chi}_{1}^{0}
+      \chi^{\pm}_{1}b \rightarrow
+      W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}
+    \end{equation}
+
+\item Work also can be done for finding the ideal cut of the BDT classification method.
+
+\end{itemize}
+
+
 -further investigation of the contradiccion of bdt gbdt
 -look at other decays of the stop
--
+-find the ideal tuning for the bdts
 ?????
 
 
