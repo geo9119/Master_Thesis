@@ -3,11 +3,10 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: MSc_dissertation.aux
 The style file: unsrt.bst
 Database file #1: MSc_dissertation.bib
-Warning--I didn't find a database entry for "ob:bornwolf"
 Warning--empty institution in simon2010techniques
 You've used 13 entries,
             1791 wiz_defined-function locations,
-            524 strings with 6055 characters,
+            523 strings with 6044 characters,
 and the built_in function-call counts, 3141 in all, are:
 = -- 234
 > -- 213
@@ -46,4 +45,4 @@ warning$ -- 1
 while$ -- 25
 width$ -- 15
 write$ -- 141
-(There were 2 warnings)
+(There was 1 warning)

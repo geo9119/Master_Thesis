@@ -27,6 +27,12 @@ Yorikiyo Nagashima.
 \newblock {\em Beyond the standard model of elementary particle physics}.
 \newblock John Wiley \& Sons, 2014.
 
+\bibitem{simon2010techniques}
+Frank Simon.
+\newblock Techniques and prospects for light-flavored squark mass measurements
+  at a multi-tev e+ e- collider.
+\newblock Technical report, 2010.
+
 \bibitem{aaboud2016search}
 Morad Aaboud, G~Aad, B~Abbott, J~Abdallah, O~Abdinov, B~Abeloos, R~Aben,
   OS~AbouZeid, NL~Abraham, H~Abramowicz, et~al.
@@ -34,12 +40,6 @@ Morad Aaboud, G~Aad, B~Abbott, J~Abdallah, O~Abdinov, B~Abeloos, R~Aben,
   jets, and missing transverse momentum in s= 13 tev p p collisions with the
   atlas detector.
 \newblock {\em Physical Review D}, 94(5):052009, 2016.
-
-\bibitem{simon2010techniques}
-Frank Simon.
-\newblock Techniques and prospects for light-flavored squark mass measurements
-  at a multi-tev e+ e- collider.
-\newblock Technical report, 2010.
 
 \bibitem{suehara2016lcfiplus}
 Taikan Suehara and Tomohiko Tanabe.

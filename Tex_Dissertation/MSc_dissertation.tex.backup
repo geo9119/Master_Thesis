@@ -113,9 +113,10 @@ I would like to thank my supervisor Prof. Victoria J. Martin not only for her he
 her deep and important insights on the subject, but also introducing me to a field that so far I was nothing 
 more than a stranger.
 
-His comments and technical help proved to be valuable, thus I owe a big thank you to Alan Taylor (UoE).
+I also owe my gratitude to Alan Taylor (UoE) for his comments and his technical help throughout this 
+project.
 
-Additionally I would like to express my gratitude towards the CLICdp team that helped me. Especially
+Finally I would like to thank the CLICdp team that helped me. Especially
 to Dr. Philipp Roloff, Dr. Marco Petric, Dr. Ignacio Garcia and Dr. Andre Sailer (all based at CERN).
 
 
@@ -168,7 +169,7 @@ In CLIC there is also a dedicated program for top quark physics, as it is one of
 in SM because it couples strongest to the Higgs field due to its mass but also it has an important role in 
 many of the BSM scenarios.
 Furthermore at the next two stages leading role will play the proposed scenarios for physics BSM with most 
-importantly Supersymmetry at $\surd s$ = 3 TeV and with $\mathcal{L}_{int}$ = 2000 fb$^{-1}$. This  is because CLIC has the potential for direct particle detection up to the 
+importantly Supersymmetry at $\surd s$ = 3 TeV and with $\mathcal{L}_{int}$ = 3000 fb$^{-1}$. This  is because CLIC has the potential for direct particle detection up to the 
 kinematic limit of $\surd s /2$ for pair production but also through indirect detection of observables that are sensitive to BSM
 scenarios through precision measurements and comparison with the SM expectations, 
 taking advantage of the full energy potential.
@@ -176,7 +177,7 @@ taking advantage of the full energy potential.
 
 
 Given the linear nature of CLIC, there are no energy losses induced by Synchrotron radiation which appears in 
-circular colliders, but due Beamsstrahlung radiation. As the colsliding bunches get closer to the 
+circular colliders, but due Beamsstrahlung radiation. As the colliding bunches get closer to the 
 vertex, the strong electromagnetic fields (up to 10 Tesla) created by the opposing beam, cause deflection
 of the partices trajectories resulting to emit Synchrotron radiation. The effect is energy-dependent with huge
 impact at higher energies~\cite{bonvicini1989first} as it can be seen in the following 
@@ -199,8 +200,8 @@ the luminosities achieved in each stage:
 \centering % used for centering table
 \begin{tabular}{c c} % centered columns (4 columns)
 \hline %inserts double horizontal lines
-$\surd s$ (GeV)  & $\mathcal{L}$   \\ \hline % inserts single horizontal line
-380 & 500 fb$^{-1}$  \\
+$\surd s$ (TeV)  & $\mathcal{L}_{int}$   \\ \hline % inserts single horizontal line
+0.38 & 500 fb$^{-1}$  \\
 1.5 & 1.5 ab$^{-1}$ \\
 3   &  3 ab$^{-1}$ 
  %inserts single line
@@ -224,7 +225,7 @@ and vector gauge bosons (force carriers) that they stem from the fact that the S
 SU(2) \otimes U(1)$ symmetries. An important part of this theory is the existence of the Higgs field which appeared
 during the unification of the electromagnetic and the weak force. It is known for the fact that it "gives"
 mass to the elementary particles (besides photons and gluons which they are protected by the $U(1)$,$SU(3)$
-symmetries respectively)
+unbreakable symmetries respectively)
 via Spontaneous Symmetry Breaking .
 
 It is true that even with the great success that the SM has been probed does not consist a flawless theory.
@@ -233,14 +234,14 @@ problem. In the electroweak sector of the SM there is a parameter that has the d
 vacum expectation value of the Higgs field which phenomenologicaly is 
 
 \begin{equation}
- \upsilon \approx 246 \quad GeV
+ \upsilon \approx 246 \quad \textrm{GeV}
 \end{equation}
 
 The importance of this parameter is that it sets the masses of the the theory and as well as the Higgs boson
 itself as it is
 
 \begin{equation}
- M_{H} = \upsilon \sqrt{\frac{\lambda}{2}} 
+ \textrm{M}_{H} = \upsilon \sqrt{\frac{\lambda}{2}} 
 \end{equation}
 
 
@@ -253,18 +254,18 @@ order corrections to the mass of the Higgs field. The self energy of the higgs b
 
 where $\Lambda$ represents the scale of the new physics such as the effects of quantum gravity. In dimensional 
 regularisation, when $\Lambda \rightarrow \infty$ the renormalisability of the theory assures that there
-is no inconsistency, but if we take into account a scale, for example, for the quantum gravity then $\Lambda \rightarrow 
-M_{P} \approx 1.2\times 10^{19}\quad GeV$ which is the Plank mass, then the additive quantum corrections for the Higgs 
+is no inconsistency, but if we take into account a scale, for example the quantum gravity, then $\Lambda \rightarrow 
+M_{P} \approx 1.2\times 10^{19}\quad \textrm{GeV}$ which is the Plank mass, then the additive quantum corrections for the Higgs 
 mass become too big dragging the value of the Higgs mass up. Because the VEV of the Higgs boson has a fixed 
 phenomenologicaly value, one way to circumvent this problem is by relating bosons with fermions since in the 
-latter, the algebraic terms for their self energies come with a minus sign giving the desired calcelations 
+latter, the algebraic terms for their self energies come with a minus sign giving the desired cancelations 
 without any "fine tuning" from our side. This results into the SUSY theory stabilising the Hierarchy $M_{H}
 \ll M_{P}$ with the constraint that the SUSY particles should be visible at a scale not too much greater 
 than 1-10 TeV~\cite{aitchison2005supersymmetry}.
 
 One other feature that makes SUSY attractive is the fact that it includes the convergence of the couplings,
 something that it is known as Grand Unification. From the point of view of SM, something like that is 
-unable to achieve since two of the couplings decrease with energy (weak and strong coupling) whereas one
+unable to be achieved since two of the couplings decrease with energy (weak and strong coupling) whereas one
 (electromagnetic) increases. In the MSSM, by the inclusion of the sparticles such unification is actually
 achievable as it can be seen in the following figure:
 
@@ -331,7 +332,6 @@ The following matrix is the mixing matrix expressed in the $(\tilde{f}_{L},\tild
 
 \begin{equation}
  \mathcal{M}^{2}_{\tilde{f}} =
-
  \[  
   \begin{pmatrix}
    M^{2}_{\tilde{f}_{L}}  &  \alpha_{f}m_{f} \\
@@ -354,7 +354,7 @@ flavour we obtain:
 \end{equation}
 
 It is obvious that the $m^{2}_{\tilde{t}_{1}}$ will have the lowest mass, something that makes it the 
-lightest squark.
+lightest squark~\cite{simon2010techniques}.
 
 \section{Results from LHC for SUSY}
  
@@ -368,7 +368,7 @@ lightest squark.
 
 So far thought no indication of SUSY has been found in LHC but through each analysis the exclusion limits 
 for the SUSY observables become bigger and bigger as it can be seen in the following figures that summarises
-the latest of them for the stop quark mass at $\surd s$ = 8,13 GeV in proton proton collisions
+the latest of them for the stop quark mass at $\surd s$ = 8/13 GeV in proton proton collisions
 ~\cite{aaboud2016search}:
 
 \begin{figure}[h!]
@@ -398,15 +398,15 @@ In this chapter I will describe the exact conditions and methods that were follo
 calculation of the stop quark mass at CLIC Conceptual experiment.
 
 I will invedtigate the production of a pair of stop quarks at $\surd s$ = 3 TeV and assumig an  integrated 
-luminosity of $\mathcal{L}_{int}$ = 2000 fb$^{-1}$. The channel of interest is the following:
+luminosity of $\mathcal{L}_{int}$ = 3000 fb$^{-1}$. The channel of interest is the following:
 
 \begin{equation}
- e^{+} e^{+} \rightarrow \tilde{t} \tilde{\bar{t}} \rightarrow t\tilde{\chi}_{1}^{0} \bar{t}\tilde{\chi}_{1}^{0}
+ e^{-} e^{+} \rightarrow \tilde{t} \tilde{\bar{t}} \rightarrow t\tilde{\chi}_{1}^{0} \bar{t}\tilde{\chi}_{1}^{0}
  \rightarrow W^{+}W^{-}b\bar{b} \tilde{\chi}_{1}^{0} \tilde{\chi}_{1}^{0}
 \end{equation}
 
-and for this model the mass of the top squark is $m_{\tilde{t}}$ = 844 GeV whereas the mass of the 
-neutralino is $m_{\tilde{\chi}_{1}^{0}}$. This is not the only possible decay of a top squark but it is the
+and for this model the mass of the top squark is $m_{\tilde{t}}$ = 845 GeV whereas the mass of the 
+neutralino is $m_{\tilde{\chi}_{1}^{0}}$= 357 GeV. This is not the only possible decay of a top squark but it is the
 dominant one. In what follows I show the top three branching ratios of the top squark decay and two
 of the corresponding Feynmann diagrams:
 
@@ -513,18 +513,18 @@ assumes that the mass of the neutralino is known and that the quark is massless.
 
 In this chapter I describe the procedure that I followed until the calculation of the top squark mass. 
 This involved the vertex finding, the jet clustering, the flavourtagging and the calculation of the $\chi^{2}$
-for each top squark mass.
+for each template of the top squark mass.
 
 \subsection{Vertex Finding}
 
 For the needs of this projecct I used the package of LCFIplus which is an improved software of the already 
 existing one LCFIVertex. The important difference between the  two is that LCFIplus employs the vertex finding 
-befere the jet clustering (in comparison to LCFIVertex which follows the exact oposite procedure) with the 
+before the jet clustering (in comparison to LCFIVertex which follows the exact opposite procedure) with the 
 goal to protect the secondadry vertices from breaking up and grouped into different jets~\cite{suehara2016lcfiplus}.
 This is an important step towards better performance since the Bottom jets can be identified from their 
 sufficiently large distance between the primary vertex and their decay vertex. Additionally, the importance
 of this step to be performed before jet clustering, is that hadrons that contain bottom or charm quarks 
-have sizeable lifetimes and they can be measured Inside the detector.
+have sizeable lifetimes and they can be measured inside the detector~\cite{suehara2016lcfiplus}.
 
 
 That said, the vertex finding was the first step towards obtaining the final data for analysis.
@@ -534,7 +534,7 @@ That said, the vertex finding was the first step towards obtaining the final dat
 Jets are an indespensible part of high energy physics. They come from the manifestation of strong nuclear
 as free quarks or gluons hadronize. They are visual structures that are measured in the detectors and they
 serve the need of approaching the initial parton that they originated. Throught the years various algorithms 
-have been developed for the clustering of such objects differing in the way that the approach suchh procedure.
+have been developed for the clustering of such objects differing in the way that they approach such procedure.
 Two of the most famous are the sequential recombination algorithms and cone algorithms. In this projecct I use
 the a sequential recombination algorithm, the $k_{t}$ algorithm which is a longitudinaly invariant algorithm
 firstly designed for hadron colliders.
@@ -569,7 +569,7 @@ constituents of the jets such as tracks and secondary vertices.
 
 \subsection{Classification Method: \textit{Boosted Descision Trees}}
 
-For the calculation of the top squark mass I made use of the TMVA package wich is provides a multivariate 
+For the calculation of the top squark mass I made use of the TMVA package which provides a multivariate 
 analysis platform in order (for this project) to make separation between the signal and the background. Two 
 of them were empoyed, used and compaired: the \textit{Boosted Descision Trees} (BDT) and the 
 \textit{Gradient Boosted Descision Trees} (GBDT).
@@ -604,7 +604,7 @@ In the physical case that I examine what will later be denoted as SUSY signal: c
 top squarks, SUSY and SM background: corresponding to any physical process that immitates the one under 
 consideration.
 
-To this end, using the TMVA package in root and trainning 200 trees with the  preselection cuts:
+To this end, using the TMVA package in root and trainning 1000 trees with the  preselection cuts:
 
 \begin{itemize}
  \item $E_{visible} <$ 2 TeV
@@ -653,7 +653,7 @@ different.
 
 The TMVA trains the classifiers with respect to the input variables and then with the weight files that it has
 created, it applies them to a different sample (test phase). Essentially what TMVA achieves is reducing the 
-multi dimantional phase space of variables into one variable, known as BDT cut.
+multidimensional phase space of variables into one variable, known as BDT cut.
 
 According to the following graph, the value of the BDT cut that was chosen is $cut_{BDT}=-0.036$ due to the 
 fact that it has the maximum statistical significance $\frac{S}{\sqrt{S+B}}$=5.68, where S is the
@@ -713,8 +713,8 @@ The above histograms show the aforementioned variables as they were given for tr
 \subsubsection{Energy Spectrum of the Reconstructed Top quark}
 
 In the histogram below the energy spectrum of the top quark can be seen for the signal events.
-This variable was not given to the TMVA for training and testing. 
-It is clear that the maximum value of the energy is 1200 Tev something that explains why this was also set  
+This variable was given to the TMVA for training and testing but it was not among the important ones. 
+It is clear that the maximum value of the energy is 1.2 Tev something that explains why this was also set  
 as a preselection cut. 
 
 \begin{figure}[ht!]
@@ -1149,15 +1149,15 @@ squark.
       W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}
     \end{equation}
 
-\item Work also can be done for finding the ideal cut of the BDT classification method.
+\item Work also can be done for finding the ideal cut of the BDT classification method as well the most 
+important variables that affect the procedure. One possible way to do such thing is by firstly including
+all the variables in the TMVA and after the training/testing phase to plot the backgroung rejection versus 
+the signal efficiency. Then, repeat the procedure for all the variables besides one and plot again the same 
+graph. That way, step by step, fewer and fewer variables will be taken into account by TMVA and where a huge 
+difference in the plot of backgroung rejection versus signal efficiency is seen, then this will be an 
+indication that this variable is an important one.
 
 \end{itemize}
-
-
--further investigation of the contradiccion of bdt gbdt
--look at other decays of the stop
--find the ideal tuning for the bdts
-?????
 
 
 \newpage
