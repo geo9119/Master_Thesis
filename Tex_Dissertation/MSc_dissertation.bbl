@@ -66,6 +66,12 @@ Morad Aaboud, G~Aad, B~Abbott, J~Abdallah, O~Abdinov, B~Abeloos, R~Aben,
   atlas detector.
 \newblock {\em Physical Review D}, 94(5):052009, 2016.
 
+\bibitem{atlassearch}
+ATLAS collaboration et~al.
+\newblock Search for a scalar partner of the top quark in the jets+ etmiss
+  final state at√ s= 13 tev with the atlas detector.
+\newblock ATLAS-CONF-2017-020.
+
 \bibitem{suehara2016lcfiplus}
 Taikan Suehara and Tomohiko Tanabe.
 \newblock Lcfiplus: A framework for jet analysis in linear collider studies.
