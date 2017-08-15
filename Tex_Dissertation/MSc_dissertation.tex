@@ -37,7 +37,7 @@
 \vspace*{0.1\textheight}
 
 \begin{center}
-        \huge{\bfseries Calculation of the Supersymmetric top quark mass at CLIC}\\
+        \huge{\bfseries Calculation of the Supersymmetric top quark mass at CLIC $e^{-}e^{+}$ collider.}\\
 \end{center}
 
 \bigskip
@@ -45,7 +45,11 @@
 \begin{center}
         \large{Georgios Billis}\\      % Replace with your name
         \bigskip
-        \large{August 18, 2017}        % Submission Date
+        \large{August 18, 2017}\\        % Submission Date
+        %\vspace*{3cm}       
+        \bigskip
+        \large{Supervisor: Prof. Victoria Martin}        % Submission Date
+
 \end{center}
 
 %%% If necessary, reduce the number 0.4 below so the University Crest
@@ -126,7 +130,8 @@ to Dr. Philipp Roloff, Dr. Marco Petric, Dr. Ignacio Garcia and Dr. Andre Sailer
 
 \chapter{Introduction}
 
-On July 2012 the discovery of the Higgs boson was announced at CERN's Large Hadron Collider (LHC). This marked the begining of a new era for experimental High Energy Physics motivating the design of new 
+On July 2012 the discovery of the Higgs boson was announced at CERN's Large Hadron Collider (LHC)~\cite{aad2012observation}. 
+This marked the begining of a new era for experimental High Energy Physics motivating the design of new 
 experiments for further and deeper exploration of the Higgs boson itself but also, a huge marathon
 addressing the questions/problems that arose with it. 
 
@@ -138,9 +143,10 @@ some restrictions with resprect to the precision that it can probe various obser
 On the other hand, CLIC is designed to invastigate the interactions of elementary particles, an important advantage since initial states of the colliding particles is known. In advance, LHC suffers from energy loss due to 
 Synchrotron radiation since protons are accelerated in a 27 km circular accelerator whereas CLIC, being linear does not.
 
-The main targets of CLIC are dependent of the energy stage. In the first it will focus on prescision standard model physics such as Higgs and Top quark measurements and in the two subsequent, among others, there will be searches
-for new physics~\cite{clic2016updated}. One of the theories that aspires to give solutions to many of the problems of Standard Model is Supersymmetry (SUSY). In this theory every particle has a Supersymmetric partner that differs in the spin by $1/2$, thus 
-relating bosons with fermions and fermions with bosons.
+The main targets of CLIC are dependent of the energy stage~\cite{clic2016updated}.
+In the first it will focus on prescision standard model physics such as Higgs and Top quark measurements and in the two subsequent, among others, there will be searches
+for new physics. One of the theories that aspires to give solutions to many of the problems of Standard Model is Supersymmetry (SUSY). In this theory every particle has a Supersymmetric partner that differs in the spin by $1/2$, thus 
+relating bosons with fermions and fermions with bosons~\cite{bilal2001introduction}.
 
 In the Minimal Supersymmetric Standard Model, the top squarks $\tilde{t}$ decay almost all the times into a top quark $t$
 and a dark matter candidate, the neutralino $\tilde{\chi}_{1}^{0}$. In this project I will use Multivariate Analisis
@@ -162,16 +168,18 @@ fully exploit its scientific potential including precision measurements and sear
 Standar Model.
 
 Specifically, at $\surd s$ = 380 GeV and with an integrated luminosity of $\mathcal{L}_{int}$ = 500 fb$^{-1}$, 
-prescision measurements can be made in the Higgs and the top quark sector. At this enegy stage the Higgsstrahlung
+prescision measurements can be made in the Higgs and the top quark sector~\cite{clic2016updated}.
+At this enegy stage the Higgsstrahlung
 process ($e^{+}e^{-}\rightarrow ZH$) alongside the $WW$ fusion ($e^{+}e^{-}\rightarrow H\nu_{e}\tilde{\nu}_{e}$) 
-are the dominant and can shed light to properties of the Higgs boson in a model independent way~\cite{clic2016updated}.
-In CLIC there is also a dedicated program for top quark physics, as it is one of the most important particles
+are the dominant and can shed light to properties of the Higgs boson in a model independent way.
+In CLIC there is also a dedicated program for top quark physics. This is because it is one of the most important particles
 in SM because it couples strongest to the Higgs field due to its mass but also it has an important role in 
 many of the BSM scenarios.
-Furthermore at the next two stages leading role will play the proposed scenarios for physics BSM with most 
+Furthermore at the next two stages, leading role will play the proposed scenarios for physics BSM with most 
 importantly Supersymmetry at $\surd s$ = 3 TeV and with $\mathcal{L}_{int}$ = 3000 fb$^{-1}$. This  is because CLIC has the potential for direct particle detection up to the 
-kinematic limit of $\surd s /2$ for pair production but also through indirect detection of observables that are sensitive to BSM
-scenarios through precision measurements and comparison with the SM expectations, 
+kinematic limit of $\surd s /2$ for pair production. Also through indirect detection of observables that are sensitive to BSM
+scenarios, precision measurements can be made, and comparison with the SM expectations can yield unexpected 
+divergencies, 
 taking advantage of the full energy potential.
 
 
@@ -206,10 +214,11 @@ $\surd s$ (TeV)  & $\mathcal{L}_{int}$   \\ \hline % inserts single horizontal l
 3   &  3 ab$^{-1}$ 
  %inserts single line
 \end{tabular}
-\label{table:nonlin} % is used to refer this table in the text
+\label{table:nonlin}% is used to refer this table in the text
+\caption{}
 \end{table}
 
-Furthermore, the experiment has two detector concepts CLIC SiD and CLIC ILD in order to serve the required 
+Furthermore, the experiment has two detector concepts: CLIC SiD and CLIC ILD, in order to serve the required 
 jet energy resolution. The latter has been  developed for the International Linear Collinder but it has been
 adapted according to the needs of CLIC. Both detectors have strong central solenoid magnets creating an axial 
 magnetic field of 5T for CLIC SiD and 4T for CLI ILD~\cite{abramowicz2017higgs}.
@@ -220,7 +229,8 @@ magnetic field of 5T for CLIC SiD and 4T for CLI ILD~\cite{abramowicz2017higgs}.
 
 \section{Motivation}
 
-The model that describes elementary particle physics is the Standar Model. It involves matter  fields (fermions)
+The model that describes elementary particle physics is the Standard Model~\cite{cheng1984gauge}.
+It involves matter  fields (fermions)
 and vector gauge bosons (force carriers) that they stem from the fact that the SM Lagrngian is subject to $SU(3) \otimes 
 SU(2) \otimes U(1)$ symmetries. An important part of this theory is the existence of the Higgs field which appeared
 during the unification of the electromagnetic and the weak force. It is known for the fact that it "gives"
@@ -230,8 +240,9 @@ via Spontaneous Symmetry Breaking .
 
 It is true that even with the great success that the SM has been probed does not consist a flawless theory.
 Many parts of it are still to be answered or contain significant controversies. One example is the Hierarchy 
-problem. In the electroweak sector of the SM there is a parameter that has the dimensions of energy, the 
-vacum expectation value of the Higgs field which phenomenologicaly is 
+problem~\cite{aitchison2005supersymmetry}. 
+In the electroweak sector of the SM there is a parameter that has the dimensions of energy, the 
+vacum expectation value (VEV) of the Higgs field which phenomenologicaly is 
 
 \begin{equation}
  \upsilon \approx 246 \quad \textrm{GeV}
@@ -254,24 +265,28 @@ order corrections to the mass of the Higgs field. The self energy of the higgs b
 
 where $\Lambda$ represents the scale of the new physics such as the effects of quantum gravity. In dimensional 
 regularisation, when $\Lambda \rightarrow \infty$ the renormalisability of the theory assures that there
-is no inconsistency, but if we take into account a scale, for example the quantum gravity, then $\Lambda \rightarrow 
-M_{P} \approx 1.2\times 10^{19}\quad \textrm{GeV}$ which is the Plank mass, then the additive quantum corrections for the Higgs 
+is no inconsistency; but if we take into account a scale such as the quantum gravity, then $\Lambda \rightarrow 
+M_{P} \approx 1.2\times 10^{19}\quad \textrm{GeV}$ which is the Plank mass. In that case 
+the additive quantum corrections for the Higgs 
 mass become too big dragging the value of the Higgs mass up. Because the VEV of the Higgs boson has a fixed 
-phenomenologicaly value, one way to circumvent this problem is by relating bosons with fermions since in the 
+phenomenologicaly value, one way to circumvent this problem is by relating bosons with fermions. 
+This constitutes a solution since in the 
 latter, the algebraic terms for their self energies come with a minus sign giving the desired cancelations 
 without any "fine tuning" from our side. This results into the SUSY theory stabilising the Hierarchy $M_{H}
 \ll M_{P}$ with the constraint that the SUSY particles should be visible at a scale not too much greater 
-than 1-10 TeV~\cite{aitchison2005supersymmetry}.
+than 1-10 TeV.
 
 One other feature that makes SUSY attractive is the fact that it includes the convergence of the couplings,
 something that it is known as Grand Unification. From the point of view of SM, something like that is 
 unable to be achieved since two of the couplings decrease with energy (weak and strong coupling) whereas one
-(electromagnetic) increases. In the MSSM, by the inclusion of the sparticles such unification is actually
-achievable as it can be seen in the following figure:
+(electromagnetic) increases. In the Minimal Supersymmetric Standard Model (MSSM),
+by the inclusion of the supersymmertric particles (sparticles) such unification is actually
+achievable as it can be seen in the following figure
+\textit{(Physics World, October 2014 - IOP publishing)}:
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.7\linewidth]{{images/PWOct14gates-fig2-full}.jpg}
+  \includegraphics[width=0.6\linewidth]{{images/PWOct14gates-fig2-full}.jpg}
   \label{}
 \end{figure}
 
@@ -294,38 +309,46 @@ Standard Model  &  & SUSY &  \\ [0.5ex]
 Photon & $\gamma$ & Photino & $\tilde{\gamma}$ \\ % inserting body of the table
 Gluon & g & Gluino & $\tilde{g}$ \\
 Z Boson & Z & Zino & $\tilde{Z}$ \\
-W Boson & $W^{\pm,0}$ & Wino & $\tilde{W}^{\pm,0}$ \\
-B Boson& B & Bino & $\tilde{B}$ \\ [1ex] % [1ex] adds vertical space
+W Boson & $W^{\pm}$ & Wino & $\tilde{W}^{\pm}$ \\ [1ex] 
+ % [1ex] adds vertical space
 \hline %inserts single line
 \end{tabular}
 \label{table:nonlin} % is used to refer this table in the text
+\caption{}
 \end{table}
 
 The framework of this project is the Minimal Supersymmetric Standard Model which besides the SM particles 
 includes the sleptons $\tilde{\ell}^{\pm}$, the sneutrinos $\tilde{\nu}_{l}$, the squarks $\tilde{q}$, the 
-gluinos $\tilde{g}$, two pair of charginos $\tilde{\chi}^{\pm}_{i}$ where $i=1,2$,  four neutralinos 
-$\tilde{\chi}^{0}_{i}$, $i=1,...,4$ and five Higgs bosons $h^{0}$, $H^{0}$, $A^{0}$,$H^{\pm}$.
+gluinos $\tilde{g}$, two pair of charginos $\tilde{\chi}^{\pm}_{i}$ where $i=1,2$ ,  four neutralinos 
+$\tilde{\chi}^{0}_{i}$, $i=1,...,4$ and five Higgs bosons $\tilde{h}^{0}$, $\tilde{H}^{0}$,
+$\tilde{A}^{0}$,$\tilde{H}^{\pm}$.
 
 Both particles and sparticles belong to the same super-multiplet having the same mass and the same quantum 
 numbers as their SM partners but with different spin. Because no such degenerate fermion-boson pair exists 
 in nature,
 then it is deduced that SUSY must be a broken symmetry. In order to constitute a solid solution to the 
-Hierarchy problem, then the difference in the masses of the particles and their supersymmetric partners 
+Hierarchy problem, the difference in the masses of the particles and their supersymmetric partners 
 must be of the order of $\mathcal{O}(1  TeV) $~\cite{nagashima2014beyond}.
 
 In Standard Model, for the Spontaneous Symmetry Breaking one Higgs doublet is needed with 4 degrees of 
-freedom. For the SUSY model on the other hand two such doublets are required with a total of eight 
-degrees of freedom where three of them are absorbed to give mass to the SM particles such as W$^{\pm}$ and Z,
-and the remaining five give rise to five physical Higgs bosons $\tilde{h}$,$\tilde{H}^{\pm}$,$\tilde{A}$,
-$\tilde{H}^{0}$. Those in turn, mix further to become the neutralinos and the charginos : $\tilde{\chi}_{i}^{0}$,
-$\tilde{\chi}_{i}^{\pm}$. 
+freedom (complex). For the SUSY model on the other hand, two such doublets are required with a total of eight 
+degrees of freedom. The supersymmertric partners of the SM Higgs, the Higgsinos, mix with the Winos 
+$\tilde{W}^{\pm}$ and the 
+Binos $\tilde{B}$ in order to form the neutralinos $\tilde{\chi}_{i}^{0}$ and the charginos 
+$\tilde{\chi}_{i}^{\pm}$.  
+
+
+%where three of them are absorbed to give mass to the SM particles such as W$^{\pm}$ and Z,
+%and the remaining five give rise to five physical Higgs bosons $\tilde{h}$,$\tilde{H}^{\pm}$,$\tilde{A}$,
+%$\tilde{H}^{0}$. Those in turn, mix further to become the neutralinos and the charginos : $\tilde{\chi}_{i}^{0}$,
+%$\tilde{\chi}_{i}^{\pm}$. 
 
 It is known that within the SM the fermions carry chirality denoted by L or R whether they are left or right 
-respectively, according to the way they transform under the symmetry group $SU(2) \otimes U(1)$. Thus given 
+respectively, according to the way they transform under the symmetry group $SL(2,\mathbb{C})$. Thus given 
 the SUSY relation of fermions-bosons that means that the sfermions  (bosonic superpartners), come into 
 doublets of the form $(f_{i},\tilde{f}_{i})$, where i=L,R. The sfermions mix further to make the eigenstates
 of the mass matrix. This mixing is expected to be strong for third generation sfermions since the Yukawa 
-couplings can be large, more precisely in our case the stop quark mixing effects can be large because
+couplings can be large. More precisely in our case the stop quark mixing effects can be large because
 of the large mass of the top quark.
 
 The following matrix is the mixing matrix expressed in the $(\tilde{f}_{L},\tilde{f}_{R})$ basis:
@@ -341,12 +364,13 @@ The following matrix is the mixing matrix expressed in the $(\tilde{f}_{L},\tild
 \end{equation}
 
 where the $M^{2}_{\tilde{f}_{L}}$ are terms that depend on the mass of the quark, the charge and the third 
-component of the weak isospin. The off diagonal elements $\alpha_{f}$ are dependent on the soft SUSY breaking
+component of the weak isospin~\cite{simon2010techniques}.
+The off-diagonal elements $\alpha_{f}$, are dependent on the soft SUSY breaking
 trilinear scalar coupling parameters.
 
 In this project I will focous on the top squarks  where the mixing   $\tilde{t}_{R}-\tilde{t}_{L}$ is important
 due to the large top quark mass. By computing the eigenvalues of the previous matrix and for the right
-flavour we obtain:
+flavour, we obtain:
 
 \begin{equation}
  m^{2}_{\tilde{t}_{1,2}} = \frac{1}{2}(M^{2}_{\tilde{t}_{L}} + M^{2}_{\tilde{t}_{R}} \mp 
@@ -354,36 +378,39 @@ flavour we obtain:
 \end{equation}
 
 It is obvious that the $m^{2}_{\tilde{t}_{1}}$ will have the lowest mass, something that makes it the 
-lightest squark~\cite{simon2010techniques}.
+lightest squark.
 
 \section{Results from LHC for SUSY}
  
  The search for indications for Supersymmetry is not new as LHC has been optimized and focused among other
- to the direct or indirect detection of sparticles. The majority of the cases that have been studied, 
- consider as main decay channel of the sparticles the following:
+ to the direct or indirect detection of sparticles~\cite{chatrchyan2011search}.
+The majority of the cases that have been studied, consider as main decay channel of the sparticles 
+the following:
  
  \begin{equation}
   BR(\tilde{q} \rightarrow q  \chi_{i}^{0,\pm}) = 100 \%
  \end{equation}
 
 So far thought no indication of SUSY has been found in LHC but through each analysis the exclusion limits 
-for the SUSY observables become bigger and bigger as it can be seen in the following figures that summarises
+for the SUSY observables become bigger and bigger as it can be seen in the figure 3.1 that summarises
 the latest of them for the stop quark mass at $\surd s$ = 8/13 GeV in proton proton collisions
-~\cite{aaboud2016search}:
+~\cite{aaboud2016search}.
 
-\begin{figure}[h!]
+\begin{figure}[!hb]
   \centering
   \includegraphics[width=0.7\linewidth]{{images/ATLAS_SUSY_Stop_tLSP}.png}
   \label{fig2.15}
+  \caption{\scriptsize{Mass exclusion limits at stop-neutralino plane.}}
 \end{figure}
 
-Whereas in the following figure there are the exclusion limits in ATLAS for p-p collisions at 13 TeV for the
-channel invastiged in this project
+Whereas in the figure 3.2 there are the latest exclusion limits in ATLAS for p-p collisions at 13 TeV in the gluino-
+stop plane.
 
 \begin{figure}[ht!]
   \centering
-  \includegraphics[width=0.6\linewidth, scale=5]{{images/fig_08}.png}
+  \includegraphics[width=0.6\linewidth, scale=5]{{images/gluino}.png}
   \label{}
+  \caption{\scriptsize{Mass exclusion limits at stop-gluino plane.}}
 \end{figure}
 
 

@@ -1,10 +1,22 @@
 \begin{thebibliography}{10}
 
+\bibitem{aad2012observation}
+Georges Aad, T~Abajyan, B~Abbott, J~Abdallah, S~Abdel Khalek, AA~Abdelalim,
+  O~Abdinov, R~Aben, B~Abi, M~Abolins, et~al.
+\newblock Observation of a new particle in the search for the standard model
+  higgs boson with the atlas detector at the lhc.
+\newblock {\em Physics Letters B}, 716(1):1--29, 2012.
+
 \bibitem{clic2016updated}
 The CLIC, MJ~Boland, U~Felzmann, PJ~Giansiracusa, TG~Lucas, RP~Rassool,
   C~Balazs, TK~Charles, K~Afanaciev, I~Emeliantchik, et~al.
 \newblock Updated baseline for a staged compact linear collider.
 \newblock {\em arXiv preprint arXiv:1608.07537}, 2016.
+
+\bibitem{bilal2001introduction}
+Adel Bilal.
+\newblock Introduction to supersymmetry.
+\newblock {\em arXiv preprint hep-th/0101055}, 2001.
 
 \bibitem{bonvicini1989first}
 Giovanni Bonvicini, E~Gero, R~Frey, W~Koska, C~Field, N~Phinney, and A~Minten.
@@ -16,6 +28,11 @@ H~Abramowicz, A~Abusleme, K~Afanaciev, N~Alipour Tehrani, C~Bal{\'a}zs,
   Y~Benhammou, M~Benoit, B~Bilki, J-J Blaising, MJ~Boland, et~al.
 \newblock Higgs physics at the clic electron--positron linear collider.
 \newblock {\em The European Physical Journal C}, 77(7):475, 2017.
+
+\bibitem{cheng1984gauge}
+Ta-Pei Cheng, Ling-Fong Li, and Ta-Pei Cheng.
+\newblock Gauge theory of elementary particle physics.
+\newblock 1984.
 
 \bibitem{aitchison2005supersymmetry}
 Ian~JR Aitchison.
@@ -32,6 +49,14 @@ Frank Simon.
 \newblock Techniques and prospects for light-flavored squark mass measurements
   at a multi-tev e+ e- collider.
 \newblock Technical report, 2010.
+
+\bibitem{chatrchyan2011search}
+Serguei Chatrchyan, Vardan Khachatryan, Albert~M Sirunyan, Armen Tumasyan,
+  Wolfgang Adam, Thomas Bergauer, Marko Dragicevic, Janos Er{\"o}, Christian
+  Fabjan, Markus Friedl, et~al.
+\newblock Search for supersymmetry at the lhc in events with jets and missing
+  transverse energy.
+\newblock {\em Physical review letters}, 107(22):221804, 2011.
 
 \bibitem{aaboud2016search}
 Morad Aaboud, G~Aad, B~Abbott, J~Abdallah, O~Abdinov, B~Abeloos, R~Aben,

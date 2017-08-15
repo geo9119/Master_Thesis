@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.2)  12 AUG 2017 18:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.2)  15 AUG 2017 20:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -229,24 +229,24 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<crest.pdf, id=1, 93.60963pt x 92.1871pt>
-File: crest.pdf Graphic file (type pdf)
- <use crest.pdf>
-Package pdftex.def Info: crest.pdf used on input line 57.
-(pdftex.def)             Requested size: 99.58464pt x 98.07092pt.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./crest.pdf>] [2]
-LaTeX Font Info:    Try loading font information for U+msa on input line 81.
+LaTeX Font Info:    Try loading font information for U+msa on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 81.
+LaTeX Font Info:    Try loading font information for U+msb on input line 40.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1] [1]
+)
+<crest.pdf, id=1, 93.60963pt x 92.1871pt>
+File: crest.pdf Graphic file (type pdf)
+ <use crest.pdf>
+Package pdftex.def Info: crest.pdf used on input line 61.
+(pdftex.def)             Requested size: 99.58464pt x 98.07092pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./crest.pdf>] [2] [1] [1]
 (./MSc_dissertation.toc [2
 
 ])
@@ -273,30 +273,36 @@ Chapter 1.
 ] [2]
 Chapter 2.
 
-Overfull \hbox (4.30424pt too wide) in paragraph at lines 179--185
+Overfull \hbox (4.30424pt too wide) in paragraph at lines 187--193
 \OT1/cmr/m/n/12 chrotron ra-di-a-tion which ap-pears in cir-cu-lar col-lid-ers,
  but due Beamsstrahlung
  []
 
 [3
 
-] <images/beamsstrahlung.png, id=63, 592.46344pt x 470.50781pt>
+] <images/beamsstrahlung.png, id=64, 592.46344pt x 470.50781pt>
 File: images/beamsstrahlung.png Graphic file (type png)
 
 <use images/beamsstrahlung.png>
-Package pdftex.def Info: images/beamsstrahlung.png used on input line 188.
+Package pdftex.def Info: images/beamsstrahlung.png used on input line 196.
 (pdftex.def)             Requested size: 272.99881pt x 216.80954pt.
  [4 <./images/beamsstrahlung.png>]
 Chapter 3.
+
+Overfull \hbox (7.85976pt too wide) in paragraph at lines 232--240
+\OT1/cmr/m/n/12 The model that de-scribes el-e-men-tary par-ti-cle physics is t
+he Stan-dard Model [[]].
+ []
+
 [5
 
-] <images/PWOct14gates-fig2-full.jpg, id=73, 1204.5pt x 759.83875pt>
+] <images/PWOct14gates-fig2-full.jpg, id=74, 1204.5pt x 759.83875pt>
 File: images/PWOct14gates-fig2-full.jpg Graphic file (type jpg)
 
 <use images/PWOct14gates-fig2-full.jpg>
 Package pdftex.def Info: images/PWOct14gates-fig2-full.jpg used on input line 2
-74.
-(pdftex.def)             Requested size: 272.99881pt x 172.22011pt.
+89.
+(pdftex.def)             Requested size: 234.00238pt x 147.61723pt.
  [6 <./images/PWOct14gates-fig2-full.jpg>] [7]
 
 ! LaTeX Error: Bad math environment delimiter.
@@ -305,7 +311,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.335  \[
+l.358  \[
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -314,7 +320,7 @@ or  <return>  to continue without it.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.340 \]
+l.363 \]
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -323,13 +329,13 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-! LaTeX Error: \begin{equation} on input line 333 ended by \end{equation*}.
+! LaTeX Error: \begin{equation} on input line 356 ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.340 \]
+l.363 \]
         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -342,7 +348,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.341 \end{equation}
+l.364 \end{equation}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -355,7 +361,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.341 \end{equation}
+l.364 \end{equation}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -364,7 +370,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.341 \end{equation}
+l.364 \end{equation}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -375,7 +381,7 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.341 \end{equation}
+l.364 \end{equation}
                     
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -383,267 +389,264 @@ So I shall assume that you typed `$$' both times.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.341 \end{equation}
+l.364 \end{equation}
                     
 Things are pretty mixed up, but I think the worst is over.
 
-<images/ATLAS_SUSY_Stop_tLSP.png, id=80, 1986.42125pt x 1798.72pt>
+<images/ATLAS_SUSY_Stop_tLSP.png, id=82, 1986.42125pt x 1798.72pt>
 File: images/ATLAS_SUSY_Stop_tLSP.png Graphic file (type png)
 
 <use images/ATLAS_SUSY_Stop_tLSP.png>
-Package pdftex.def Info: images/ATLAS_SUSY_Stop_tLSP.png used on input line 376
+Package pdftex.def Info: images/ATLAS_SUSY_Stop_tLSP.png used on input line 401
 .
 (pdftex.def)             Requested size: 272.99881pt x 247.18066pt.
 
+<images/gluino.png, id=83, 1976.38374pt x 1903.11pt>
+File: images/gluino.png Graphic file (type png)
+ <use images/gluino.png>
+Package pdftex.def Info: images/gluino.png used on input line 411.
+(pdftex.def)             Requested size: 9881.89468pt x 9515.52689pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/fig_08.png, id=81, 1986.42125pt x 1924.18875pt>
-File: images/fig_08.png Graphic file (type png)
-
-<use images/fig_08.png>
-Package pdftex.def Info: images/fig_08.png used on input line 385.
-(pdftex.def)             Requested size: 9932.08206pt x 9620.92033pt.
- [8] [9 <./images/ATLAS_SUSY_Stop_tLSP.png> <./images/fig_08.png>]
+[8] [9 <./images/ATLAS_SUSY_Stop_tLSP.png> <./images/gluino.png>]
 Chapter 4.
-<images/feyn1.png, id=91, 416.30531pt x 284.56313pt>
+<images/feyn1.png, id=93, 416.30531pt x 284.56313pt>
 File: images/feyn1.png Graphic file (type png)
  <use images/feyn1.png>
-Package pdftex.def Info: images/feyn1.png used on input line 415.
+Package pdftex.def Info: images/feyn1.png used on input line 442.
 (pdftex.def)             Requested size: 155.99762pt x 106.63275pt.
 
-<images/feyn2.png, id=92, 392.96812pt x 262.73157pt>
+<images/feyn2.png, id=94, 392.96812pt x 262.73157pt>
 File: images/feyn2.png Graphic file (type png)
  <use images/feyn2.png>
-Package pdftex.def Info: images/feyn2.png used on input line 417.
+Package pdftex.def Info: images/feyn2.png used on input line 444.
 (pdftex.def)             Requested size: 155.99762pt x 104.29698pt.
 
 [10
 
  <./images/feyn1.png> <./images/feyn2.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 434.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 461.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 434.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 461.
  [11] [12] [13]
 [14] [15] [16]
-<images/cutefficiences_1000trees2.pdf, id=118, 569.12625pt x 420.57124pt>
+<images/cutefficiences_1000trees2.pdf, id=120, 569.12625pt x 420.57124pt>
 File: images/cutefficiences_1000trees2.pdf Graphic file (type pdf)
 
 <use images/cutefficiences_1000trees2.pdf>
 Package pdftex.def Info: images/cutefficiences_1000trees2.pdf used on input lin
-e 663.
+e 690.
 (pdftex.def)             Requested size: 234.00238pt x 172.92305pt.
 
-<images/BDT_output_intlum3000.pdf, id=119, 569.12625pt x 385.44pt>
+<images/BDT_output_intlum3000.pdf, id=121, 569.12625pt x 385.44pt>
 File: images/BDT_output_intlum3000.pdf Graphic file (type pdf)
 
 <use images/BDT_output_intlum3000.pdf>
-Package pdftex.def Info: images/BDT_output_intlum3000.pdf used on input line 66
-8.
+Package pdftex.def Info: images/BDT_output_intlum3000.pdf used on input line 69
+5.
 (pdftex.def)             Requested size: 234.00238pt x 158.4784pt.
  [17 <./images/cutefficiences_1000trees2.pdf, page is rotated 90 degrees> <./im
 ages/BDT_output_intlum3000.pdf, page is rotated 90 degrees>]
-<images/thetamiss_report.pdf, id=209, 569.12625pt x 431.6125pt>
+<images/thetamiss_report.pdf, id=211, 569.12625pt x 431.6125pt>
 File: images/thetamiss_report.pdf Graphic file (type pdf)
 
 <use images/thetamiss_report.pdf>
-Package pdftex.def Info: images/thetamiss_report.pdf used on input line 689.
+Package pdftex.def Info: images/thetamiss_report.pdf used on input line 716.
 (pdftex.def)             Requested size: 195.0pt x 147.88565pt.
 
-<images/missingptpfo_report.pdf, id=210, 569.12625pt x 431.6125pt>
+<images/missingptpfo_report.pdf, id=212, 569.12625pt x 431.6125pt>
 File: images/missingptpfo_report.pdf Graphic file (type pdf)
 
 <use images/missingptpfo_report.pdf>
-Package pdftex.def Info: images/missingptpfo_report.pdf used on input line 694.
+Package pdftex.def Info: images/missingptpfo_report.pdf used on input line 721.
 
 (pdftex.def)             Requested size: 195.0pt x 147.88565pt.
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 688--697
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 715--724
 []$[]$  $[]$ 
  []
 
-<images/deltaphi_report.pdf, id=211, 569.12625pt x 431.6125pt>
+<images/deltaphi_report.pdf, id=213, 569.12625pt x 431.6125pt>
 File: images/deltaphi_report.pdf Graphic file (type pdf)
 
 <use images/deltaphi_report.pdf>
-Package pdftex.def Info: images/deltaphi_report.pdf used on input line 701.
+Package pdftex.def Info: images/deltaphi_report.pdf used on input line 728.
 (pdftex.def)             Requested size: 195.0pt x 147.88565pt.
 
-<images/costhetatopmax.pdf, id=212, 569.12625pt x 431.6125pt>
+<images/costhetatopmax.pdf, id=214, 569.12625pt x 431.6125pt>
 File: images/costhetatopmax.pdf Graphic file (type pdf)
 
 <use images/costhetatopmax.pdf>
-Package pdftex.def Info: images/costhetatopmax.pdf used on input line 706.
+Package pdftex.def Info: images/costhetatopmax.pdf used on input line 733.
 (pdftex.def)             Requested size: 195.0pt x 147.88565pt.
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 700--709
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 727--736
 []$[]$  $[]$ 
  []
 
 [18 <./images/thetamiss_report.pdf, page is rotated 90 degrees> <./images/missi
 ngptpfo_report.pdf, page is rotated 90 degrees> <./images/deltaphi_report.pdf, 
 page is rotated 90 degrees> <./images/costhetatopmax.pdf, page is rotated 90 de
-grees>] <images/E_jjj.pdf, id=389, 569.12625pt x 431.6125pt>
+grees>] <images/E_jjj.pdf, id=391, 569.12625pt x 431.6125pt>
 File: images/E_jjj.pdf Graphic file (type pdf)
 
 <use images/E_jjj.pdf>
-Package pdftex.def Info: images/E_jjj.pdf used on input line 721.
+Package pdftex.def Info: images/E_jjj.pdf used on input line 748.
 (pdftex.def)             Requested size: 272.99881pt x 207.04651pt.
 
-<images/ratio_plot_witherrors.pdf, id=390, 569.12625pt x 385.44pt>
+<images/ratio_plot_witherrors.pdf, id=392, 569.12625pt x 385.44pt>
 File: images/ratio_plot_witherrors.pdf Graphic file (type pdf)
 
 <use images/ratio_plot_witherrors.pdf>
-Package pdftex.def Info: images/ratio_plot_witherrors.pdf used on input line 72
-8.
+Package pdftex.def Info: images/ratio_plot_witherrors.pdf used on input line 75
+5.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
  [19 <./images/E_jjj.pdf, page is rotated 90 degrees> <./images/ratio_plot_with
 errors.pdf, page is rotated 90 degrees>]
-<images/ratio_plot_SMbackground_witherrors.pdf, id=481, 569.12625pt x 385.44pt>
+<images/ratio_plot_SMbackground_witherrors.pdf, id=483, 569.12625pt x 385.44pt>
 File: images/ratio_plot_SMbackground_witherrors.pdf Graphic file (type pdf)
 <use images/ratio_plot_SMbackground_witherrors.pdf>
 Package pdftex.def Info: images/ratio_plot_SMbackground_witherrors.pdf used on 
-input line 746.
+input line 773.
 (pdftex.def)             Requested size: 234.00238pt x 158.4784pt.
 
-<images/ratio_plot_susybg_witherrors.pdf, id=482, 569.12625pt x 385.44pt>
+<images/ratio_plot_susybg_witherrors.pdf, id=484, 569.12625pt x 385.44pt>
 File: images/ratio_plot_susybg_witherrors.pdf Graphic file (type pdf)
 
 <use images/ratio_plot_susybg_witherrors.pdf>
 Package pdftex.def Info: images/ratio_plot_susybg_witherrors.pdf used on input 
-line 751.
+line 778.
 (pdftex.def)             Requested size: 234.00238pt x 158.4784pt.
 
-Overfull \hbox (80.61584pt too wide) in paragraph at lines 745--754
+Overfull \hbox (80.61584pt too wide) in paragraph at lines 772--781
 []$[]$  $[]$ 
  []
 
 [20 <./images/ratio_plot_SMbackground_witherrors.pdf, page is rotated 90 degree
 s> <./images/ratio_plot_susybg_witherrors.pdf, page is rotated 90 degrees>]
-<images/prebdtcut.pdf, id=572, 569.12625pt x 431.6125pt>
+<images/prebdtcut.pdf, id=574, 569.12625pt x 431.6125pt>
 File: images/prebdtcut.pdf Graphic file (type pdf)
 
 <use images/prebdtcut.pdf>
-Package pdftex.def Info: images/prebdtcut.pdf used on input line 766.
+Package pdftex.def Info: images/prebdtcut.pdf used on input line 793.
 (pdftex.def)             Requested size: 272.99881pt x 207.04651pt.
 
-<images/postbdtcut_intlumi3000.pdf, id=573, 569.12625pt x 385.44pt>
+<images/postbdtcut_intlumi3000.pdf, id=575, 569.12625pt x 385.44pt>
 File: images/postbdtcut_intlumi3000.pdf Graphic file (type pdf)
 
 <use images/postbdtcut_intlumi3000.pdf>
 Package pdftex.def Info: images/postbdtcut_intlumi3000.pdf used on input line 7
-72.
+99.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
  [21 <./images/prebdtcut.pdf, page is rotated 90 degrees> <./images/postbdtcut_
 intlumi3000.pdf, page is rotated 90 degrees>]
-Overfull \hbox (4.39215pt too wide) in paragraph at lines 783--793
+Overfull \hbox (4.39215pt too wide) in paragraph at lines 810--820
  [][] 
  []
 
-[22] <images/chisqvsmass_intlumi3000.pdf, id=667, 569.12625pt x 385.44pt>
+[22] <images/chisqvsmass_intlumi3000.pdf, id=669, 569.12625pt x 385.44pt>
 File: images/chisqvsmass_intlumi3000.pdf Graphic file (type pdf)
 
 <use images/chisqvsmass_intlumi3000.pdf>
 Package pdftex.def Info: images/chisqvsmass_intlumi3000.pdf used on input line 
-840.
+867.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
 
-<images/toyMC_intlumi3000.pdf, id=668, 569.12625pt x 385.44pt>
+<images/toyMC_intlumi3000.pdf, id=670, 569.12625pt x 385.44pt>
 File: images/toyMC_intlumi3000.pdf Graphic file (type pdf)
 
 <use images/toyMC_intlumi3000.pdf>
-Package pdftex.def Info: images/toyMC_intlumi3000.pdf used on input line 854.
+Package pdftex.def Info: images/toyMC_intlumi3000.pdf used on input line 881.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
  [23 <./images/chisqvsmass_intlumi3000.pdf, page is rotated 90 degrees> <./imag
 es/toyMC_intlumi3000.pdf, page is rotated 90 degrees>] [24] [25]
-<images/cutefficiency_bdtg_new.pdf, id=765, 569.12625pt x 420.57124pt>
+<images/cutefficiency_bdtg_new.pdf, id=767, 569.12625pt x 420.57124pt>
 File: images/cutefficiency_bdtg_new.pdf Graphic file (type pdf)
 
 <use images/cutefficiency_bdtg_new.pdf>
 Package pdftex.def Info: images/cutefficiency_bdtg_new.pdf used on input line 9
-24.
+51.
 (pdftex.def)             Requested size: 272.99881pt x 201.74997pt.
  [26 <./images/cutefficiency_bdtg_new.pdf, page is rotated 90 degrees>]
-<images/postbdtcut_bdtg_3000.pdf, id=812, 569.12625pt x 385.44pt>
+<images/postbdtcut_bdtg_3000.pdf, id=814, 569.12625pt x 385.44pt>
 File: images/postbdtcut_bdtg_3000.pdf Graphic file (type pdf)
 
 <use images/postbdtcut_bdtg_3000.pdf>
-Package pdftex.def Info: images/postbdtcut_bdtg_3000.pdf used on input line 947
+Package pdftex.def Info: images/postbdtcut_bdtg_3000.pdf used on input line 974
 .
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
 
-Overfull \hbox (4.39215pt too wide) in paragraph at lines 953--963
+Overfull \hbox (4.39215pt too wide) in paragraph at lines 980--990
  [][] 
  []
 
-<images/GBDT_output.pdf, id=813, 569.12625pt x 385.44pt>
+<images/GBDT_output.pdf, id=815, 569.12625pt x 385.44pt>
 File: images/GBDT_output.pdf Graphic file (type pdf)
 
 <use images/GBDT_output.pdf>
-Package pdftex.def Info: images/GBDT_output.pdf used on input line 969.
+Package pdftex.def Info: images/GBDT_output.pdf used on input line 996.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
  [27 <./images/postbdtcut_bdtg_3000.pdf, page is rotated 90 degrees> <./images/
 GBDT_output.pdf, page is rotated 90 degrees>]
-<images/ratio_plot_SMbackground_witherrors_gbdt.pdf, id=904, 569.12625pt x 385.
+<images/ratio_plot_SMbackground_witherrors_gbdt.pdf, id=906, 569.12625pt x 385.
 44pt>
 File: images/ratio_plot_SMbackground_witherrors_gbdt.pdf Graphic file (type pdf
 )
  <use images/ratio_plot_SMbackground_witherrors_gbdt.pdf>
 Package pdftex.def Info: images/ratio_plot_SMbackground_witherrors_gbdt.pdf use
-d on input line 984.
+d on input line 1011.
 (pdftex.def)             Requested size: 234.00238pt x 158.4784pt.
 
-<images/ratio_plot_susybg_witherrors_gbdt.pdf, id=905, 569.12625pt x 385.44pt>
+<images/ratio_plot_susybg_witherrors_gbdt.pdf, id=907, 569.12625pt x 385.44pt>
 File: images/ratio_plot_susybg_witherrors_gbdt.pdf Graphic file (type pdf)
 
 <use images/ratio_plot_susybg_witherrors_gbdt.pdf>
 Package pdftex.def Info: images/ratio_plot_susybg_witherrors_gbdt.pdf used on i
-nput line 989.
+nput line 1016.
 (pdftex.def)             Requested size: 234.00238pt x 158.4784pt.
 
-Overfull \hbox (80.61584pt too wide) in paragraph at lines 983--992
+Overfull \hbox (80.61584pt too wide) in paragraph at lines 1010--1019
 []$[]$  $[]$ 
  []
 
-<images/ratio_plot_witherrors_gbdt.pdf, id=906, 569.12625pt x 385.44pt>
+<images/ratio_plot_witherrors_gbdt.pdf, id=908, 569.12625pt x 385.44pt>
 File: images/ratio_plot_witherrors_gbdt.pdf Graphic file (type pdf)
 
 <use images/ratio_plot_witherrors_gbdt.pdf>
 Package pdftex.def Info: images/ratio_plot_witherrors_gbdt.pdf used on input li
-ne 998.
+ne 1025.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
  [28 <./images/ratio_plot_SMbackground_witherrors_gbdt.pdf, page is rotated 90 
 degrees> <./images/ratio_plot_susybg_witherrors_gbdt.pdf, page is rotated 90 de
 grees> <./images/ratio_plot_witherrors_gbdt.pdf, page is rotated 90 degrees>]
-<images/chisqvsmass_gbdt.pdf, id=1040, 569.12625pt x 385.44pt>
+<images/chisqvsmass_gbdt.pdf, id=1042, 569.12625pt x 385.44pt>
 File: images/chisqvsmass_gbdt.pdf Graphic file (type pdf)
 
 <use images/chisqvsmass_gbdt.pdf>
-Package pdftex.def Info: images/chisqvsmass_gbdt.pdf used on input line 1019.
+Package pdftex.def Info: images/chisqvsmass_gbdt.pdf used on input line 1046.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
 
-<images/toyMC_gbdt.pdf, id=1041, 569.12625pt x 385.44pt>
+<images/toyMC_gbdt.pdf, id=1043, 569.12625pt x 385.44pt>
 File: images/toyMC_gbdt.pdf Graphic file (type pdf)
 
 <use images/toyMC_gbdt.pdf>
-Package pdftex.def Info: images/toyMC_gbdt.pdf used on input line 1025.
+Package pdftex.def Info: images/toyMC_gbdt.pdf used on input line 1052.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
  [29 <./images/chisqvsmass_gbdt.pdf, page is rotated 90 degrees> <./images/toyM
 C_gbdt.pdf, page is rotated 90 degrees>]
-Overfull \hbox (43.85753pt too wide) in paragraph at lines 1045--1045
+Overfull \hbox (43.85753pt too wide) in paragraph at lines 1072--1072
 []\OT1/cmr/bx/n/17.28 Comparison of BDT - GBDT meth-ods/Results 
  []
 
-[30] <images/postbdtcut_200trees.pdf, id=1134, 569.12625pt x 385.44pt>
+[30] <images/postbdtcut_200trees.pdf, id=1136, 569.12625pt x 385.44pt>
 File: images/postbdtcut_200trees.pdf Graphic file (type pdf)
 
 <use images/postbdtcut_200trees.pdf>
-Package pdftex.def Info: images/postbdtcut_200trees.pdf used on input line 1102
+Package pdftex.def Info: images/postbdtcut_200trees.pdf used on input line 1129
 .
 (pdftex.def)             Requested size: 234.00238pt x 158.4784pt.
  [31 <./images/postbdtcut_200trees.pdf, page is rotated 90 degrees>]
@@ -662,11 +665,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2683 strings out of 494953
- 37922 string characters out of 6180978
- 92780 words of memory out of 5000000
- 5889 multiletter control sequences out of 15000+600000
- 13415 words of font info for 51 fonts, out of 8000000 for 9000
+ 2699 strings out of 494953
+ 38196 string characters out of 6180978
+ 92796 words of memory out of 5000000
+ 5905 multiletter control sequences out of 15000+600000
+ 16208 words of font info for 62 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,11n,26p,397b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
@@ -676,15 +679,17 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on MSc_dissertation.pdf (45 pages, 1224407 bytes).
+1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on MSc_dissertation.pdf (45 pages, 1188249 bytes).
 PDF statistics:
- 1239 PDF objects out of 1440 (max. 8388607)
- 563 compressed objects within 6 object streams
+ 1247 PDF objects out of 1440 (max. 8388607)
+ 569 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
  151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
