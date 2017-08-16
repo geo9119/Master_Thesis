@@ -649,7 +649,7 @@ constituents of the jets such as tracks and secondary vertices.
 
 For the calculation of the top squark mass I made use of the TMVA package which provides a multivariate 
 analysis platform in order (for this project) to make separation between the signal and the background. Two 
-of them were empoyed, used and compared: the \textit{Boosted Descision Trees} (BDT) and the 
+of them were employed, used and compared: the \textit{Boosted Descision Trees} (BDT) and the 
 \textit{Gradient Boosted Descision Trees} (GBDT).
 
 In this chapter I describe the Boosted Descision Trees method of classification and cite the results of this 
@@ -661,18 +661,27 @@ Before I explain what BDT's are, it would be beneficial to sketch what Descision
 
 Suppose we start with signal and background events described by a set of variables such as (in HEP) transverse 
 momenta, missing energy, etc. Then TMVA sorts all events by each variable and we choose the one that gives the
-best separation between signal and background. This is how the first node is made called root. Then, in the two branches 
+best separation between signal and background. This is how the first node is made called root node. 
+Then, in the two branches 
 that are made we repeat this procedure applying the best cut on each node until the splitting stops based on 
-some criterion. That is how the terminal node is reached which is called leaf~\cite{hoecker2007tmva}.
+some criterion. That is how the terminal node is reached which is called a leaf~\cite{hoecker2007tmva}.
+This results into a descision tree where all nodes, from root to leaf node, separate (cut) the input
+data into signal and background based on some criteria.
+
+The "learning" phase where the nodes are created is called training phase. After this, where the 
+nodes have been created, they are tested with a (not necessarily) new  data set in order to 
+check their efficiency. This is called the testing phase.
 
 One \textit{issue} that arises for Descision Trees is their instability in statistical fluctuations. If two 
 of the input variables have similar separation power then a fluctuation of the input sample may cause the 
 selection of one of the two variables disregarding the other, something that would not happen if the fluctuation
 was not present. This results in a totaly different tree structure.
 
-A way to circumvent this problem is to employ many different trees whose depth is small. They are called
+A way to circumvent this problem is to employ many different trees whose depth (number of nodes
+of each tree) is small. 
+They are called
 weak learners. The classification of the event comes from the majority vote of these weak learners (boosting).
-It is important to be noted that each tree is trainned with the same sample of input variables. That way not 
+It is important to be noted that each tree is trained with the same sample of input variables. That way not 
 only we reach better results in the possible presence of statistical fluctuations but we also avoid the 
 overtrainning of the trees.
 
