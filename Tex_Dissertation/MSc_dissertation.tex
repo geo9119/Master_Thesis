@@ -37,7 +37,7 @@
 \vspace*{0.1\textheight}
 
 \begin{center}
-        \huge{\bfseries Calculation of the Supersymmetric top quark mass at CLIC $e^{-}e^{+}$ collider.}\\
+        \huge{\bfseries Measurement of the Supersymmetric top quark mass at CLIC $e^{-}e^{+}$ collider.}\\
 \end{center}
 
 \bigskip
@@ -121,7 +121,7 @@ I also owe my gratitude to Alan Taylor (UoE) for his comments and his technical 
 project.
 
 Finally I would like to thank the CLICdp team that helped me. Especially
-to Dr. Philipp Roloff, Dr. Marco Petric, Dr. Ignacio Garcia and Dr. Andre Sailer (all based at CERN).
+Dr. Philipp Roloff, Dr. Marco Petric, Dr. Ignacio Garcia and Dr. Andre Sailer (all based at CERN).
 
 
 \end{titlepage}
@@ -130,27 +130,29 @@ to Dr. Philipp Roloff, Dr. Marco Petric, Dr. Ignacio Garcia and Dr. Andre Sailer
 
 \chapter{Introduction}
 
-On July 2012 the discovery of the Higgs boson was announced at CERN's Large Hadron Collider (LHC)~\cite{aad2012observation}. 
+On July 2012 the discovery of the Higgs boson was announced at CERN's Large Hadron Collider (LHC)~\cite{aad2012observation}
+~\cite{higgs1966spontaneous}. 
 This marked the begining of a new era for experimental High Energy Physics motivating the design of new 
 experiments for further and deeper exploration of the Higgs boson itself but also, a huge marathon
 addressing the questions/problems that arose with it. 
 
 One of these proposed experiments is Compact Linear Collider (CLIC), a high-luminosity linear $e^{-}$ $e^{+}$ collider. It is designed for a staging scenario of three main centre of mass energies at $\surd{s}$ = 380 GeV, $\surd{s}$ = 1.5 TeV
-and $\surd{s}$ = 3 TeV targeting optimal physics output based on the current landscape. The main difference of CLIC with LHC is that in the latter, protons collide which are non fundamental particles as they consist of quarks and 
+and $\surd{s}$ = 3 TeV targeting optimal physics output based on the current landscape~\cite{clic2016updated}. 
+The main difference of CLIC with LHC is that in the latter, protons collide which are non fundamental particles as they consist of quarks and 
 gluons bound alltogether. One of the disadvantages of LHC is the inability to know beforehand the initial state of the colliding particles as quarks exist in a "sea of gluons" making it impossible to know their momenta. This sets
 some restrictions with resprect to the precision that it can probe various observables.
 
-On the other hand, CLIC is designed to invastigate the interactions of elementary particles, an important advantage since initial states of the colliding particles is known. In advance, LHC suffers from energy loss due to 
+On the other hand, CLIC is designed to invastigate the interactions of elementary particles, an important advantage since initial states of the colliding particles is known. In addition, LHC suffers from energy loss due to 
 Synchrotron radiation since protons are accelerated in a 27 km circular accelerator whereas CLIC, being linear does not.
 
 The main targets of CLIC are dependent of the energy stage~\cite{clic2016updated}.
-In the first it will focus on prescision standard model physics such as Higgs and Top quark measurements and in the two subsequent, among others, there will be searches
+In the first it will focus on prescision standard model physics such as Higgs and top quark measurements and in the two subsequent, among others, there will be searches
 for new physics. One of the theories that aspires to give solutions to many of the problems of Standard Model is Supersymmetry (SUSY). In this theory every particle has a Supersymmetric partner that differs in the spin by $1/2$, thus 
 relating bosons with fermions and fermions with bosons~\cite{bilal2001introduction}.
 
-In the Minimal Supersymmetric Standard Model, the top squarks $\tilde{t}$ decay almost all the times into a top quark $t$
-and a dark matter candidate, the neutralino $\tilde{\chi}_{1}^{0}$. In this project I will use Multivariate Analisis
-to discriminate the best it can be achieved between signal and background with the goal to measure the top squark
+In the Minimal Supersymmetric Standard Model, the top squarks $\tilde{t}$ can decay into a top quark $t$
+and a dark matter candidate, the neutralino $\tilde{\chi}_{1}^{0}$. In this project I will use multivariate analysis
+to discriminat between signal and background with the goal to measure the top squark
 mass at $\surd{s}$ = 3 TeV in the CLIC accelerator environment.
 
 
@@ -175,7 +177,8 @@ are the dominant and can shed light to properties of the Higgs boson in a model 
 In CLIC there is also a dedicated program for top quark physics. This is because it is one of the most important particles
 in SM because it couples strongest to the Higgs field due to its mass but also it has an important role in 
 many of the BSM scenarios.
-Furthermore at the next two stages, leading role will play the proposed scenarios for physics BSM with most 
+Furthermore at the next two energy stages, investigations will be done with respect to 
+proposed scenarios for physics BSM with most 
 importantly Supersymmetry at $\surd s$ = 3 TeV and with $\mathcal{L}_{int}$ = 3000 fb$^{-1}$. This  is because CLIC has the potential for direct particle detection up to the 
 kinematic limit of $\surd s /2$ for pair production. Also through indirect detection of observables that are sensitive to BSM
 scenarios, precision measurements can be made, and comparison with the SM expectations can yield unexpected 
@@ -188,8 +191,8 @@ Given the linear nature of CLIC, there are no energy losses induced by Synchrotr
 circular colliders, but due Beamsstrahlung radiation. As the colliding bunches get closer to the 
 vertex, the strong electromagnetic fields (up to 10 Tesla) created by the opposing beam, cause deflection
 of the partices trajectories resulting to emit Synchrotron radiation. The effect is energy-dependent with huge
-impact at higher energies~\cite{bonvicini1989first} as it can be seen in the following 
-image~\cite{abramowicz2017higgs}.
+impact at higher energies~\cite{bonvicini1989first} as it can be seen in figure 
+2.1~\cite{abramowicz2017higgs}.
 
 \begin{figure}[h!]
   \centering
@@ -218,8 +221,8 @@ $\surd s$ (TeV)  & $\mathcal{L}_{int}$   \\ \hline % inserts single horizontal l
 \caption{}
 \end{table}
 
-Furthermore, the experiment has two detector concepts: CLIC SiD and CLIC ILD, in order to serve the required 
-jet energy resolution. The latter has been  developed for the International Linear Collinder but it has been
+Furthermore, the experiment has two detector concepts: CLIC SiD and CLIC ILD. 
+Both have been  developed for the International Linear Collinder but it has been
 adapted according to the needs of CLIC. Both detectors have strong central solenoid magnets creating an axial 
 magnetic field of 5T for CLIC SiD and 4T for CLI ILD~\cite{abramowicz2017higgs}.
 
@@ -229,14 +232,14 @@ magnetic field of 5T for CLIC SiD and 4T for CLI ILD~\cite{abramowicz2017higgs}.
 
 \section{Motivation}
 
-The model that describes elementary particle physics is the Standard Model~\cite{cheng1984gauge}.
-It involves matter  fields (fermions)
-and vector gauge bosons (force carriers) that they stem from the fact that the SM Lagrngian is subject to $SU(3) \otimes 
+The model that describes elementary particle physics is the Standard Model~\cite{cheng1984gauge}~\cite{weinberg1967model}.
+It involves matter fields (fermions)
+and vector gauge bosons (force carriers) that they stem from the fact that the SM Lagrangian is subject to $SU(3) \otimes 
 SU(2) \otimes U(1)$ symmetries. An important part of this theory is the existence of the Higgs field which appeared
 during the unification of the electromagnetic and the weak force. It is known for the fact that it "gives"
-mass to the elementary particles (besides photons and gluons which they are protected by the $U(1)$,$SU(3)$
+mass to the elementary particles (besides photons and gluons which they are protected by the $U(1)$, $SU(3)$
 unbreakable symmetries respectively)
-via Spontaneous Symmetry Breaking .
+via Spontaneous Symmetry Breaking.
 
 It is true that even with the great success that the SM has been probed does not consist a flawless theory.
 Many parts of it are still to be answered or contain significant controversies. One example is the Hierarchy 
@@ -260,13 +263,13 @@ where $\lambda$ is the constant of the Higgs self interaction. The problem arise
 order corrections to the mass of the Higgs field. The self energy of the higgs boson has a term of the form
 
 \begin{equation}
- \int_{}^{\Lambda} d^{4}k \quad f(k,external\quad momenta)
+ \int_{}^{\Lambda} d^{4}k \quad f(k,\textrm{external momenta})
 \end{equation}
 
 where $\Lambda$ represents the scale of the new physics such as the effects of quantum gravity. In dimensional 
 regularisation, when $\Lambda \rightarrow \infty$ the renormalisability of the theory assures that there
 is no inconsistency; but if we take into account a scale such as the quantum gravity, then $\Lambda \rightarrow 
-M_{P} \approx 1.2\times 10^{19}\quad \textrm{GeV}$ which is the Plank mass. In that case 
+M_{P} \approx 1.2\times 10^{19} \textrm{GeV}$ which is the Plank mass. In that case 
 the additive quantum corrections for the Higgs 
 mass become too big dragging the value of the Higgs mass up. Because the VEV of the Higgs boson has a fixed 
 phenomenologicaly value, one way to circumvent this problem is by relating bosons with fermions. 
@@ -317,11 +320,7 @@ W Boson & $W^{\pm}$ & Wino & $\tilde{W}^{\pm}$ \\ [1ex]
 \caption{}
 \end{table}
 
-The framework of this project is the Minimal Supersymmetric Standard Model which besides the SM particles 
-includes the sleptons $\tilde{\ell}^{\pm}$, the sneutrinos $\tilde{\nu}_{l}$, the squarks $\tilde{q}$, the 
-gluinos $\tilde{g}$, two pair of charginos $\tilde{\chi}^{\pm}_{i}$ where $i=1,2$ ,  four neutralinos 
-$\tilde{\chi}^{0}_{i}$, $i=1,...,4$ and five Higgs bosons $\tilde{h}^{0}$, $\tilde{H}^{0}$,
-$\tilde{A}^{0}$,$\tilde{H}^{\pm}$.
+The framework of this project is the Minimal Supersymmetric Standard Model. 
 
 Both particles and sparticles belong to the same super-multiplet having the same mass and the same quantum 
 numbers as their SM partners but with different spin. Because no such degenerate fermion-boson pair exists 
@@ -330,6 +329,11 @@ then it is deduced that SUSY must be a broken symmetry. In order to constitute a
 Hierarchy problem, the difference in the masses of the particles and their supersymmetric partners 
 must be of the order of $\mathcal{O}(1  TeV) $~\cite{nagashima2014beyond}.
 
+
+The MSSM includes the sleptons $\tilde{\ell}^{\pm}$, the sneutrinos $\tilde{\nu}_{l}$, the squarks $\tilde{q}$, the 
+gluinos $\tilde{g}$, two pair of charginos $\tilde{\chi}^{\pm}_{i}$ where $i=1,2$ ,  four neutralinos 
+$\tilde{\chi}^{0}_{i}$, $i=1,...,4$ and five Higgsinos $\tilde{h}^{0}$, $\tilde{H}^{0}$,
+$\tilde{A}^{0}$,$\tilde{H}^{\pm}$.
 In Standard Model, for the Spontaneous Symmetry Breaking one Higgs doublet is needed with 4 degrees of 
 freedom (complex). For the SUSY model on the other hand, two such doublets are required with a total of eight 
 degrees of freedom. The supersymmertric partners of the SM Higgs, the Higgsinos, mix with the Winos 
@@ -346,9 +350,10 @@ $\tilde{\chi}_{i}^{\pm}$.
 It is known that within the SM the fermions carry chirality denoted by L or R whether they are left or right 
 respectively, according to the way they transform under the symmetry group $SL(2,\mathbb{C})$. Thus given 
 the SUSY relation of fermions-bosons that means that the sfermions  (bosonic superpartners), come into 
-doublets of the form $(f_{i},\tilde{f}_{i})$, where i=L,R. The sfermions mix further to make the eigenstates
+doublets of the form (SM particle, SUSY partner), i.e.: $(f_{i},\tilde{f}_{i})$, where i=L,R. 
+The sfermions mix further to make the eigenstates
 of the mass matrix. This mixing is expected to be strong for third generation sfermions since the Yukawa 
-couplings can be large. More precisely in our case the stop quark mixing effects can be large because
+couplings can be large. More precisely in our case the top squark mixing effects can be large because
 of the large mass of the top quark.
 
 The following matrix is the mixing matrix expressed in the $(\tilde{f}_{L},\tilde{f}_{R})$ basis:
@@ -368,7 +373,7 @@ component of the weak isospin~\cite{simon2010techniques}.
 The off-diagonal elements $\alpha_{f}$, are dependent on the soft SUSY breaking
 trilinear scalar coupling parameters.
 
-In this project I will focous on the top squarks  where the mixing   $\tilde{t}_{R}-\tilde{t}_{L}$ is important
+In this project I will focus on the top squarks  where the mixing   $\tilde{t}_{R}-\tilde{t}_{L}$ is important
 due to the large top quark mass. By computing the eigenvalues of the previous matrix and for the right
 flavour, we obtain:
 
@@ -377,14 +382,14 @@ flavour, we obtain:
  \sqrt{(M^{2}_{\tilde{t}_{L}}-M^{2}_{\tilde{t}_{R}})^{2} + 4 m^{2}_{t}\alpha^{2}_{t}})
 \end{equation}
 
-It is obvious that the $m^{2}_{\tilde{t}_{1}}$ will have the lowest mass, something that makes it the 
-lightest squark.
+It is obvious that the $m^{2}_{\tilde{t}_{1}}$ will have the lowest mass, something that makes it
+probably the lightest squark.
 
 \section{Results from LHC for SUSY}
  
  The search for indications for Supersymmetry is not new as LHC has been optimized and focused among other
  to the direct or indirect detection of sparticles~\cite{chatrchyan2011search}.
-The majority of the cases that have been studied, consider as main decay channel of the sparticles 
+The majority of the cases that have been studied, consider as main decay channel of the squarks 
 the following:
  
  \begin{equation}
@@ -392,22 +397,25 @@ the following:
  \end{equation}
 
 So far thought no indication of SUSY has been found in LHC but through each analysis the exclusion limits 
-for the SUSY observables become bigger and bigger as it can be seen in the figure 3.1 that summarises
-the latest of them for the stop quark mass at $\surd s$ = 8/13 GeV in proton proton collisions
+for the SUSY observables become bigger and bigger. This can be seen in the figure 3.1 
+that summarises
+the latest exclusion limits for the top squark mass at $\surd s$ = 8/13 GeV in proton proton collisions
 ~\cite{aaboud2016search}.
+Whereas in the figure 3.2 are the latest exclusion limits in ATLAS for p-p collisions at 13 TeV in the gluino -
+stop plane.
 
-\begin{figure}[!hb]
+\begin{figure}[!h]
   \centering
-  \includegraphics[width=0.7\linewidth]{{images/ATLAS_SUSY_Stop_tLSP}.png}
+  \includegraphics[width=0.6\linewidth]{{images/ATLAS_SUSY_Stop_tLSP}.png}
   \label{fig2.15}
   \caption{\scriptsize{Mass exclusion limits at stop-neutralino plane (combined summary plot from ATLAS 
   twiki).}}
 \end{figure}
 
-Whereas in the figure 3.2 there are the latest exclusion limits in ATLAS for p-p collisions at 13 TeV in the gluino-
-stop plane.
+%Whereas in the figure 3.2 there are the latest exclusion limits in ATLAS for p-p collisions at 13 TeV in the gluino-
+%stop plane.
 
-\begin{figure}[ht!]
+\begin{figure}[h!]
   \centering
   \includegraphics[width=0.6\linewidth, scale=5]{{images/gluino}.png}
   \label{}
@@ -423,9 +431,9 @@ stop plane.
 \section{Introduction}
 
 In this chapter I will describe the exact conditions and methods that were followed in this project for the 
-calculation of the stop quark mass at CLIC Conceptual experiment.
+measurement of the stop quark mass at the CLIC Conceptual experiment.
 
-I will invedtigate the production of a pair of stop quarks at $\surd s$ = 3 TeV and assumig an  integrated 
+I investigate the production of a pair of top squarks at $\surd s$ = 3 TeV and assuming an  integrated 
 luminosity of $\mathcal{L}_{int}$ = 3000 fb$^{-1}$. The channel of interest is the following:
 
 \begin{equation}
@@ -433,8 +441,11 @@ luminosity of $\mathcal{L}_{int}$ = 3000 fb$^{-1}$. The channel of interest is t
  \rightarrow W^{+}W^{-}b\bar{b} \tilde{\chi}_{1}^{0} \tilde{\chi}_{1}^{0}
 \end{equation}
 
-and for this model the mass of the top squark is $m_{\tilde{t}}$ = 845 GeV whereas the mass of the 
-neutralino is $m_{\tilde{\chi}_{1}^{0}}$= 357 GeV. This is not the only possible decay of a top squark but it is the
+and for this model the mass of the top squark is $m_{\tilde{t}}$ = 845 GeV (denoted as $M_{nom}$ later
+in the text)
+whereas the mass of the 
+lightest neutralino is $m_{\tilde{\chi}_{1}^{0}}$= 357 GeV. This is not the only possible decay of a top 
+squark but it is the
 dominant one. In what follows I show the top three branching ratios of the top squark decay and two
 of the corresponding Feynmann diagrams:
 
@@ -455,7 +466,7 @@ of the corresponding Feynmann diagrams:
  \item BR($\tilde{t}\rightarrow t \tilde{\chi}_{2}^{0}$) = 13.2 \%
  \end{enumerate}
 
-As also the branching ratios for the decay of the W boson to either in a hadronic final state or in
+Also, the branching ratios for the decay of the W boson to either a hadronic final state or 
 a leptonic one are:
 
 \begin{itemize}
@@ -468,7 +479,7 @@ for each one:
 
 \begin{itemize}
  \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \tilde{\chi}_{1}^{0}
- \chi^{\pm}_{1}b \rightarrow
+ \tilde{\chi}^{\pm}_{1}b \rightarrow
  W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}$ \quad (35.8\%)
 
  \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t\bar{t} \tilde{\chi}_{1}^{0}
@@ -476,15 +487,15 @@ for each one:
  W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}$ \quad (27.4\%)
 
  \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t\bar{t} \tilde{\chi}_{1}^{0}
- \chi^{0}_{2} \rightarrow
+ \tilde{\chi}^{0}_{2} \rightarrow
  W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}h$ \quad (13.7\%)
  
- \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow b\bar{b} \chi_{1}^{+}
- \chi^{-}_{1} \rightarrow
+ \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow b\bar{b} \tilde{\chi}_{1}^{+}
+ \tilde{\chi}^{-}_{1} \rightarrow
  W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}$ \quad (11.6\%)
  
  \item $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \tilde{\chi}_{2}^{0}
- \chi^{\pm}_{1}b \rightarrow
+ \tilde{\chi}^{\pm}_{1}b \rightarrow
  W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}h$ \quad (9\%)
  
  \end{itemize}
@@ -492,14 +503,14 @@ for each one:
 
 \newpage
 
-\section{Calculation of SUSY particle masses}
+\section{Measurement of SUSY particle masses}
 
 There are various ways that have been developed for the calculation of the squark masses at electron-positron
 linear colliders. In this chapter I present one that will not be used in my analysis but sketch the potencial
 and thus the importance of the aforementioned colliders regarding these kind of calculations.
 
 The main topologies that are considered are those that the gluino is heavier than the squarks and thus the 
-dominant decaying channel is:
+dominant production and decay channel is:
 
 \begin{equation}
  e^{-}e^{+} \rightarrow \tilde{q} \tilde{\bar{q}} \rightarrow q\bar{q}\chi_{1}^{0}\chi_{1}^{0}
@@ -511,7 +522,8 @@ depending on the needs of the physical analysis.
 
 \subsection{Modified Invariant Mass}
 
-This technique has been developed initially for LHC experiment where the p-p collision energy is not known.
+This technique has been developed initially for LHC experiment where the energy that is used
+to make the squark - antisquark pair is not known.
 The calculation was achieved by creating the variable $M_{C}$ which is related to the standard 
 invariant mass but it's invariance comes from contra linear boosts of equal magnitude. The squark mass is given
 by:
@@ -523,7 +535,7 @@ by:
 where 
 
 \begin{equation}
- M_{C}^{2}=2(E_{q,1}E_{q,2}+\vec{p}_{q,1}\vec{p}_{q,2})
+ M_{C}^{2}=2(E_{q,1}E_{q,2}+\vec{p}_{q,1}\cdot \vec{p}_{q,2})
 \end{equation}
 
 and
@@ -535,15 +547,22 @@ and
 The power off this kind of calculation comes from the fact that no knowledge for the exact center of mass 
 energy is needed (In comparison with the first method described in~\cite{simon2010techniques}), something that is not purely known since the effects of initial state radiation and
 the Beamstrahlung can distort it significantly resulting to even bigger uncertainties. Note that this method 
-assumes that the mass of the neutralino is known and that the quark is massless. 
+assumes that the mass of the neutralino is known and that the quark is massless and therefore
+unsuitable for the mass measurement of the top squark. 
 
 \section{Minimisaton of $\chi^{2}$ Method}
 
 In this chapter I describe the procedure that I followed until the calculation of the top squark mass. 
-This involved the vertex finding, the jet clustering, the flavourtagging and the calculation of the $\chi^{2}$
+This involved vertex finding, jet clustering, flavour tagging and the calculation of the $\chi^{2}$
 for each template of the top squark mass.
 
 \subsection{Vertex Finding}
+
+The point that particles collide in a collider experiment is called primary vertex or interaction 
+point (IP). After that 
+collision, it is possible that some of the particles will decay further away from the IP. The point 
+that this decay takes place is called secondary vertex. Every analysis that involves jet clustering
+procedure (and not only) has as starting point the vertex finding. This involves an algorithm 
 
 For the needs of this projecct I used the package of LCFIplus which is an improved software of the already 
 existing one LCFIVertex. The important difference between the  two is that LCFIplus employs the vertex finding 

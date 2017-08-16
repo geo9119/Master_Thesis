@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {3.3}Results from LHC for SUSY}{8}
 \contentsline {chapter}{\numberline {4}Methods}{10}
 \contentsline {section}{\numberline {4.1}Introduction}{10}
-\contentsline {section}{\numberline {4.2}Calculation of SUSY particle masses}{12}
+\contentsline {section}{\numberline {4.2}Measurement of SUSY particle masses}{12}
 \contentsline {subsection}{\numberline {4.2.1}Modified Invariant Mass}{12}
 \contentsline {section}{\numberline {4.3}Minimisaton of $\chi ^{2}$ Method}{13}
 \contentsline {subsection}{\numberline {4.3.1}Vertex Finding}{13}

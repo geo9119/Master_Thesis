@@ -3,49 +3,49 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: MSc_dissertation.aux
 The style file: unsrt.bst
 Database file #1: MSc_dissertation.bib
-Warning--empty journal in cheng1984gauge
-Warning--empty institution in simon2010techniques
 Warning--empty booktitle in atlassearch
 Warning--empty year in atlassearch
-You've used 18 entries,
+Warning--empty journal in cheng1984gauge
+Warning--empty institution in simon2010techniques
+You've used 20 entries,
             1791 wiz_defined-function locations,
-            550 strings with 7100 characters,
-and the built_in function-call counts, 4269 in all, are:
-= -- 308
-> -- 306
+            565 strings with 7278 characters,
+and the built_in function-call counts, 4633 in all, are:
+= -- 340
+> -- 314
 < -- 2
-+ -- 110
-- -- 92
-* -- 329
-:= -- 750
-add.period$ -- 54
-call.type$ -- 18
-change.case$ -- 18
++ -- 114
+- -- 94
+* -- 355
+:= -- 810
+add.period$ -- 60
+call.type$ -- 20
+change.case$ -- 20
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 171
-empty$ -- 365
-format.name$ -- 92
-if$ -- 894
+cite$ -- 24
+duplicate$ -- 189
+empty$ -- 407
+format.name$ -- 94
+if$ -- 974
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 18
-newline$ -- 93
-num.names$ -- 18
-pop$ -- 50
+int.to.str$ -- 20
+missing$ -- 20
+newline$ -- 103
+num.names$ -- 20
+pop$ -- 52
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 68
+skip$ -- 74
 stack$ -- 0
-substring$ -- 193
-swap$ -- 29
+substring$ -- 217
+swap$ -- 31
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 33
-width$ -- 20
-write$ -- 191
+while$ -- 37
+width$ -- 22
+write$ -- 213
 (There were 4 warnings)

@@ -1,11 +1,22 @@
 \begin{thebibliography}{10}
 
+\bibitem{atlassearch}
+ATLAS collaboration et~al.
+\newblock Search for a scalar partner of the top quark in the jets+ etmiss
+  final state at√ s= 13 tev with the atlas detector.
+\newblock ATLAS-CONF-2017-020.
+
 \bibitem{aad2012observation}
 Georges Aad, T~Abajyan, B~Abbott, J~Abdallah, S~Abdel Khalek, AA~Abdelalim,
   O~Abdinov, R~Aben, B~Abi, M~Abolins, et~al.
 \newblock Observation of a new particle in the search for the standard model
   higgs boson with the atlas detector at the lhc.
 \newblock {\em Physics Letters B}, 716(1):1--29, 2012.
+
+\bibitem{higgs1966spontaneous}
+Peter~W Higgs.
+\newblock Spontaneous symmetry breakdown without massless bosons.
+\newblock {\em Physical Review}, 145(4):1156, 1966.
 
 \bibitem{clic2016updated}
 The CLIC, MJ~Boland, U~Felzmann, PJ~Giansiracusa, TG~Lucas, RP~Rassool,
@@ -33,6 +44,11 @@ H~Abramowicz, A~Abusleme, K~Afanaciev, N~Alipour Tehrani, C~Bal{\'a}zs,
 Ta-Pei Cheng, Ling-Fong Li, and Ta-Pei Cheng.
 \newblock Gauge theory of elementary particle physics.
 \newblock 1984.
+
+\bibitem{weinberg1967model}
+Steven Weinberg.
+\newblock A model of leptons.
+\newblock {\em Physical review letters}, 19(21):1264, 1967.
 
 \bibitem{aitchison2005supersymmetry}
 Ian~JR Aitchison.
@@ -65,12 +81,6 @@ Morad Aaboud, G~Aad, B~Abbott, J~Abdallah, O~Abdinov, B~Abeloos, R~Aben,
   jets, and missing transverse momentum in s= 13 tev p p collisions with the
   atlas detector.
 \newblock {\em Physical Review D}, 94(5):052009, 2016.
-
-\bibitem{atlassearch}
-ATLAS collaboration et~al.
-\newblock Search for a scalar partner of the top quark in the jets+ etmiss
-  final state at√ s= 13 tev with the atlas detector.
-\newblock ATLAS-CONF-2017-020.
 
 \bibitem{suehara2016lcfiplus}
 Taikan Suehara and Tomohiko Tanabe.

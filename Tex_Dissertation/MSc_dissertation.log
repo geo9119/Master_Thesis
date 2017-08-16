@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.2)  15 AUG 2017 20:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.2)  16 AUG 2017 19:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -273,7 +273,7 @@ Chapter 1.
 ] [2]
 Chapter 2.
 
-Overfull \hbox (4.30424pt too wide) in paragraph at lines 187--193
+Overfull \hbox (4.30424pt too wide) in paragraph at lines 190--196
 \OT1/cmr/m/n/12 chrotron ra-di-a-tion which ap-pears in cir-cu-lar col-lid-ers,
  but due Beamsstrahlung
  []
@@ -284,14 +284,14 @@ Overfull \hbox (4.30424pt too wide) in paragraph at lines 187--193
 File: images/beamsstrahlung.png Graphic file (type png)
 
 <use images/beamsstrahlung.png>
-Package pdftex.def Info: images/beamsstrahlung.png used on input line 196.
+Package pdftex.def Info: images/beamsstrahlung.png used on input line 199.
 (pdftex.def)             Requested size: 272.99881pt x 216.80954pt.
  [4 <./images/beamsstrahlung.png>]
 Chapter 3.
 
-Overfull \hbox (7.85976pt too wide) in paragraph at lines 232--240
+Overfull \hbox (22.87349pt too wide) in paragraph at lines 235--243
 \OT1/cmr/m/n/12 The model that de-scribes el-e-men-tary par-ti-cle physics is t
-he Stan-dard Model [[]].
+he Stan-dard Model [[]] [[]].
  []
 
 [5
@@ -301,7 +301,7 @@ File: images/PWOct14gates-fig2-full.jpg Graphic file (type jpg)
 
 <use images/PWOct14gates-fig2-full.jpg>
 Package pdftex.def Info: images/PWOct14gates-fig2-full.jpg used on input line 2
-89.
+92.
 (pdftex.def)             Requested size: 234.00238pt x 147.61723pt.
  [6 <./images/PWOct14gates-fig2-full.jpg>] [7]
 
@@ -311,7 +311,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.358  \[
+l.363  \[
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -320,7 +320,7 @@ or  <return>  to continue without it.
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.363 \]
+l.368 \]
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -329,13 +329,13 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-! LaTeX Error: \begin{equation} on input line 356 ended by \end{equation*}.
+! LaTeX Error: \begin{equation} on input line 361 ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.363 \]
+l.368 \]
         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -348,7 +348,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.364 \end{equation}
+l.369 \end{equation}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -361,7 +361,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.364 \end{equation}
+l.369 \end{equation}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -370,7 +370,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.364 \end{equation}
+l.369 \end{equation}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -381,7 +381,7 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.364 \end{equation}
+l.369 \end{equation}
                     
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
@@ -389,7 +389,7 @@ So I shall assume that you typed `$$' both times.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.364 \end{equation}
+l.369 \end{equation}
                     
 Things are pretty mixed up, but I think the worst is over.
 
@@ -397,41 +397,41 @@ Things are pretty mixed up, but I think the worst is over.
 File: images/ATLAS_SUSY_Stop_tLSP.png Graphic file (type png)
 
 <use images/ATLAS_SUSY_Stop_tLSP.png>
-Package pdftex.def Info: images/ATLAS_SUSY_Stop_tLSP.png used on input line 401
+Package pdftex.def Info: images/ATLAS_SUSY_Stop_tLSP.png used on input line 409
 .
-(pdftex.def)             Requested size: 272.99881pt x 247.18066pt.
-
-<images/gluino.png, id=83, 1976.38374pt x 1903.11pt>
+(pdftex.def)             Requested size: 234.00238pt x 211.88483pt.
+ [8]
+<images/gluino.png, id=86, 1976.38374pt x 1903.11pt>
 File: images/gluino.png Graphic file (type png)
  <use images/gluino.png>
-Package pdftex.def Info: images/gluino.png used on input line 412.
+Package pdftex.def Info: images/gluino.png used on input line 420.
 (pdftex.def)             Requested size: 9881.89468pt x 9515.52689pt.
 
-[8] [9 <./images/ATLAS_SUSY_Stop_tLSP.png> <./images/gluino.png>]
+[9 <./images/ATLAS_SUSY_Stop_tLSP.png> <./images/gluino.png>]
 Chapter 4.
 <images/feyn1.png, id=93, 416.30531pt x 284.56313pt>
 File: images/feyn1.png Graphic file (type png)
  <use images/feyn1.png>
-Package pdftex.def Info: images/feyn1.png used on input line 443.
+Package pdftex.def Info: images/feyn1.png used on input line 454.
 (pdftex.def)             Requested size: 155.99762pt x 106.63275pt.
 
 <images/feyn2.png, id=94, 392.96812pt x 262.73157pt>
 File: images/feyn2.png Graphic file (type png)
  <use images/feyn2.png>
-Package pdftex.def Info: images/feyn2.png used on input line 445.
+Package pdftex.def Info: images/feyn2.png used on input line 456.
 (pdftex.def)             Requested size: 155.99762pt x 104.29698pt.
 
 [10
 
  <./images/feyn1.png> <./images/feyn2.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 462.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 473.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 462.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 473.
  [11] [12] [13]
 [14] [15] [16]
 <images/cutefficiences_1000trees2.pdf, id=120, 569.12625pt x 420.57124pt>
@@ -439,15 +439,15 @@ File: images/cutefficiences_1000trees2.pdf Graphic file (type pdf)
 
 <use images/cutefficiences_1000trees2.pdf>
 Package pdftex.def Info: images/cutefficiences_1000trees2.pdf used on input lin
-e 691.
+e 704.
 (pdftex.def)             Requested size: 234.00238pt x 172.92305pt.
 
 <images/BDT_output_intlum3000.pdf, id=121, 569.12625pt x 385.44pt>
 File: images/BDT_output_intlum3000.pdf Graphic file (type pdf)
 
 <use images/BDT_output_intlum3000.pdf>
-Package pdftex.def Info: images/BDT_output_intlum3000.pdf used on input line 69
-6.
+Package pdftex.def Info: images/BDT_output_intlum3000.pdf used on input line 70
+9.
 (pdftex.def)             Requested size: 234.00238pt x 158.4784pt.
  [17 <./images/cutefficiences_1000trees2.pdf, page is rotated 90 degrees> <./im
 ages/BDT_output_intlum3000.pdf, page is rotated 90 degrees>]
@@ -455,18 +455,18 @@ ages/BDT_output_intlum3000.pdf, page is rotated 90 degrees>]
 File: images/thetamiss_report.pdf Graphic file (type pdf)
 
 <use images/thetamiss_report.pdf>
-Package pdftex.def Info: images/thetamiss_report.pdf used on input line 717.
+Package pdftex.def Info: images/thetamiss_report.pdf used on input line 730.
 (pdftex.def)             Requested size: 195.0pt x 147.88565pt.
 
 <images/missingptpfo_report.pdf, id=212, 569.12625pt x 431.6125pt>
 File: images/missingptpfo_report.pdf Graphic file (type pdf)
 
 <use images/missingptpfo_report.pdf>
-Package pdftex.def Info: images/missingptpfo_report.pdf used on input line 722.
+Package pdftex.def Info: images/missingptpfo_report.pdf used on input line 735.
 
 (pdftex.def)             Requested size: 195.0pt x 147.88565pt.
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 716--725
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 729--738
 []$[]$  $[]$ 
  []
 
@@ -474,17 +474,17 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 716--725
 File: images/deltaphi_report.pdf Graphic file (type pdf)
 
 <use images/deltaphi_report.pdf>
-Package pdftex.def Info: images/deltaphi_report.pdf used on input line 729.
+Package pdftex.def Info: images/deltaphi_report.pdf used on input line 742.
 (pdftex.def)             Requested size: 195.0pt x 147.88565pt.
 
 <images/costhetatopmax.pdf, id=214, 569.12625pt x 431.6125pt>
 File: images/costhetatopmax.pdf Graphic file (type pdf)
 
 <use images/costhetatopmax.pdf>
-Package pdftex.def Info: images/costhetatopmax.pdf used on input line 734.
+Package pdftex.def Info: images/costhetatopmax.pdf used on input line 747.
 (pdftex.def)             Requested size: 195.0pt x 147.88565pt.
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 728--737
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 741--750
 []$[]$  $[]$ 
  []
 
@@ -495,15 +495,15 @@ grees>] <images/E_jjj.pdf, id=391, 569.12625pt x 431.6125pt>
 File: images/E_jjj.pdf Graphic file (type pdf)
 
 <use images/E_jjj.pdf>
-Package pdftex.def Info: images/E_jjj.pdf used on input line 749.
+Package pdftex.def Info: images/E_jjj.pdf used on input line 762.
 (pdftex.def)             Requested size: 272.99881pt x 207.04651pt.
 
 <images/ratio_plot_witherrors.pdf, id=392, 569.12625pt x 385.44pt>
 File: images/ratio_plot_witherrors.pdf Graphic file (type pdf)
 
 <use images/ratio_plot_witherrors.pdf>
-Package pdftex.def Info: images/ratio_plot_witherrors.pdf used on input line 75
-6.
+Package pdftex.def Info: images/ratio_plot_witherrors.pdf used on input line 76
+9.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
  [19 <./images/E_jjj.pdf, page is rotated 90 degrees> <./images/ratio_plot_with
 errors.pdf, page is rotated 90 degrees>]
@@ -511,7 +511,7 @@ errors.pdf, page is rotated 90 degrees>]
 File: images/ratio_plot_SMbackground_witherrors.pdf Graphic file (type pdf)
 <use images/ratio_plot_SMbackground_witherrors.pdf>
 Package pdftex.def Info: images/ratio_plot_SMbackground_witherrors.pdf used on 
-input line 774.
+input line 787.
 (pdftex.def)             Requested size: 234.00238pt x 158.4784pt.
 
 <images/ratio_plot_susybg_witherrors.pdf, id=484, 569.12625pt x 385.44pt>
@@ -519,10 +519,10 @@ File: images/ratio_plot_susybg_witherrors.pdf Graphic file (type pdf)
 
 <use images/ratio_plot_susybg_witherrors.pdf>
 Package pdftex.def Info: images/ratio_plot_susybg_witherrors.pdf used on input 
-line 779.
+line 792.
 (pdftex.def)             Requested size: 234.00238pt x 158.4784pt.
 
-Overfull \hbox (80.61584pt too wide) in paragraph at lines 773--782
+Overfull \hbox (80.61584pt too wide) in paragraph at lines 786--795
 []$[]$  $[]$ 
  []
 
@@ -532,7 +532,7 @@ s> <./images/ratio_plot_susybg_witherrors.pdf, page is rotated 90 degrees>]
 File: images/prebdtcut.pdf Graphic file (type pdf)
 
 <use images/prebdtcut.pdf>
-Package pdftex.def Info: images/prebdtcut.pdf used on input line 794.
+Package pdftex.def Info: images/prebdtcut.pdf used on input line 807.
 (pdftex.def)             Requested size: 272.99881pt x 207.04651pt.
 
 <images/postbdtcut_intlumi3000.pdf, id=575, 569.12625pt x 385.44pt>
@@ -540,11 +540,11 @@ File: images/postbdtcut_intlumi3000.pdf Graphic file (type pdf)
 
 <use images/postbdtcut_intlumi3000.pdf>
 Package pdftex.def Info: images/postbdtcut_intlumi3000.pdf used on input line 8
-00.
+13.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
  [21 <./images/prebdtcut.pdf, page is rotated 90 degrees> <./images/postbdtcut_
 intlumi3000.pdf, page is rotated 90 degrees>]
-Overfull \hbox (4.39215pt too wide) in paragraph at lines 811--821
+Overfull \hbox (4.39215pt too wide) in paragraph at lines 824--834
  [][] 
  []
 
@@ -553,14 +553,14 @@ File: images/chisqvsmass_intlumi3000.pdf Graphic file (type pdf)
 
 <use images/chisqvsmass_intlumi3000.pdf>
 Package pdftex.def Info: images/chisqvsmass_intlumi3000.pdf used on input line 
-868.
+881.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
 
 <images/toyMC_intlumi3000.pdf, id=670, 569.12625pt x 385.44pt>
 File: images/toyMC_intlumi3000.pdf Graphic file (type pdf)
 
 <use images/toyMC_intlumi3000.pdf>
-Package pdftex.def Info: images/toyMC_intlumi3000.pdf used on input line 882.
+Package pdftex.def Info: images/toyMC_intlumi3000.pdf used on input line 895.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
  [23 <./images/chisqvsmass_intlumi3000.pdf, page is rotated 90 degrees> <./imag
 es/toyMC_intlumi3000.pdf, page is rotated 90 degrees>] [24] [25]
@@ -569,18 +569,18 @@ File: images/cutefficiency_bdtg_new.pdf Graphic file (type pdf)
 
 <use images/cutefficiency_bdtg_new.pdf>
 Package pdftex.def Info: images/cutefficiency_bdtg_new.pdf used on input line 9
-52.
+65.
 (pdftex.def)             Requested size: 272.99881pt x 201.74997pt.
  [26 <./images/cutefficiency_bdtg_new.pdf, page is rotated 90 degrees>]
 <images/postbdtcut_bdtg_3000.pdf, id=814, 569.12625pt x 385.44pt>
 File: images/postbdtcut_bdtg_3000.pdf Graphic file (type pdf)
 
 <use images/postbdtcut_bdtg_3000.pdf>
-Package pdftex.def Info: images/postbdtcut_bdtg_3000.pdf used on input line 975
+Package pdftex.def Info: images/postbdtcut_bdtg_3000.pdf used on input line 988
 .
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
 
-Overfull \hbox (4.39215pt too wide) in paragraph at lines 981--991
+Overfull \hbox (4.39215pt too wide) in paragraph at lines 994--1004
  [][] 
  []
 
@@ -588,7 +588,7 @@ Overfull \hbox (4.39215pt too wide) in paragraph at lines 981--991
 File: images/GBDT_output.pdf Graphic file (type pdf)
 
 <use images/GBDT_output.pdf>
-Package pdftex.def Info: images/GBDT_output.pdf used on input line 997.
+Package pdftex.def Info: images/GBDT_output.pdf used on input line 1010.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
  [27 <./images/postbdtcut_bdtg_3000.pdf, page is rotated 90 degrees> <./images/
 GBDT_output.pdf, page is rotated 90 degrees>]
@@ -598,7 +598,7 @@ File: images/ratio_plot_SMbackground_witherrors_gbdt.pdf Graphic file (type pdf
 )
  <use images/ratio_plot_SMbackground_witherrors_gbdt.pdf>
 Package pdftex.def Info: images/ratio_plot_SMbackground_witherrors_gbdt.pdf use
-d on input line 1012.
+d on input line 1025.
 (pdftex.def)             Requested size: 234.00238pt x 158.4784pt.
 
 <images/ratio_plot_susybg_witherrors_gbdt.pdf, id=907, 569.12625pt x 385.44pt>
@@ -606,10 +606,10 @@ File: images/ratio_plot_susybg_witherrors_gbdt.pdf Graphic file (type pdf)
 
 <use images/ratio_plot_susybg_witherrors_gbdt.pdf>
 Package pdftex.def Info: images/ratio_plot_susybg_witherrors_gbdt.pdf used on i
-nput line 1017.
+nput line 1030.
 (pdftex.def)             Requested size: 234.00238pt x 158.4784pt.
 
-Overfull \hbox (80.61584pt too wide) in paragraph at lines 1011--1020
+Overfull \hbox (80.61584pt too wide) in paragraph at lines 1024--1033
 []$[]$  $[]$ 
  []
 
@@ -618,7 +618,7 @@ File: images/ratio_plot_witherrors_gbdt.pdf Graphic file (type pdf)
 
 <use images/ratio_plot_witherrors_gbdt.pdf>
 Package pdftex.def Info: images/ratio_plot_witherrors_gbdt.pdf used on input li
-ne 1026.
+ne 1039.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
  [28 <./images/ratio_plot_SMbackground_witherrors_gbdt.pdf, page is rotated 90 
 degrees> <./images/ratio_plot_susybg_witherrors_gbdt.pdf, page is rotated 90 de
@@ -627,18 +627,18 @@ grees> <./images/ratio_plot_witherrors_gbdt.pdf, page is rotated 90 degrees>]
 File: images/chisqvsmass_gbdt.pdf Graphic file (type pdf)
 
 <use images/chisqvsmass_gbdt.pdf>
-Package pdftex.def Info: images/chisqvsmass_gbdt.pdf used on input line 1047.
+Package pdftex.def Info: images/chisqvsmass_gbdt.pdf used on input line 1060.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
 
 <images/toyMC_gbdt.pdf, id=1043, 569.12625pt x 385.44pt>
 File: images/toyMC_gbdt.pdf Graphic file (type pdf)
 
 <use images/toyMC_gbdt.pdf>
-Package pdftex.def Info: images/toyMC_gbdt.pdf used on input line 1053.
+Package pdftex.def Info: images/toyMC_gbdt.pdf used on input line 1066.
 (pdftex.def)             Requested size: 272.99881pt x 184.89735pt.
  [29 <./images/chisqvsmass_gbdt.pdf, page is rotated 90 degrees> <./images/toyM
 C_gbdt.pdf, page is rotated 90 degrees>]
-Overfull \hbox (43.85753pt too wide) in paragraph at lines 1073--1073
+Overfull \hbox (43.85753pt too wide) in paragraph at lines 1086--1086
 []\OT1/cmr/bx/n/17.28 Comparison of BDT - GBDT meth-ods/Results 
  []
 
@@ -646,7 +646,7 @@ Overfull \hbox (43.85753pt too wide) in paragraph at lines 1073--1073
 File: images/postbdtcut_200trees.pdf Graphic file (type pdf)
 
 <use images/postbdtcut_200trees.pdf>
-Package pdftex.def Info: images/postbdtcut_200trees.pdf used on input line 1130
+Package pdftex.def Info: images/postbdtcut_200trees.pdf used on input line 1143
 .
 (pdftex.def)             Requested size: 234.00238pt x 158.4784pt.
  [31 <./images/postbdtcut_200trees.pdf, page is rotated 90 degrees>]
@@ -657,22 +657,22 @@ Chapter 5.
 Chapter 6.
 [33
 
-] (./MSc_dissertation.bbl [34
-
-]
+] (./MSc_dissertation.bbl
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no š in font cmr12!
-) [35] (./MSc_dissertation.aux)
+ [34
+
+] [35]) [36] (./MSc_dissertation.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2700 strings out of 494953
- 38209 string characters out of 6180978
- 92800 words of memory out of 5000000
- 5906 multiletter control sequences out of 15000+600000
+ 2702 strings out of 494953
+ 38250 string characters out of 6180978
+ 92808 words of memory out of 5000000
+ 5908 multiletter control sequences out of 15000+600000
  16208 words of font info for 62 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,11n,26p,397b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -690,10 +690,10 @@ sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MSc_dissertation.pdf (45 pages, 1188665 bytes).
+Output written on MSc_dissertation.pdf (46 pages, 1189106 bytes).
 PDF statistics:
- 1247 PDF objects out of 1440 (max. 8388607)
- 569 compressed objects within 6 object streams
+ 1250 PDF objects out of 1440 (max. 8388607)
+ 571 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
  151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
