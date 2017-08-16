@@ -559,15 +559,32 @@ for each template of the top squark mass.
 \subsection{Vertex Finding}
 
 The point that particles collide in a collider experiment is called primary vertex or interaction 
-point (IP). After that 
+point (IP). After the 
 collision, it is possible that some of the particles will decay further away from the IP. The point 
-that this decay takes place is called secondary vertex.
+that this decay takes place is called secondary vertex. Every analysis that involves jet clustering
+procedure (and not only) has as starting point the vertex finding. This involves an algorithm that 
+classifies the tracks of the particles into vertex candidates (vertex finding) and "passes it on"
+to the vertex fitting  algorithm. In turn, the latter, takes the vertex candidates and outputs a
+list of vertices with their position using the $\chi^{2}$ or a related statistical method. 
+Additionally, it yields a set of parameters that are related to each particular production point.
+
+The reasons of why an accurate vertex finding is important are:
+
+\begin{itemize}
+ \item Information can be exctracted about short lived particles such as their decay length.
+ \item There can be improvement with respect to momentum estimate of the particles involved in each 
+ vertex.
+ \item Reconstruction can be achieved for short lived particles by its decay products by fitting them
+ into one particular vertex.
+\end{itemize}
+
+
 
 For the needs of this projecct I used the package of LCFIplus which is an improved software of the already 
 existing one LCFIVertex. The important difference between the  two is that LCFIplus employs the vertex finding 
 before the jet clustering (in comparison to LCFIVertex which follows the exact opposite procedure) with the 
-goal to protect the secondadry vertices from breaking up and grouped into different jets~\cite{suehara2016lcfiplus}.
-This is an important step towards better performance since the Bottom jets can be identified from their 
+goal to protect the secondary vertices from breaking up and grouped into different jets~\cite{suehara2016lcfiplus}.
+This is an important step towards better performance since the bottom jets can be identified from their 
 sufficiently large distance between the primary vertex and their decay vertex. Additionally, the importance
 of this step to be performed before jet clustering, is that hadrons that contain bottom or charm quarks 
 have sizeable lifetimes and they can be measured inside the detector~\cite{suehara2016lcfiplus}.
@@ -583,7 +600,7 @@ serve the need of approaching the initial parton that they originated. Throught 
 have been developed for the clustering of such objects differing in the way that they approach such procedure.
 Two of the most famous are the sequential recombination algorithms and cone algorithms. In this projecct I use
 the a sequential recombination algorithm, the $k_{t}$ algorithm which is a longitudinaly invariant algorithm
-firstly designed for hadron colliders.
+firstly designed for hadron colliders~\cite{catani1993longitudinally}.
 
 The $k_{t}$ involves a measure of distance $d_{ij}$ for all the pair of particles $i,j$:
 

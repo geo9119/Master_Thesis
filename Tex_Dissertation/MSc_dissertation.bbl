@@ -89,6 +89,17 @@ Taikan Suehara and Tomohiko Tanabe.
   Accelerators, Spectrometers, Detectors and Associated Equipment},
   808:109--116, 2016.
 
+\bibitem{catani1993longitudinally}
+Stefano Catani, Yu~L Dokshitzer, Michael~H Seymour, and Bryan~R Webber.
+\newblock Longitudinally-invariant k⊥-clustering algorithms for hadron-hadron
+  collisions.
+\newblock {\em Nuclear Physics B}, 406(1-2):187--224, 1993.
+
+\bibitem{ellis1993successive}
+Stephen~D Ellis and Davison~E Soper.
+\newblock Successive combination jet algorithm for hadron collisions.
+\newblock {\em Physical Review D}, 48(7):3160, 1993.
+
 \bibitem{cacciari2012fastjet}
 Matteo Cacciari, Gavin~P Salam, and Gregory Soyez.
 \newblock Fastjet user manual.

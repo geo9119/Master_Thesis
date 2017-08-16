@@ -5,28 +5,28 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Mass exclusion limits at stop-neutralino plane (combined summary plot from ATLAS twiki).}}}{9}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Mass exclusion limits at stop-gluino plane\nobreakspace {}\cite {atlassearch}.}}}{9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The green line represents the statistical significance $\frac {S}{\sqrt {S+B}}$ where as it can be seen it reaches the greatest value at -0.0238. The cut is also known as descision boundary and defines the critical region.}}}{17}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The BDT output for the signal and the two backgrounds. The y axis has a log scale.}}}{17}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Polar angle of the missing momentum of the jets}}}{18}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Missing transverse momentum}}}{18}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The angle between the reconstructed tops}}}{18}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {cos$\theta _{top}$}}}{18}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The energy of the top quark. For higher energies there are less entries per bin, something that is connected with the effect of Beamsstrahlung radiadion that is manifested mainly in higher energies.}}}{19}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {}}}{19}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The Standard Model Background Efficiency}}}{20}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The SUSY Background Efficiency}}}{20}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Signal, SM background and SUSY background before the TMVA application. It is a stacked histogram with log y axis.}}}{21}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Signal, SM background and SUSY background after the TMVA application, again stacked.}}}{21}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The $\chi ^{2}$ versus the different top squark mass templates. The minimum is at 839 GeV/c$^{2}$.}}}{23}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Toy Monte carlo method that yielded an uncertainty of 11 GeV.}}}{23}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The green line represents the statistical significance $\frac {S}{\sqrt {S+B}}$ where as it can be seen it reaches the greatest value (7.68) at -0.0606. The cut is also known as descision boundary and defines the critical region.}}}{26}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Energy of the three jets after the $cut_{GBDT}$.}}}{27}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The GBDT output for the signal (blue), SUSY background (red) and SM background (green).}}}{27}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The Standard Model Background Efficiency for the GBDT method.}}}{28}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The SUSY Background Efficiency for the GBDT method.}}}{28}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The signal efficiency for the GBDT method.}}}{28}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The $\chi ^{2}$ versus the different mass templates. The minimum is at 811 GeV/$c^{2}$.}}}{29}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The resulting uncertaity from the toy Monte Carlo method is 15 GeV.}}}{29}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The signal and the two backgrounds after the BDT cuts for the case of 200 trees.}}}{31}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The green line represents the statistical significance $\frac {S}{\sqrt {S+B}}$ where as it can be seen it reaches the greatest value at -0.0238. The cut is also known as descision boundary and defines the critical region.}}}{18}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The BDT output for the signal and the two backgrounds. The y axis has a log scale.}}}{18}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Polar angle of the missing momentum of the jets}}}{19}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Missing transverse momentum}}}{19}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The angle between the reconstructed tops}}}{19}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {cos$\theta _{top}$}}}{19}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The energy of the top quark. For higher energies there are less entries per bin, something that is connected with the effect of Beamsstrahlung radiadion that is manifested mainly in higher energies.}}}{20}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {}}}{20}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The Standard Model Background Efficiency}}}{21}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The SUSY Background Efficiency}}}{21}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Signal, SM background and SUSY background before the TMVA application. It is a stacked histogram with log y axis.}}}{22}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Signal, SM background and SUSY background after the TMVA application, again stacked.}}}{22}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The $\chi ^{2}$ versus the different top squark mass templates. The minimum is at 839 GeV/c$^{2}$.}}}{24}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Toy Monte carlo method that yielded an uncertainty of 11 GeV.}}}{24}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The green line represents the statistical significance $\frac {S}{\sqrt {S+B}}$ where as it can be seen it reaches the greatest value (7.68) at -0.0606. The cut is also known as descision boundary and defines the critical region.}}}{27}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {Energy of the three jets after the $cut_{GBDT}$.}}}{28}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The GBDT output for the signal (blue), SUSY background (red) and SM background (green).}}}{28}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The Standard Model Background Efficiency for the GBDT method.}}}{29}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The SUSY Background Efficiency for the GBDT method.}}}{29}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The signal efficiency for the GBDT method.}}}{29}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The $\chi ^{2}$ versus the different mass templates. The minimum is at 811 GeV/$c^{2}$.}}}{30}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The resulting uncertaity from the toy Monte Carlo method is 15 GeV.}}}{30}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces \relax \fontsize {8}{9.5}\selectfont {The signal and the two backgrounds after the BDT cuts for the case of 200 trees.}}}{32}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

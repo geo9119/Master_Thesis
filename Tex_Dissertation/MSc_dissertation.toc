@@ -11,19 +11,19 @@
 \contentsline {subsection}{\numberline {4.2.1}Modified Invariant Mass}{12}
 \contentsline {section}{\numberline {4.3}Minimisaton of $\chi ^{2}$ Method}{13}
 \contentsline {subsection}{\numberline {4.3.1}Vertex Finding}{13}
-\contentsline {subsection}{\numberline {4.3.2}Jet Clustering}{13}
-\contentsline {subsection}{\numberline {4.3.3}Flavour Tagging}{14}
-\contentsline {subsection}{\numberline {4.3.4}Classification Method: \textit {Boosted Descision Trees}}{14}
+\contentsline {subsection}{\numberline {4.3.2}Jet Clustering}{14}
+\contentsline {subsection}{\numberline {4.3.3}Flavour Tagging}{15}
+\contentsline {subsection}{\numberline {4.3.4}Classification Method: \textit {Boosted Descision Trees}}{15}
 \contentsline {subsubsection}{Background on BDT's}{15}
-\contentsline {subsubsection}{Separation of Signal and Background}{15}
-\contentsline {subsubsection}{Energy Spectrum of the Reconstructed Top quark}{19}
-\contentsline {subsubsection}{Effectiveness of BDT's}{21}
-\contentsline {subsubsection}{Mass Calculation Results}{22}
-\contentsline {subsection}{\numberline {4.3.5}Results - Summary of the BDT method}{24}
-\contentsline {subsection}{\numberline {4.3.6}Classification Method: \textit {Gradient Boosted Descision Trees}}{25}
-\contentsline {subsubsection}{Background on GBDT's}{25}
-\contentsline {subsubsection}{Training and testing phase}{25}
-\contentsline {subsection}{\numberline {4.3.7}Results - Summary of the GBDT method}{30}
-\contentsline {section}{\numberline {4.4}Comparison of BDT - GBDT methods/Results}{30}
-\contentsline {chapter}{\numberline {5}Conclusions}{32}
-\contentsline {chapter}{\numberline {6}Further Work}{33}
+\contentsline {subsubsection}{Separation of Signal and Background}{16}
+\contentsline {subsubsection}{Energy Spectrum of the Reconstructed Top quark}{20}
+\contentsline {subsubsection}{Effectiveness of BDT's}{22}
+\contentsline {subsubsection}{Mass Calculation Results}{23}
+\contentsline {subsection}{\numberline {4.3.5}Results - Summary of the BDT method}{25}
+\contentsline {subsection}{\numberline {4.3.6}Classification Method: \textit {Gradient Boosted Descision Trees}}{26}
+\contentsline {subsubsection}{Background on GBDT's}{26}
+\contentsline {subsubsection}{Training and testing phase}{26}
+\contentsline {subsection}{\numberline {4.3.7}Results - Summary of the GBDT method}{31}
+\contentsline {section}{\numberline {4.4}Comparison of BDT - GBDT methods/Results}{31}
+\contentsline {chapter}{\numberline {5}Conclusions}{33}
+\contentsline {chapter}{\numberline {6}Further Work}{34}
