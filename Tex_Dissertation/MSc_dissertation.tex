@@ -82,13 +82,16 @@
 \pagenumbering{roman}
 
 \begin{abstract}
-In this project I calculate the mass of the Supersymmetric top quark in CLIC experiment at $\sqrt{s}$ = 3 TeV
+In this project I measure the mass of the Supersymmetric top quark in CLIC experiment at $\sqrt{s}$ = 3 TeV
 and for an integrated luminosity $\mathcal{L}_{int}$=3000 fb$^{-1}$
-in $e^{-}$ $e^{+}$ collisions. I assume the following decay for the top squark $\tilde{q} \rightarrow q$ 
-$\chi_{0}$, 
-and the final products to be
-$\tilde{q} \rightarrow q$ $\chi_{0} \rightarrow$ $W b \tilde{\chi}_{1}^{0}$ .
-The mass was found  to be  $m_{\tilde{t}}$ = 839 $\pm$ 11 GeV/$c^{2}$ using the Boosted Descision 
+in $e^{-}$ $e^{+}$ collisions. I assume the following decay for the top squark $\tilde{t} \rightarrow t$ $\tilde{\chi}_{1}^{0}$, 
+investigating the channel:
+ $e^{-} e^{+} \rightarrow \tilde{t} \tilde{\bar{t}} \rightarrow t\tilde{\chi}_{1}^{0} \bar{t}\tilde{\chi}_{1}^{0}
+ \rightarrow W^{+}W^{-}b\bar{b} \tilde{\chi}_{1}^{0} \tilde{\chi}_{1}^{0}$. 
+The major background to this signal comes from top quark pair production $e^{-}e^{+}\rightarrow t\bar{t}$
+while other decays of the top squarks were used to model backgrounds from SUSY processes. 
+For a generated Monte Carlo mass $M_{nom}$ = $m_{\tilde{t}}$ = 845 GeV/$c^{2}$, the top squark mass was 
+measured $m_{\tilde{t}}$ = 839 $\pm$ 11 GeV/$c^{2}$ using the Boosted Descision 
 Trees Multivariate Analysis and $m_{\tilde{t}}$ = 861 $\pm$ 15 GeV/$c^{2}$ using the Gradient Boosted Descision  Trees Multivariate Analysis. 
 \end{abstract}
 
@@ -895,6 +898,7 @@ SM background    & 113494   &  528       &  0.4 \\
  %inserts single line
 \end{tabular}
 \label{table:nonlin} % is used to refer this table in the text
+\caption{}
 \end{table}
 
 \subsubsection{Mass Measurements Results}
@@ -933,6 +937,7 @@ $M_{nom}  \num{+200}$  GeV	   &   0.8   \\
  %inserts single line
 \end{tabular}
 \label{table:nonlin} % is used to refer this table in the text
+\caption{}
 \end{table}
 
 The mass was found  to be $m_{\tilde{t}}$ = 839 GeV compaired to the mass of the Monte Carlo sample which 
@@ -1174,6 +1179,7 @@ GBDT         &       7.68      &  811 $\pm$ 15 GeV/$c^{2}$      &  455		\\
  %inserts single line
 \end{tabular}
 \label{table:nonlin} % is used to refer this table in the text
+\caption{}
 \end{table}
 
 
@@ -1270,14 +1276,25 @@ $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \bar{t}\tilde{\ch
 As further work on this project the following can be mentioned:
 
 \begin{itemize}
+ \item As I investigated the following channel
+    \begin{equation}
+      e^{-} e^{+} \rightarrow \tilde{t} \tilde{\bar{t}} \rightarrow t\tilde{\chi}_{1}^{0} \bar{t}\tilde{\chi}_{1}^{0}
+      \rightarrow W^{+}W^{-}b\bar{b} \tilde{\chi}_{1}^{0} \tilde{\chi}_{1}^{0}
+    \end{equation}
+the decay of the W boson can be hadronic or leptonic. By isolating and investigating 
+the cases that $W\rightarrow l\nu_{l}$
+,i.e. the leptonic channel. 
 
-\item A possibility is to look also for other decays of the top squarks such as 
+\item Another possibility is to look also for other decays of the top squarks such as 
     \begin{equation}
       e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \tilde{\chi}_{1}^{0}
       \chi^{\pm}_{1}b \rightarrow
       W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}
     \end{equation}
 
+\item Besides looking for other decays, work can be done on taking into account on the mass measurement all
+the possible stop decays denoted in page 11. In that case, since there will be no SUSY background work has to
+be done on simulating a new one involving other interactions.
     
 \item Work also can be done for finding the ideal cut of the BDT classification method as well the most 
 important variables that affect the procedure. One possible way to do such thing is by firstly including
