@@ -499,6 +499,19 @@ for each one:
  W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}h$ \quad (9\%)
  
  \end{itemize}
+ 
+ In this project I investigate the first channel with the W boson decaying into hadrons. This results
+ into having 6 jets in the final products. The channel explicitly is:
+ 
+ 
+ 
+ 
+  
+ $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \bar{t}\tilde{\chi}_{1}^{0}
+ \tilde{\chi}^{0}_{1} \rightarrow
+ W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0} \rightarrow 
+ q \bar{q} q \bar{q} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}$
+ 
 
 
 \newpage
@@ -600,7 +613,7 @@ serve the need of approaching the initial parton that they originated. Throught 
 have been developed for the clustering of such objects differing in the way that they approach such procedure.
 Two of the most famous are the sequential recombination algorithms and cone algorithms. In this projecct I use
 the a sequential recombination algorithm, the $k_{t}$ algorithm which is a longitudinaly invariant algorithm
-firstly designed for hadron colliders~\cite{catani1993longitudinally}.
+firstly designed for hadron colliders~\cite{catani1993longitudinally}~\cite{ellis1993successive}.
 
 The $k_{t}$ involves a measure of distance $d_{ij}$ for all the pair of particles $i,j$:
 
@@ -611,22 +624,24 @@ The $k_{t}$ involves a measure of distance $d_{ij}$ for all the pair of particle
 
 where $p_{Ti}$ is the transverse momentum of $i^{th}$ particle with respect to beam direction and 
 $\Delta R^{2}_{ij}=(y_{i}-y_{j})^{2}+(\phi_{i}-\phi_{j})^{2}$ with $y$ being the rapitdity, $\phi$ being
-the azimuth angle and R the jet radius fixed in this project as $R=0.7$.
+the azimuth angle and $R$ the jet radius fixed in this project as $R=0.7$.
 
 The basic idea behind this algorithm is that it calculates the $d_{ij}$ with the smallest value and then it 
 "merges" the $i,j$ into a single object with momentum $p_{i}+p_{j}$. This procedure is repeated until the quantity
-$d_{ij}$ is above some threshold and all the particles that are left are the event's jet
-~\cite{cacciari2012fastjet}.
+$d_{ij}$ is above some threshold and all the particles that are left are the event's jet~\cite{cacciari2012fastjet}.
 
+For this project the jet clustering procedure is stoped when the number of jets reaches the number 
+6, since in the final products there are 6 jets (see section 4.1).
 \subsection{Flavour Tagging}
 
-Flavour Tagging is the procedure in which a pseudoprobability is assigned to each jet regarding the parton
-that the jet originates from. In this project, there are six jets in the final products four of them 
+Flavour Tagging is the procedure in which a pseudoprobability is assigned to each jet regarding the
+flavour of the parton
+that the jet originates from. In this project, there are six jets in the final products two of them 
 originating from b quarks. 
 
-The flavour tagging algorithm that was used belonged in the LCFIplus package~\cite{suehara2016lcfiplus}.
+The flavour tagging algorithm belongs in the LCFIplus package~\cite{suehara2016lcfiplus}.
 It  makes use of the TMVA package which in turn uses multivariate classifiers. A set of input variables are 
-defined for each jet and they are passed to the Gradien Boosted Descision Trees (a certain type of classifiers)
+defined for each jet and they are passed to the Gradient Boosted Descision Trees (a certain type of classifiers)
 which they are trained and then applied to the jets of the physical process. Those input variables are
 constituents of the jets such as tracks and secondary vertices.
 
@@ -634,7 +649,7 @@ constituents of the jets such as tracks and secondary vertices.
 
 For the calculation of the top squark mass I made use of the TMVA package which provides a multivariate 
 analysis platform in order (for this project) to make separation between the signal and the background. Two 
-of them were empoyed, used and compared: the \textit{Boosted Descision Trees} (BDT) and the 
+of them were employed, used and compared: the \textit{Boosted Descision Trees} (BDT) and the 
 \textit{Gradient Boosted Descision Trees} (GBDT).
 
 In this chapter I describe the Boosted Descision Trees method of classification and cite the results of this 
@@ -646,28 +661,51 @@ Before I explain what BDT's are, it would be beneficial to sketch what Descision
 
 Suppose we start with signal and background events described by a set of variables such as (in HEP) transverse 
 momenta, missing energy, etc. Then TMVA sorts all events by each variable and we choose the one that gives the
-best separation between signal and background. This is how the first node is made called root. Then, in the two branches 
+best separation between signal and background. This is how the first node is made called root node. 
+Then, in the two branches 
 that are made we repeat this procedure applying the best cut on each node until the splitting stops based on 
-some criterion. That is how the terminal node is reached which is called leaf~\cite{hoecker2007tmva}.
+some criterion. That is how the terminal node is reached which is called a leaf~\cite{hoecker2007tmva}.
+This results into a descision tree where all nodes, from root to leaf node, separate (cut) the input
+data into signal and background based on some criteria.
+
+The "learning" phase where the nodes are created is called training phase. After this, where the 
+nodes have been created, they are tested with a (not necessarily) new  data set in order to 
+check their efficiency. This is called the testing phase.
 
 One \textit{issue} that arises for Descision Trees is their instability in statistical fluctuations. If two 
 of the input variables have similar separation power then a fluctuation of the input sample may cause the 
 selection of one of the two variables disregarding the other, something that would not happen if the fluctuation
 was not present. This results in a totaly different tree structure.
 
-A way to circumvent this problem is to employ many different trees whose depth is small. They are called
+A way to circumvent this problem is to employ many different trees whose depth (number of nodes
+of each tree) is small. 
+They are called
 weak learners. The classification of the event comes from the majority vote of these weak learners (boosting).
-It is important to be noted that each tree is trainned with the same sample of input variables. That way not 
+It is important to be noted that each tree is trained with the same sample of input variables. That way not 
 only we reach better results in the possible presence of statistical fluctuations but we also avoid the 
 overtrainning of the trees.
 
 \subsubsection{Separation of Signal and Background}
 
-In the physical case that I examine what will later be denoted as SUSY signal: corresponding to the 
-top squarks, SUSY and SM background: corresponding to any physical process that immitates the one under 
-consideration.
+In the channel that I investigate there is the SUSY signal:
 
-To this end, using the TMVA package in root and trainning 1000 trees with the  preselection cuts:
+ $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \bar{t}\tilde{\chi}_{1}^{0}
+ \tilde{\chi}^{0}_{1} \rightarrow
+ W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0} \rightarrow 
+ q \bar{q} q \bar{q} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}$
+ 
+the SUSY background which is any other SUSY process except the aforementioned one, and the SM background
+which does not involve any supersymmetric process. 
+
+Before the training and testing phase it is possible to impose some constraints to the input kinematic 
+variables. They are called preselection cuts.
+
+
+% In the physical case that I examine what will later be denoted as SUSY signal: corresponding to the 
+% top squarks, SUSY and SM background: corresponding to any physical process that immitates the one under 
+% consideration.
+
+To this end, using the TMVA package in ROOT and trainning 1000 trees with the  preselection cuts:
 
 \begin{itemize}
  \item $E_{visible} <$ 2 TeV
@@ -675,7 +713,7 @@ To this end, using the TMVA package in root and trainning 1000 trees with the  p
 \end{itemize}
 
 where $E_{visible}$ is the total energy of the jets and $E_{top,i}$ is the energy of the $i^{th}$ top quark.
-99$\%$ of the signal events passed the cut whereas for the background 70$\%$.
+99$\%$ of the signal events pass the preselection cuts whereas for the background 70$\%$.
 
 In what follows I enumerate the input variables in the TMVA that they were used for trainning and testing 
 the classifiers. It is important to notice that the sample with which the BDT's was trainned and tested were

@@ -687,11 +687,26 @@ overtrainning of the trees.
 
 \subsubsection{Separation of Signal and Background}
 
-In the physical case that I examine what will later be denoted as SUSY signal: corresponding to the 
-top squarks, SUSY and SM background: corresponding to any physical process that immitates the one under 
-consideration.
+The products of the particle collision can be separated as signal and background.
+The channel of interest is denoted as SUSY signal, i.e.:
 
-To this end, using the TMVA package in root and trainning 1000 trees with the  preselection cuts:
+ $e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \bar{t}\tilde{\chi}_{1}^{0}
+ \tilde{\chi}^{0}_{1} \rightarrow
+ W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0} \rightarrow 
+ q \bar{q} q \bar{q} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}$
+ 
+The SUSY background is any other SUSY process that involves top squark pair production but the final products 
+are not the ones of interest, and the SM background which does not involve any supersymmetric process. 
+
+Before the training and testing phase it is possible to impose some constraints to the input kinematic 
+variables. They are called preselection cuts.
+
+
+% In the physical case that I examine what will later be denoted as SUSY signal: corresponding to the 
+% top squarks, SUSY and SM background: corresponding to any physical process that immitates the one under 
+% consideration.
+
+To this end, using the TMVA package in ROOT and trainning 1000 trees with the  preselection cuts:
 
 \begin{itemize}
  \item $E_{visible} <$ 2 TeV
@@ -699,11 +714,11 @@ To this end, using the TMVA package in root and trainning 1000 trees with the  p
 \end{itemize}
 
 where $E_{visible}$ is the total energy of the jets and $E_{top,i}$ is the energy of the $i^{th}$ top quark.
-99$\%$ of the signal events passed the cut whereas for the background 70$\%$.
+99$\%$ of the signal events pass the preselection cuts whereas for the background 70$\%$.
 
-In what follows I enumerate the input variables in the TMVA that they were used for trainning and testing 
-the classifiers. It is important to notice that the sample with which the BDT's was trainned and tested were
-different.
+In what follows I enumerate the input variables in the TMVA that they are used for trainning and testing 
+the classifiers. It is important to notice that the sample with which the BDT's was trainned and tested are
+different. Some of those variables can be seen in figures 4.3 - 4.6.
 
 \begin{enumerate}
  \item The invariant masses of the top quarks
