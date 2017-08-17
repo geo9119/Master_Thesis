@@ -18,7 +18,7 @@
 \contentsline {subsubsection}{Separation of Signal and Background}{16}
 \contentsline {subsubsection}{Energy Spectrum of the Reconstructed Top quark}{20}
 \contentsline {subsubsection}{Effectiveness of BDT's}{22}
-\contentsline {subsubsection}{Mass Calculation Results}{23}
+\contentsline {subsubsection}{Mass Measurements Results}{23}
 \contentsline {subsection}{\numberline {4.3.5}Results - Summary of the BDT method}{25}
 \contentsline {subsection}{\numberline {4.3.6}Classification Method: \textit {Gradient Boosted Descision Trees}}{26}
 \contentsline {subsubsection}{Background on GBDT's}{26}
@@ -26,4 +26,4 @@
 \contentsline {subsection}{\numberline {4.3.7}Results - Summary of the GBDT method}{31}
 \contentsline {section}{\numberline {4.4}Comparison of BDT - GBDT methods/Results}{31}
 \contentsline {chapter}{\numberline {5}Conclusions}{33}
-\contentsline {chapter}{\numberline {6}Further Work}{34}
+\contentsline {chapter}{\numberline {6}Further Work}{35}

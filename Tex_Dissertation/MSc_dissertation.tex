@@ -721,19 +721,19 @@ the classifiers. It is important to notice that the sample with which the BDT's 
 different. Some of those variables can be seen in figures 4.3 - 4.6.
 
 \begin{enumerate}
- \item The invariant masses of the top quarks
- \item The invariant masses of the W bosons
- \item The missing transverse momentum  $p_{T}$
+ \item The the reconstructed masses of the top quark candidates
+ \item The reconstructed masses of the W boson candidates
+ \item The missing transverse momentum  $p_{T}$ (transversity with respect to the beam line)
  \item The $\Delta \phi$ angle between the $t\bar{}t$ quarks
  \item The $\Delta R$  between the W candidates and the b jets
- \item The $cos\theta_{top}$. We expect the top quarks created by purely SM processes to be more boosted 
- than the ones that involved SUSY processes.
+ \item The $\cos\theta_{top}$. We expect the top quarks created by purely SM processes to be more boosted 
+ than the ones that involved SUSY processes
  \item Thrust: 
  \begin{equation}
   T=max_{\hat{n}}\frac{\sum_{i}^{}|\vec{p}_{i}\cdot \hat{n}_{i}|}{\sum_{i}^{}|\vec{p}_{i}|}
  \end{equation}
-	where $\hat{n}$ is the unitary vector that maximises the ratio of the sums. The sums run over all the
-	particles that emerge from the collision.
+	where $\hat{n}$ is the unit vector that maximises the ratio of the sums. The sums run over all the
+	particles that emerge from the collision
 
 	
   \item The three highest b tags
@@ -742,29 +742,33 @@ different. Some of those variables can be seen in figures 4.3 - 4.6.
   \item Oblatness
   \item Sphericity (defined in~\cite{chen2012new})
   \item Aplanarity (defined in~\cite{chen2012new})
-  \item The number of particles
+  \item The number of particles detected
   \item $y_{3,4},y_{4,5},y_{5,6},y_{6,7},y_{7,8}$: The jet transition values defined from the following 
   formula:
   \begin{equation}
-   y_{i,j}=min(E_{i}^{2},E_{j}^{2})\frac{1-(cos\theta_{i}-cos\theta_{j})}{s}
+   y_{i,j}=\min(E_{i}^{2},E_{j}^{2})\frac{1-(\cos\theta_{i}-\cos\theta_{j})}{s}
   \end{equation}
-  where i,j jets are chosen such that y gets the minimum value. 
+  where $i,j$ jets are chosen such that $y$ gets the minimum value 
 \end{enumerate}  
 
 \newpage
 
-The TMVA trains the classifiers with respect to the input variables and then with the weight files that it has
-created, it applies them to a different sample (test phase). Essentially what TMVA achieves is reducing the 
+The TMVA trains the classifiers with respect to the input variables, listed above, 
+on generated samples of the signal and backgrounds. The TMVA creates "weight files" which in turn are 
+applied to statistically independent samples of the signal and background processes (test phase). 
+Essentially what TMVA achieves is reducing the 
 multidimensional phase space of variables into one variable, known as BDT cut.
 
-According to the following graph, the value of the BDT cut that was chosen is $cut_{BDT}=-0.036$ due to the 
-fact that it has the maximum statistical significance $\frac{S}{\sqrt{S+B}}$=5.68, where S is the
-number of signal events and B is the number of background events.
+As shown in the following graph, the value of the BDT cut that was chosen is $cut_{BDT}=-0.036$ due to the 
+fact that it has the maximum statistical significance $\frac{S}{\sqrt{S+B}}$=5.68, where $S$ is the
+number of signal events and $B$ is the number of background events.
 
 \begin{figure}[ht!]
+ \centering
   \includegraphics[width=0.6\linewidth]{{images/cutefficiences_1000trees2}.pdf}
   \caption{\scriptsize{The green line represents the statistical significance $\frac{S}{\sqrt{S+B}}$ where as it can be
-  seen it reaches the greatest value at -0.0238. The cut is also known as descision boundary and defines the
+  seen it reaches the greatest value at $\num{-0.0238}$. 
+  The cut is also known as descision boundary and defines the
   critical region.}}
   
  \includegraphics[width=0.6\linewidth]{{images/BDT_output_intlum3000}.pdf}
@@ -779,7 +783,7 @@ procedure where (ordered from the most significant):
 \begin{enumerate}
  \item $\theta_{miss}$
  \item missing $p_{T}$ 
- \item $\Delta \phi$
+ \item $\Delta \phi$ as the angle between the $t\bar{t}$
  \item $cos\theta_{top}$
 \end{enumerate}
 
@@ -816,19 +820,18 @@ The above histograms show the aforementioned variables as they were given for tr
 
 In the histogram below the energy spectrum of the top quark can be seen for the signal events.
 This variable was given to the TMVA for training and testing but it was not among the important ones. 
-It is clear that the maximum value of the energy is 1.2 Tev something that explains why this was also set  
+It is clear that the maximum value of the energy is 1.2 TeV something that explains why this was also set  
 as a preselection cut. 
 
 \begin{figure}[ht!]
   \includegraphics[width=0.7\linewidth]{{images/E_jjj}.pdf}
-  \caption{\scriptsize{The energy of the top quark. For higher energies there are less entries per bin, something that
-  is connected with the effect of Beamsstrahlung radiadion that is manifested mainly in higher energies.}}
+  \caption{\scriptsize{The energy of the reconstructed top quark candidate.}}
 \end{figure}
 
 
 \begin{figure}[ht!]
   \includegraphics[width=0.7\linewidth]{{images/ratio_plot_witherrors}.pdf}
-  \caption{\scriptsize{}}
+  \caption{\scriptsize{The signal efficiency with the associated errors.}}
 \end{figure}
 
 In the above histogram it can be seen the signal efficiency (with errors) as with respect to the energy of the three jets
@@ -838,10 +841,10 @@ number of the signal events.
 
 For completenes, the above diagrams depict the SM background efficiency and the SUSY background efficiency.
 
-Note that the descent that manifests in histogram 4.7 in the energy of the top squark is related with the
-effect of Beamsstrahlung radiation. As mentioned in the overview of the experiment, the Beamsstrahlung 
-radiation is energy dependent, being more apparent in higher energies something that is confirmed in the above 
-spectrum.
+% Note that the descent that manifests in histogram 4.7 in the energy of the top squark is related with the
+% effect of Beamsstrahlung radiation. As mentioned in the overview of the experiment, the Beamsstrahlung 
+% radiation is energy dependent, being more apparent in higher energies something that is confirmed in the above 
+% spectrum.
 
 \begin{figure}
 \begin{minipage}[c]{0.6\linewidth}
@@ -894,7 +897,7 @@ SM background    & 113494   &  528       &  0.4 \\
 \label{table:nonlin} % is used to refer this table in the text
 \end{table}
 
-\subsubsection{Mass Calculation Results}
+\subsubsection{Mass Measurements Results}
 
 For the calculation of the top squark mass I made use of the minimisation of the $\chi^{2}$ method. In this 
 method we calculate the $\chi^{2}$ value for different masses of the top squark, and the minimum of the fitted
@@ -908,7 +911,7 @@ Concretely, the formula for the calculation of the $\chi^{2}$ is:
 
 where $n_{data}$ are the number of events in the energy spectrum of the three jets after the TMVA (figure 4.12)
 and $n_{template}$ are the number of events for each different template, while the sum runs over all the bins
-of the histogram. A $\chi^{2}$ was calculated for each different template, summarised in the table below.
+$i$ of the histogram. A $\chi^{2}$ was calculated for each different template, summarised in the table below.
 
 
 \hfill
@@ -918,13 +921,13 @@ of the histogram. A $\chi^{2}$ was calculated for each different template, summa
 \begin{tabular}{||c | c||} % centered columns (4 columns)
 \hline \hline %inserts double horizontal lines
 $M_{template}$ 		   & $\sigma$ (fb)   \\ \hline % inserts single horizontal line
-$M_{nom}$ -200 GeV         &   2.8   \\
-$M_{nom}$ -100 GeV         &   2.2   \\
-$M_{nom}$ -50  GeV         &   1.9   \\  
+$M_{nom}   \num{-200}$ GeV         &   2.8   \\
+$M_{nom}   \num{-100}$ GeV         &   2.2   \\
+$M_{nom}   \num{-50}$  GeV         &   1.9   \\  
 $M_{nom}$        	   &  1.65   \\
-$M_{nom}$ +50  GeV	   &   1.4   \\
-$M_{nom}$ +100 GeV	   &   1.2   \\
-$M_{nom}$ +200 GeV	   &   0.8   \\
+$M_{nom}   \num{+50}$  GeV	   &   1.4   \\
+$M_{nom}  \num{+100}$  GeV	   &   1.2   \\
+$M_{nom}  \num{+200}$  GeV	   &   0.8   \\
 
 \hline
  %inserts single line
@@ -932,7 +935,8 @@ $M_{nom}$ +200 GeV	   &   0.8   \\
 \label{table:nonlin} % is used to refer this table in the text
 \end{table}
 
-The mass was found  to be $m_{\tilde{t}}$ = 839 GeV.
+The mass was found  to be $m_{\tilde{t}}$ = 839 GeV compaired to the mass of the Monte Carlo sample which 
+is $m_{\tilde{t}}$ = 845 GeV/$c^{2}$.
 
 
 \newpage
@@ -954,7 +958,8 @@ is the error of each bin content $i$. The result was an uncertainty of the mass 
 \begin{figure}[ht!]
 \centering
   \includegraphics[width=0.7\linewidth]{{images/toyMC_intlumi3000}.pdf}
-  \caption{\scriptsize{Toy Monte carlo method that yielded an uncertainty of 11 GeV.}}
+  \caption{\scriptsize{The mass result after 5000 different measurements. 
+ A toy Monte Carlo method was used that yielded an uncertainty of 11 GeV.}}
 \end{figure}
 
 
@@ -969,7 +974,7 @@ templates, I found the mass of the supersymmetric top quark to be
  m_{\tilde{t}}=839\pm 11 \textrm{GeV}/c^{2}
 \end{equation}
 
-Although the nominal mass is $M_{nom}$= 845 GeV/$c^{2}$, my calculation is one sigma  inside this range,
+The nominal mass is $M_{nom}$= 845 GeV/$c^{2}$, my measurement is one sigma  inside this range,
 taking into account the aforementioned uncertainty at CLIC for integrated luminosity 
 $\mathcal{L}_{int}$=3000 fb$^{-1}$.
 
@@ -989,7 +994,8 @@ prediction model. The main difference from the classification method described i
 the prediction model is built in an iterative way allowing its own optimisation by the calculation of errors
 using a different loss function than the one used for the BDT's.
 
-Again like all the boosting methods, it combines a set of weak learners (for BDT it was the number of trees).
+Again like all the boosting methods, it combines a set of weak learners which is defined to be the trees that
+are "short", i.e. that they have small number of nodes.
 In the first phase -training phase- a rough approximation for the prediction model is made. Subsequently, the 
 the error of the model and the actual expected values is calculated (residual) and it is added in the
 previous model making it a slightly  better. This procedure is repeated various times until a good description
@@ -1019,7 +1025,7 @@ The list of the input variables can be seen in chapter 4.3.4 (p.16).
 Based again, to the graph that has the efficiency vs the $cut_{GBDT}$, the chosen value for the cut was the one
 that maximised the statistical significance $\frac{S}{\sqrt{S+B}}$=7.68, where $S$ is the signal and $B$ is the 
 background: $cut_{GBDT}=-0.0606$. It needs to be noted that the statistical significance achieved through
-this method is almost one point higher than that of the BDT method of classification.
+this method is almost one sigma (standar deviation) higher than that of the BDT method of classification.
 
 \begin{figure}[ht!]
 \centering
@@ -1035,7 +1041,7 @@ The variables that TMVA found most important are exactly the same with those of 
  \item $\theta_{miss}$ : the polar angle of the missing momentum of the jets.
  \item $p_{T}$ : the missing transverse momentum.
  \item $\Delta \phi$ : the angle between the reconstructed tops.
- \item $cos\theta_{top}$.
+ \item $\cos\theta_{top}$.
 \end{enumerate}
 
 In the following stacked histogram can be seen the post GBDT reduction of background and in the table 
@@ -1105,7 +1111,7 @@ The above histograms show the effciency for both backgrounds whereas the one bel
 Using again the method of minimisation of the $\chi^{2}$ for different templates (table in p.22) of the top 
 squark mass (formula 4.9), I calculated the mass to be:
 \begin{equation}
- m_{\tilde{t}}=811\quad \textrm{GeV}/c^{2}
+ m_{\tilde{t}}=811\textrm{GeV}/c^{2}
 \end{equation}
 
 again using a toy Monte Carlo method I smeared each bin of the energy spectrum of the three jets with a 
@@ -1137,7 +1143,7 @@ the $\chi^{2}$ for different mass templates, I found the mass of the supersymmet
 quark to be:
 
 \begin{equation}
- m_{\tilde{t}}=811\pm 15 \quad \textrm{GeV}
+ m_{\tilde{t}}=811\pm 15 \quad \textrm{GeV/}c^{2}
 \end{equation}
 
 The nominal mass is $M_{nom}$ = 845 GeV/$c^{2}$, my calculation is two sigma inside this range taking into 
@@ -1163,7 +1169,7 @@ The following table summarises the basic characteristics of the two methods:
 Method      &Stat. Efficiency &  $m_{\tilde{t}}$               &  $N_{signal}$ \\ 
 \hline 
 BDT         &       6.79      &  839 $\pm$ 11 GeV/$c^{2}$      &  493		\\
-GBD         &       7.68      &  811 $\pm$ 15 GeV/$c^{2}$      &  455		\\
+GBDT         &       7.68      &  811 $\pm$ 15 GeV/$c^{2}$      &  455		\\
 \hline
  %inserts single line
 \end{tabular}
@@ -1185,15 +1191,15 @@ Additionally another interesting thing is the importance of these 40 more events
 This is clear because in the BDT the number of events of SM background ($N_{events}$=528) 
 in total are far more 
 than those in the GBDT method ($N_{events}$=198), and at first sight it would be expected that the GBDT has 
-better potencial than the BDT.
+better potential than the BDT.
 But the mass and uncertainty measurements proved to be the other way round giving evidence to the fact
 that more signal events have more impact than less background.
 
-Similar contradiccion produces the careful examination of the signal efficiency plots(4.8 for BDT and 4.20
+Similar contradiction produces the careful examination of the signal efficiency plots(4.8 for BDT and 4.20
 for GBDT). Both of them (taking into account the errors) tend to have an almost constant trend but the 
 efficiency of GBDT is higher.
 
-Another interesting fact is the dependence of the discrimination strength of the classifiers with respect to 
+Another interesting observation is the dependence of the discrimination strength of the classifiers with respect to 
 the number of trees. Before I set the number of trees to be 1000, my initial calculation for the mass 
 was with 200 trees,
 something that yielded an uncertainty of 19 GeV. The reason for that is clear if the following histogram is 
@@ -1209,15 +1215,16 @@ If the above histogram is compared with the corresponding one for 1000 trees (Fi
 that the SM background has reduced significantly. This is the reason why we get a significance of 11 GeV, i.e.
 8 GeV less.
 
-Although, apart from the "tunning" issues, the fact that the BDT's performance is superior is is no 
-new to the experimental world. From 2005, similar studies were made for the MiniBoone experiment and 
+Although, apart from the "tunning" issues, the fact that the BDT's performance is superior is 
+something that the experimental community knew already. 
+From 2005, similar studies were made for the MiniBoone experiment and 
 it was found that BDT's (on Adaboost mode) outperform other methods~\cite{yang2005studies}.
 
 \chapter{Conclusions}
 
 
 The mass of the supersymmetric top quark was calculated for the CLIC experiment at $\surd s$ = 3 TeV and for 
-an integrated luminosity $\mathcal{L}_{int}$ = 3000 fb$^{-1}$.
+an integrated luminosity $\mathcal{L}_{int}$ = 3000 fb$^{-1}$ for a nominal mass of $M_{nom}$ = 845 GeV/$c^{2}$.
 
 Using the Boosted Decision Trees multivariate method of classification it was found to be 
 \begin{equation}
@@ -1229,9 +1236,30 @@ whereas using the Gradient Boosted Decision Trees method of classification it wa
 \end{equation}
 
 Althought the GBDT's at first seem to be the best candidate for a more precise mass calculation, the BDT's 
-proved to be the ones that offered a better one. That is because the resulting number of signal events in the BDT 
+proved to be the ones that offered a more precise one. That is because the resulting number of signal events in the BDT 
 method are more than the ones in GBDT implying that having stronger signal than better separation between 
 signal-background is preferable in the case of the mass calculation of the $\tilde{t}$ in CLIC experiment.
+
+Having in hand the mass of the top squark calculated with the BDT method along with the Monte Carlo mass
+of the neutralino, comparison can be made with figure 3.1 of ATLAS. As it can be seen the set of these masses 
+($m_{\tilde{t}}$ = 839 GeV/$c^{2}$,$m_{\tilde{\chi}_{1}^{0}}$ = 357 GeV/$c^{2}$) belong in the already 
+excluded limits 
+of ATLAS experiment. Besides that, the potencial of CLIC collider for a precise measurement of the mass is 
+not ruled out but on the opposite stressed, given the potencial of low uncertainty on the mass measurement.
+
+Summing up, I demonstrated that it is possible the CLIC experiment to make a precise measurement of the top
+squark mass with significantly low uncertainty for the scenario that the mass of the $\tilde{t}$ is 
+$m_{\tilde{t}}$ = 845 GeV/$c^{2}$ and the mass of the neutralino being $m_{\tilde{\chi}_{1}^{0}}$ = 
+357 GeV/$c^{2}$ investigating the channel:
+
+$e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \bar{t}\tilde{\chi}_{1}^{0}
+ \tilde{\chi}^{0}_{1} \rightarrow
+ W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0} \rightarrow 
+ q \bar{q} q \bar{q} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}$
+ 
+ 
+
+
 
 
 
@@ -1242,21 +1270,15 @@ signal-background is preferable in the case of the mass calculation of the $\til
 As further work on this project the following can be mentioned:
 
 \begin{itemize}
- \item As I investigated the following channel
-    \begin{equation}
-      e^{-} e^{+} \rightarrow \tilde{t} \tilde{\bar{t}} \rightarrow t\tilde{\chi}_{1}^{0} \bar{t}\tilde{\chi}_{1}^{0}
-      \rightarrow W^{+}W^{-}b\bar{b} \tilde{\chi}_{1}^{0} \tilde{\chi}_{1}^{0}
-    \end{equation}
-the decay of the W boson can be hadronic or leptonic. By isolating the cases that $W\rightarrow l\nu_{l}$
-,i.e. the hadronic channe, we can possibly achieve even smaller uncertainty in the mass calculation of the top
-squark.
-\item Another possibility is to look also for other decays of the top squarks such as 
+
+\item A possibility is to look also for other decays of the top squarks such as 
     \begin{equation}
       e^{-}e^{+} \rightarrow \tilde{t}\tilde{\bar{t}} \rightarrow t \tilde{\chi}_{1}^{0}
       \chi^{\pm}_{1}b \rightarrow
       W^{+}W^{-} b \bar{b} \tilde{\chi}_{1}^{0}  \tilde{\chi}_{1}^{0}
     \end{equation}
 
+    
 \item Work also can be done for finding the ideal cut of the BDT classification method as well the most 
 important variables that affect the procedure. One possible way to do such thing is by firstly including
 all the variables in the TMVA and after the training/testing phase to plot the backgroung rejection versus 
