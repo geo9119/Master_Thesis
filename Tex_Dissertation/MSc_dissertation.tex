@@ -149,13 +149,13 @@ On the other hand, CLIC is designed to invastigate the interactions of elementar
 Synchrotron radiation since protons are accelerated in a 27 km circular accelerator whereas CLIC, being linear does not.
 
 The main targets of CLIC are dependent of the energy stage~\cite{clic2016updated}.
-In the first it will focus on prescision standard model physics such as Higgs and top quark measurements and in the two subsequent, among others, there will be searches
+In the first stage it will focus on prescision standard model physics such as Higgs and top quark measurements and in the two subsequent, among others, there will be searches
 for new physics. One of the theories that aspires to give solutions to many of the problems of Standard Model is Supersymmetry (SUSY). In this theory every particle has a Supersymmetric partner that differs in the spin by $1/2$, thus 
 relating bosons with fermions and fermions with bosons~\cite{bilal2001introduction}.
 
 In the Minimal Supersymmetric Standard Model, the top squarks $\tilde{t}$ can decay into a top quark $t$
 and a dark matter candidate, the neutralino $\tilde{\chi}_{1}^{0}$. In this project I will use multivariate analysis
-to discriminat between signal and background with the goal to measure the top squark
+to discriminate between signal and background with the goal to measure the top squark
 mass at $\surd{s}$ = 3 TeV in the CLIC accelerator environment.
 
 
@@ -175,7 +175,7 @@ Standar Model.
 Specifically, at $\surd s$ = 380 GeV and with an integrated luminosity of $\mathcal{L}_{int}$ = 500 fb$^{-1}$, 
 prescision measurements can be made in the Higgs and the top quark sector~\cite{clic2016updated}.
 At this enegy stage the Higgsstrahlung
-process ($e^{+}e^{-}\rightarrow ZH$) alongside the $WW$ fusion ($e^{+}e^{-}\rightarrow H\nu_{e}\tilde{\nu}_{e}$) 
+process ($e^{+}e^{-}\rightarrow ZH$) alongside the $WW$ fusion ($e^{+}e^{-}\rightarrow H\nu_{e}\bar{\nu}_{e}$) 
 are the dominant and can shed light to properties of the Higgs boson in a model independent way.
 In CLIC there is also a dedicated program for top quark physics. This is because it is one of the most important particles
 in SM because it couples strongest to the Higgs field due to its mass but also it has an important role in 
@@ -434,7 +434,7 @@ stop plane.
 \section{Introduction}
 
 In this chapter I will describe the exact conditions and methods that were followed in this project for the 
-measurement of the stop quark mass at the CLIC Conceptual experiment.
+measurement of the stop quark mass at the CLIC experiment.
 
 I investigate the production of a pair of top squarks at $\surd s$ = 3 TeV and assuming an  integrated 
 luminosity of $\mathcal{L}_{int}$ = 3000 fb$^{-1}$. The channel of interest is the following:
@@ -568,7 +568,7 @@ unsuitable for the mass measurement of the top squark.
 
 \section{Minimisaton of $\chi^{2}$ Method}
 
-In this chapter I describe the procedure that I followed until the calculation of the top squark mass. 
+In this chapter I describe the procedure that I followed until the measurement of the top squark mass. 
 This involved vertex finding, jet clustering, flavour tagging and the calculation of the $\chi^{2}$
 for each template of the top squark mass.
 
@@ -1193,7 +1193,7 @@ GBDT are almost 40 less. Even thought that they sound few, as a fraction they co
 $N_{signal}$,
 number not at all negligible especially when we deal with a few hundreads of events.
 Additionally another interesting thing is the importance of these 40 more events in the case of BDT 
-(for the mass and the ancertainty calculation).
+(for the mass and the uncertainty calculation).
 This is clear because in the BDT the number of events of SM background ($N_{events}$=528) 
 in total are far more 
 than those in the GBDT method ($N_{events}$=198), and at first sight it would be expected that the GBDT has 
@@ -1219,12 +1219,13 @@ taken into account:
 
 If the above histogram is compared with the corresponding one for 1000 trees (Figure 4.12), then it is clear
 that the SM background has reduced significantly. This is the reason why we get a significance of 11 GeV, i.e.
-8 GeV less.
+4 GeV less.
 
 Although, apart from the "tunning" issues, the fact that the BDT's performance is superior is 
-something that the experimental community knew already. 
+something that the experimental community knew. 
 From 2005, similar studies were made for the MiniBoone experiment and 
 it was found that BDT's (on Adaboost mode) outperform other methods~\cite{yang2005studies}.
+
 
 \chapter{Conclusions}
 
@@ -1248,7 +1249,7 @@ signal-background is preferable in the case of the mass calculation of the $\til
 
 Having in hand the mass of the top squark calculated with the BDT method along with the Monte Carlo mass
 of the neutralino, comparison can be made with figure 3.1 of ATLAS. As it can be seen the set of these masses 
-($m_{\tilde{t}}$ = 839 GeV/$c^{2}$,$m_{\tilde{\chi}_{1}^{0}}$ = 357 GeV/$c^{2}$) belong in the already 
+($m_{\tilde{t}}$ = 839 GeV/$c^{2}$, $m_{\tilde{\chi}_{1}^{0}}$ = 357 GeV/$c^{2}$) belong in the already 
 excluded limits 
 of ATLAS experiment. Besides that, the potencial of CLIC collider for a precise measurement of the mass is 
 not ruled out but on the opposite stressed, given the potencial of low uncertainty on the mass measurement.
@@ -1281,9 +1282,9 @@ As further work on this project the following can be mentioned:
       e^{-} e^{+} \rightarrow \tilde{t} \tilde{\bar{t}} \rightarrow t\tilde{\chi}_{1}^{0} \bar{t}\tilde{\chi}_{1}^{0}
       \rightarrow W^{+}W^{-}b\bar{b} \tilde{\chi}_{1}^{0} \tilde{\chi}_{1}^{0}
     \end{equation}
-the decay of the W boson can be hadronic or leptonic. By isolating and investigating 
+the decay of the W boson can be hadronic or leptonic. Isolating and investigating 
 the cases that $W\rightarrow l\nu_{l}$
-,i.e. the leptonic channel. 
+,i.e. the leptonic channel a mass measurement can be achieved. 
 
 \item Another possibility is to look also for other decays of the top squarks such as 
     \begin{equation}
@@ -1293,8 +1294,8 @@ the cases that $W\rightarrow l\nu_{l}$
     \end{equation}
 
 \item Besides looking for other decays, work can be done on taking into account on the mass measurement all
-the possible stop decays denoted in page 11. In that case, since there will be no SUSY background work has to
-be done on simulating a new one involving other interactions.
+the possible stop decays denoted in page 11. In that case, since there will be no SUSY background
+and work has to be done in order to simulate a new one involving other interactions.
     
 \item Work also can be done for finding the ideal cut of the BDT classification method as well the most 
 important variables that affect the procedure. One possible way to do such thing is by firstly including
